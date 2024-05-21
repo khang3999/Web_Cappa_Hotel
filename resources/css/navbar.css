@@ -1,0 +1,35 @@
+.logo-img {
+    width: 160px;
+    margin: 15px;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: 'Barlow Condensed', serif;
+    letter-spacing: 2px;
+}
+/* 
+.main {
+    color: #ab854f;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: 'Barlow Condensed', serif;
+    letter-spacing: 2px;
+} */
+
+.icon-down {
+    font-size: 10px;
+}
+
+.nav-link:hover {
+    color: #ab854f;
+}
+.nav-link:focus {
+    color: #ab854f;
+}
+.nav-item:hover .dropdown-menu{
+    display: block;
+    transition: ease-out 1s;
+}
