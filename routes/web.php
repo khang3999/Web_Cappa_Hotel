@@ -8,7 +8,7 @@ use Inertia\Inertia;
 
 // Tu viet
 Route::get('/a', function () {
-    return Inertia::render('User/Test');
+    return Inertia::render('User/Home');
 });
 
 Route::get('/', function () {
