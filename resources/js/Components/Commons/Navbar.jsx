@@ -1,9 +1,9 @@
-const Header = (props) => {
+import "../../../css/navbar.css"
+const Navbar = (props) => {
     return (
-
-        <nav className="navbar navbar-expand-xl z-3 position-absolute w-100 mt-3 ">
-            <div className="container-fluid p-0 ">
-                <a className="navbar-brand ms-5 ps-5" href="#">
+        <nav className="navbar navbar-expand-xl z-3 position-absolute w-100 mt-3">
+            <div className="container">
+                <a className="navbar-brand" href="#">
                     <img src="/images/logo.png" alt="THE CAPPA" className="logo-img"></img>
                 </a>
                 <button className="navbar-toggler navbar-dark me-3" type="button" data-bs-toggle="collapse"
@@ -15,67 +15,65 @@ const Header = (props) => {
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li className="nav-item ">
                             <div className="d-flex h-100">
-                                <a className=" main m-1 p-2 my-auto" aria-current="page" href="#">HOME <i
+                                <a className="nav-link mx-2 p-2 my-auto" aria-current="page" href="#">HOME <i
                                     className="fa-solid fa-angle-down icon-down"></i></a>
                             </div>
-
-                            <ul className="dropdown-menu ">
-                                <li><a className="dropdown-item" href="#">Home 1</a></li>
-                                <li><a className="dropdown-item" href="#">Home 2</a></li>
-                                <li><a className="dropdown-item" href="#">Home 3</a></li>
-
-                            </ul>
-
+                        </li>
+                        <li className="nav-item ">
+                            <a className="nav-link mx-2 p-2" aria-current="page" href="#">ABOUT</a>
                         </li>
 
                         <li className="nav-item ">
-                            <a className="nav-link m-1 p-2" aria-current="page" href="#">ABOUT</a>
-                        </li>
-
-                        <li className="nav-item ">
-                            <a className="nav-link  m-1 p-2 " aria-current="page" href="#">ROOMS & SUITES <i
+                            <a className="nav-link  mx-2 p-2 " aria-current="page" href="#">ROOMS & SUITES <i
                                 className="fa-solid fa-angle-down icon-down"></i></a>
                             <ul className="dropdown-menu ">
                                 <li><a className="dropdown-item" href="#">Rooms & suites 1</a></li>
+                                <li><hr className="dropdown-divider"/></li>
                                 <li><a className="dropdown-item" href="#">Rooms & suites 2</a></li>
+                                <li><hr className="dropdown-divider"/></li>
                                 <li><a className="dropdown-item" href="#">Rooms & suites 3</a></li>
 
                             </ul>
                         </li>
 
                         <li className="nav-item ">
-                            <a className="nav-link  m-1 p-2 " aria-current="page" href="#">PAGES <i
+                            <a className="nav-link  mx-2 p-2 " aria-current="page" href="#">PAGES <i
                                 className="fa-solid fa-angle-down icon-down"></i></a>
                             <ul className="dropdown-menu ">
                                 <li><a className="dropdown-item" href="#">Pages 1</a></li>
+                                <li><hr className="dropdown-divider"/></li>
                                 <li><a className="dropdown-item" href="#">Pages 2</a></li>
+                                <li><hr className="dropdown-divider"/></li>
                                 <li><a className="dropdown-item" href="#">Pages 3</a></li>
 
                             </ul>
                         </li>
 
                         <li className="nav-item ">
-                            <a className="nav-link m-1 p-2 " aria-current="page" href="#">SHOP <i
+                            <a className="nav-link mx-2 p-2 " aria-current="page" href="#">SHOP <i
                                 className="fa-solid fa-angle-down icon-down"></i></a>
                             <ul className="dropdown-menu ">
                                 <li><a className="dropdown-item" href="#">Shop 1</a></li>
+                                <li><hr className="dropdown-divider"/></li>
                                 <li><a className="dropdown-item" href="#">Shop 2</a></li>
+                                <li><hr className="dropdown-divider"/></li>
                                 <li><a className="dropdown-item" href="#">Shop 3</a></li>
-
                             </ul>
                         </li>
                         <li className="nav-item ">
-                            <a className="nav-link m-1 p-2 " aria-current="page" href="#">NEWS <i
+                            <a className="nav-link mx-2 p-2 " aria-current="page" href="#">NEWS <i
                                 className="fa-solid fa-angle-down icon-down"></i></a>
                             <ul className="dropdown-menu ">
                                 <li><a className="dropdown-item" href="#">News 1</a></li>
+                                <li><hr className="dropdown-divider"/></li>
                                 <li><a className="dropdown-item" href="#">News 2</a></li>
+                                <li><hr className="dropdown-divider"/></li>
                                 <li><a className="dropdown-item" href="#">News 3</a></li>
 
                             </ul>
                         </li>
                         <li className="nav-item ">
-                            <a className="nav-link  m-1 p-2 " aria-current="page" href="#">CONTACT </a>
+                            <a className="nav-link ms-2 p-2 " aria-current="page" href="#">CONTACT </a>
                         </li>
                     </ul>
 
@@ -86,4 +84,4 @@ const Header = (props) => {
     )
 }
 
-export default Header;
+export default Navbar;

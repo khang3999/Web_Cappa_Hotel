@@ -1,13 +1,14 @@
+import "../../../css/slidebar.css"
 const Slidebar = (props) => {
     return (
         <div className="banner position-relative ">
             <div id="carouselExampleCaptions" className="carousel slide position-relative ">
                 <div className="carousel-indicators z-3 d-none d-lg-block">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active"
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="dot active"
                         aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" className="dot"
                         aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" className="dot"
                         aria-label="Slide 3"></button>
                 </div>
                 <div className="carousel-inner">

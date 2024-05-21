@@ -1,11 +1,11 @@
-import Header from "../Commons/Header";
+import Navbar from "../Commons/Navbar";
 import Slidebar from "../Commons/Slidebar";
 const Banner = (props) => {
     return (
-        <div>
-            <Header></Header>
+         <div className="header z-2 position-relative">
+            <Navbar></Navbar>
             <Slidebar></Slidebar>
-        </div>
+         </div>  
     )
 }
 
