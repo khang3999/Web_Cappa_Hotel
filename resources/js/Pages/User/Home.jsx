@@ -10,12 +10,13 @@ import Promotion from "@/Components/HomePage/Promotion";
 import RoomAndSuite from "@/Components/HomePage/RoomAndSuite";
 import Testimonial from "@/Components/HomePage/Testimonial";
 import Utility from "@/Components/HomePage/Utility";
+
 const Home = (props) => {
     return (
         <>
         <Banner></Banner>
 
-        <About></About>
+        {/* <About></About>
 
         <RoomAndSuite></RoomAndSuite>
 
@@ -33,7 +34,7 @@ const Home = (props) => {
 
         <Booking></Booking>
 
-        <Footer></Footer>
+        <Footer></Footer> */}
         </>
     )
 }
