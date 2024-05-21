@@ -1,101 +1,101 @@
 const Footer = (props) => {
     return (
         <div>
-            <div class="footer-top ">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 mb-4">
-                            <h3 class="footer-title text-white">About Hotel</h3>
-                            <p class="footer-about-text mb-4">Welcome to the best five-star deluxe hotel in New York. Hotel elementum
+            <div className="footer-top ">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-4 mb-4">
+                            <h3 className="footer-title text-white">About Hotel</h3>
+                            <p className="footer-about-text mb-4">Welcome to the best five-star deluxe hotel in New York. Hotel elementum
                                 sesue the aucan vestibulum aliquam justo in sapien rutrum volutpat.</p>
-                            <div class="select-lan d-flex text-secondary">
-                                <select class="form-select w-100 bg-transparent border-0 text-bg-secondary bg-dank">
-                                    <option value="1" class="bg-dark">Vietnamese</option>
-                                    <option value="2" class="bg-dark">English</option>
+                            <div className="select-lan d-flex text-secondary">
+                                <select className="form-select w-100 bg-transparent border-0 text-bg-secondary bg-dank">
+                                    <option value="1" className="bg-dark">Vietnamese</option>
+                                    <option value="2" className="bg-dark">English</option>
                                 </select>
                             </div>
                         </div>
-                        <div class="col-md-4 d-flex mb-4 ">
-                            <div class="explore-title mx-md-auto">
-                                <h3 class="footer-title text-white ">Explore</h3>
-                                <div class="explore-list">
-                                    <div class="point  mb-1">
+                        <div className="col-md-4 d-flex mb-4 ">
+                            <div className="explore-title mx-md-auto">
+                                <h3 className="footer-title text-white ">Explore</h3>
+                                <div className="explore-list">
+                                    <div className="point  mb-1">
                                     </div>
-                                    <a href="#" class="explore-item ">Home</a>
+                                    <a href="#" className="explore-item ">Home</a>
                                 </div>
-                                <div class="explore-list">
-                                    <div class="point  mb-1">
+                                <div className="explore-list">
+                                    <div className="point  mb-1">
                                     </div>
-                                    <a href="#" class="explore-item ">Rooms & Suites</a>
+                                    <a href="#" className="explore-item ">Rooms & Suites</a>
                                 </div>
-                                <div class="explore-list">
-                                    <div class="point  mb-1">
+                                <div className="explore-list">
+                                    <div className="point  mb-1">
                                     </div>
-                                    <a href="#" class="explore-item ">Restaurant</a>
+                                    <a href="#" className="explore-item ">Restaurant</a>
                                 </div>
-                                <div class="explore-list">
-                                    <div class="point  mb-1">
+                                <div className="explore-list">
+                                    <div className="point  mb-1">
                                     </div>
-                                    <a href="#" class="explore-item ">Spa & Wellness</a>
+                                    <a href="#" className="explore-item ">Spa & Wellness</a>
                                 </div>
-                                <div class="explore-list">
-                                    <div class="point  mb-1">
+                                <div className="explore-list">
+                                    <div className="point  mb-1">
                                     </div>
-                                    <a href="#" class="explore-item ">About Hotel</a>
+                                    <a href="#" className="explore-item ">About Hotel</a>
                                 </div>
-                                <div class="explore-list">
-                                    <div class="point  mb-1">
+                                <div className="explore-list">
+                                    <div className="point  mb-1">
                                     </div>
-                                    <a href="#" class="explore-item ">Contact</a>
+                                    <a href="#" className="explore-item ">Contact</a>
                                 </div>
                             </div>
 
                         </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="contact">
-                                <h3 class="footer-title text-white">Contact</h3>
-                                <p class="contact-text">
+                        <div className="col-md-4 mb-4">
+                            <div className="contact">
+                                <h3 className="footer-title text-white">Contact</h3>
+                                <p className="contact-text">
                                     1616 Broadway NY, New York 10001 <br></br>
                                         United States of America
                                 </p>
-                                <div class="phone mb-3">
-                                    <i class="fa-solid fa-phone-volume phone-contact d-inline-block"></i>
-                                    <p class="phone-text d-inline-block">855 100 4444</p>
+                                <div className="phone mb-3">
+                                    <i className="fa-solid fa-phone-volume phone-contact d-inline-block"></i>
+                                    <p className="phone-text d-inline-block">855 100 4444</p>
                                 </div>
                             </div>
-                            <a href="" class="mail-contact ">
+                            <a href="" className="mail-contact ">
                                 info@luxuryhotel.com
                             </a>
-                            <div class="social mt-4">
+                            <div className="social mt-4">
                                 <a href="#">
 
-                                    <i class="fa-brands fa-instagram social-icon"></i>
+                                    <i className="fa-brands fa-instagram social-icon"></i>
                                 </a>
                                 <a href="#">
 
-                                    <i class="fa-brands fa-twitter social-icon"></i>
+                                    <i className="fa-brands fa-twitter social-icon"></i>
                                 </a>
                                 <a href="#">
 
-                                    <i class="fa-brands fa-youtube social-icon"></i>
+                                    <i className="fa-brands fa-youtube social-icon"></i>
                                 </a>
                                 <a href="#">
 
-                                    <i class="fa-brands fa-facebook social-icon"></i>
+                                    <i className="fa-brands fa-facebook social-icon"></i>
                                 </a>
                                 <a href="#">
 
-                                    <i class="fa-brands fa-pinterest social-icon"></i>
+                                    <i className="fa-brands fa-pinterest social-icon"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p class="footer-bot-text mx-auto">&copy; Copyright 2023 by <a href="#">Shtheme</a></p>
+            <div className="footer-bottom">
+                <p className="footer-bot-text mx-auto">&copy; Copyright 2023 by <a href="#">Shtheme</a></p>
             </div>
-            <a href="#" class="sticky-button">
+            <a href="#" className="sticky-button">
                 <p>^</p>
             </a>
         </div>
