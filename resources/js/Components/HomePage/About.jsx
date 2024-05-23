@@ -37,8 +37,7 @@ const About = (props) => {
                     </div>
                     <div className="col col-md-3">
                         <div className="img-2 overflow-hidden">
-                            <img src="/images/2-1.jpg" alt=" " className="w-100 img-fluid h-auto img-hover"></img>
-
+                            <img src="/images/room-standard-3.jpg" alt=" " className="w-100 img-fluid h-auto img-hover"></img>
                         </div>
                     </div>
                 </div>

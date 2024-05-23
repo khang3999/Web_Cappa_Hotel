@@ -17,28 +17,31 @@ const Home = () => {
     return (
         <>
             <Head title="Cappa Luxury Hotel" />
+            <div className="img-base z-n1 fixed-top ">
+                <img src="/images/banner-home-1.jpg" alt="" className="w-100 img-fluid"/>
+            </div>
             {/* <Banner banners = {banners}></Banner> */}
             <Banner pageName={pageName}></Banner>
 
             <About></About>
 
-                <RoomAndSuite></RoomAndSuite>
+            <RoomAndSuite></RoomAndSuite>
 
-                <Promotion></Promotion>
+            <Promotion></Promotion>
 
-                <Facilities></Facilities>
+            <Facilities></Facilities>
 
-                <CheckRoom></CheckRoom>
+            <CheckRoom></CheckRoom>
 
-                <Testimonial></Testimonial>
+            <Testimonial></Testimonial>
 
-                <Utility></Utility>
+            <Utility></Utility>
 
-                <Blog></Blog>
+            <Blog></Blog>
 
-                <Booking></Booking>
+            <Booking></Booking>
 
-                <Footer></Footer>
+            <Footer></Footer>
         </>
     )
 }

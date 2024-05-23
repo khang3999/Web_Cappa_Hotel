@@ -102,5 +102,7 @@ class DatabaseSeeder extends Seeder
                 'type'=>'spa'
             ]
         );
+
+                
     }
 }
