@@ -1,4 +1,3 @@
-
 import Footer from "@/Components/Commons/Footer";
 import About from "@/Components/HomePage/About";
 import Banner from "@/Components/HomePage/Banner";
@@ -10,31 +9,36 @@ import Promotion from "@/Components/HomePage/Promotion";
 import RoomAndSuite from "@/Components/HomePage/RoomAndSuite";
 import Testimonial from "@/Components/HomePage/Testimonial";
 import Utility from "@/Components/HomePage/Utility";
+import { Head } from "@inertiajs/react";
+import { useEffect } from "react";
 
-const Home = (props) => {
+const Home = () => {
+    const pageName = "home"
     return (
         <>
-        <Banner></Banner>
+            <Head title="Cappa Luxury Hotel" />
+            {/* <Banner banners = {banners}></Banner> */}
+            <Banner pageName={pageName}></Banner>
 
-        {/* <About></About>
+            <About></About>
 
-        <RoomAndSuite></RoomAndSuite>
+                <RoomAndSuite></RoomAndSuite>
 
-        <Promotion></Promotion>
+                <Promotion></Promotion>
 
-        <Facilities></Facilities>
+                <Facilities></Facilities>
 
-        <CheckRoom></CheckRoom>
+                <CheckRoom></CheckRoom>
 
-        <Testimonial></Testimonial>
+                <Testimonial></Testimonial>
 
-        <Utility></Utility>
+                <Utility></Utility>
 
-        <Blog></Blog>
+                <Blog></Blog>
 
-        <Booking></Booking>
+                <Booking></Booking>
 
-        <Footer></Footer> */}
+                <Footer></Footer>
         </>
     )
 }

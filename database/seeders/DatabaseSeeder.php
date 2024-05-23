@@ -29,7 +29,9 @@ class DatabaseSeeder extends Seeder
             [
                 'title'=>'Luxury Hotel & Best Resort',
                 'description'=>'Enjoy a Luxury Experience',
-                'photo'=>'banner-home-1.jpg'
+                'photo'=>'banner-home-1.jpg',
+                'type'=>'home'
+
             ]
         );
         DB::table('banners')->insert(

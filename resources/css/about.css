@@ -1,0 +1,68 @@
+/* About */
+.rating i {
+    color: #e4a853;
+}
+/* .content-about{
+    padding: 120px 0;
+    background: url(/public/images/3-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* -webkit-filter: blur(10px); }*/
+.content-about,.testimonials {
+    padding: 120px 0;
+}
+
+.text-about {
+    font-family: 'Barlow', serif;
+    margin-bottom: 20px;
+    color: #666666;
+    font-size: 0.9em;
+}
+
+.text-about-top {
+    letter-spacing: 5px;
+    font-size: 1em;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.text-about-bot {
+    font-family: 'Gilda Display', serif;
+    font-size: 2.8em;
+    letter-spacing: 3px;
+}
+
+.call-icon {
+    font-size: 2.5em;
+    color: #8e6d45;
+    padding: 16px;
+}
+
+.about-call {
+    display: inline-block;
+    font-size: 1.1em;
+    margin: 0;
+    color: #666666;
+    font-family: 'Barlow Condensed', serif;
+}
+
+.about-callnumber {
+    text-decoration: none;
+    color: #aa8453;
+    font-size: 1.3em;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.img-1 {
+    margin-top: 90px;
+     
+}
+.img-hover:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
+}
+.img-hover:not(:hover){
+    transform: scale(1);
+    transition: 0.5s;
+}
