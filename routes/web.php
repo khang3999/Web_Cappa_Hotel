@@ -11,6 +11,7 @@ Route::get('/a', function () {
     return Inertia::render('User/Home');
 });
 
+
 Route::get('/', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
@@ -39,4 +40,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+//declare route for restaurant ui
+Route::get('/restaurant', function () {
+    return Inertia::render('User/Restaurant');
+});
 require __DIR__.'/auth.php';
