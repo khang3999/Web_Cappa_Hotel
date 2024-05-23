@@ -2,7 +2,7 @@ import "../../../css/app.css"
 import "../../../css/restaurant.css"
 const Introduction = (props) => {
     return (
-        <section>
+        <section className="mb-5">
         <div className="container d-block mt-7">
             <div className="row">
                 <div className="col-md-12 text-left">
