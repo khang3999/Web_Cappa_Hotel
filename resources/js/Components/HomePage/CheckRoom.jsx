@@ -26,7 +26,7 @@ const CheckRoom = (props) => {
                     <div className="col-xl-6 row p-0  mt-md-4 m-0 mt-xl-0 ">
                         <div className="Adult col-md-3 mt-4 bg-white p-0">
                             <select className="form-select w-100 h-100 border-0 ">
-                                <option selected>Adult</option>
+                                <option defaultValue="selected" value="0">Adult</option>
                                 <option value="1">1 Adult</option>
                                 <option value="2">2 Adults</option>
                                 <option value="3">3 Adults</option>
@@ -34,7 +34,7 @@ const CheckRoom = (props) => {
                         </div>
                         <div className="child col-md-3 mt-4 bg-white p-0">
                             <select className="form-select w-100 h-100 border-0 ">
-                                <option selected>Children</option>
+                                <option defaultValue="selected" value="0">Children</option>
                                 <option value="1">Child</option>
                                 <option value="2">2 Children</option>
                                 <option value="3">3 Children</option>
@@ -42,7 +42,7 @@ const CheckRoom = (props) => {
                         </div>
                         <div className="room col-md-3 mt-4 bg-white p-0">
                             <select className="form-select w-100 h-100 border-0 ">
-                                <option selected>Room</option>
+                                <option defaultValue="selected" value="0">Room</option>
                                 <option value="1">1 Room</option>
                                 <option value="2">2 Rooms</option>
                                 <option value="3">3 Rooms</option>

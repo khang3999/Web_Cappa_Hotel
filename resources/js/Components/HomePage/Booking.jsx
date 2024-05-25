@@ -1,9 +1,10 @@
+import '../../../css/booking.css'
 const Booking = (props) => {
     return (
         <div className="booking z-2 bg-md-transparent">
             <div className="container ">
                 <div className="row bg-transparent ">
-                    <div className="booking-hotel col-lg-6 m-0 px-3">
+                    <div className="col-lg-6">
                         <div className="rating  pb-3">
                             <i className="fa-solid fa-star"></i>
                             <i className="fa-solid fa-star"></i>
@@ -27,70 +28,145 @@ const Booking = (props) => {
                         </div>
 
                     </div>
+
                     <div className="col-lg-6 ">
-                        <div className="check-now z-2  form-booking">
+                        <form className="check-booking-form z-2 py-5 px-4 ms-5 mb-5">
                             <div className="container">
                                 <div className="check-now-text">
-                                    <h6 className="check-now-top text-secondary ">ROOMS & SUITS</h6>
-                                    <h4 className="check-now-bot mb-3 text-dark mt-2 mb-3">Hotel Booking Now </h4>
+                                    <h6 className="check-now-top">ROOMS & SUITS</h6>
+                                    <h4 className="check-now-bot mb-3 text-dark mt-2 mb-3 fs-2">Hotel Booking Form </h4>
+                                    <div className="line w-100"></div>
                                 </div>
-                                <div className=" row checkin-box m-0 mt-4 ps-0 pe-0">
-                                    <div className="col-8 checkin bg-white">Check in</div>
-                                    <a href="#" className="col-4 icon-cal d-flex ">
-                                        <i className="fa-solid fa-calendar-days ms-auto my-auto"></i>
-                                    </a>
-
-                                </div>
-                                <div className="row checkout-box m-0 mt-4 ps-0 pe-0">
-                                    <div className="col-8 checkout bg-white">Check out</div>
-                                    <a href="#" className="col-4 icon-cal d-flex  ">
-                                        <i className="fa-solid fa-calendar-days ms-auto my-auto "></i>
-                                    </a>
-                                </div>
-
-
-                                <div className=" row p-0  mt-md-4 m-0 mt-xl-0 ">
-                                    <div className="Adult  mt-4 bg-white p-0">
-                                        <select className="form-select w-100 h-100 border-0 ">
-                                            <option selected>Adult</option>
-                                            <option value="1">1 Adult</option>
-                                            <option value="2">2 Adults</option>
-                                            <option value="3">3 Adults</option>
-                                        </select>
-                                    </div>
-                                    <div className="child mt-4 bg-white p-0">
-                                        <select className="form-select w-100 h-100 border-0 ">
-                                            <option selected>Children</option>
-                                            <option value="1">Child</option>
-                                            <option value="2">2 Children</option>
-                                            <option value="3">3 Children</option>
-                                        </select>
+                                <div className="mt-4 px-0">
+                                    <label htmlFor="input-checkin" className="form-label px-1">Check in</label>
+                                    <div className="position-relative">
+                                        <input id="input-checkin" readOnly className="checkin bg-white form-control position-relative" placeholder="24-05-2024" />
+                                        <a href="#" className="icon-calendar-link position-absolute">
+                                            <i className="fa-solid fa-calendar-days ms-auto my-auto"></i>
+                                        </a>
                                     </div>
                                 </div>
-                                <div className="check-booking mt-4 d-flex">
-                                    <a href="#" className="row  mx-auto">CHECK AVAILABILITY</a>
+                                <div className="mt-4 px-0">
+                                    <label htmlFor="input-checkout" className="px-1 form-label">Check out</label>
+                                    <div className="position-relative">
+                                        <input id="input-checkout" readOnly className="checkout bg-white form-control position-relative" placeholder="24-05-2024" />
+                                        <a href="#" className="icon-calendar-link position-absolute">
+                                            <i className="fa-solid fa-calendar-days ms-auto my-auto"></i>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div className="note-booking mt-4 d-flex">
+
+                                <div className="row mt-4 px-0">
+                                    <div className="col-lg-6">
+                                        <label htmlFor="select-adults" className="form-label px-1">Adults</label>
+                                    </div>
+                                    <div className="col-lg-6">
+                                        <label htmlFor="select-children" className="form-label px-1">Children</label>
+                                    </div>
+                                </div>
+
+                                <div className="row px-0">
+                                    <div className="col-lg-6">
+                                        <select id='select-adults' className="form-select border-1">
+                                            <option value="1" defaultValue="selected">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                        </select>
+                                    </div>
+                                    <div className="col-lg-6">
+                                        <select id='select-children' className="form-select border-1">
+                                            <option value="1" defaultValue="selected">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div className="mt-5">
+                                    <button type='submit' className="btn-check-booking w-100 border-0">CHECK AVAILABILITY</button>
+                                </div>
+                                {/* <div className="note-booking mt-4 d-flex">
                                     <p className="px-2">One or more fields have an error. Please check and try again.</p>
+                                </div> */}
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div className="book-img p-3 mb-5">
+                <div className="container">
+                    <div className="row parent">
+                        <div className="col-4 ">
+                            <div className="box-wrap d-flex justify-content-center">
+                                <div class="left-top place">
+                                </div>
+                                <div class="top place">
+                                </div>
+                                <div class="right-top place">
+                                </div>
+                                <div class="left place">
+                                </div>
+                                <div class="right place">
+                                </div>
+                                <div class="left-bottom place">
+                                </div>
+                                <div class="bottom place">
+                                </div>
+                                <div class="right-bottom place">
+                                </div>
+                                <div className="div img-wrap">
+                                    <img src="/images/1.png " alt="" className="book-img-item img-fluid"></img>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-            </div>
-            <div className="book-img p-3">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-6 row ">
-                            <div className="col-4">
-                                <img src="/images/1.png" alt="" className="book-img-item img-fluid w-100 "></img>
+                        <div className="col-4 ">
+                            <div className="box-wrap d-flex justify-content-center">
+                                <div class="left-top place">
+                                </div>
+                                <div class="top place">
+                                </div>
+                                <div class="right-top place">
+                                </div>
+                                <div class="left place">
+                                </div>
+                                <div class="right place">
+                                </div>
+                                <div class="left-bottom place">
+                                </div>
+                                <div class="bottom place">
+                                </div>
+                                <div class="right-bottom place">
+                                </div>
+                                <div className="div img-wrap">
+                                    <img src="/images/2.png " alt="" className="book-img-item img-fluid"></img>
+                                </div>
                             </div>
-                            <div className="col-4">
-                                <img src="/images/2.png" alt="" className="book-img-item img-fluid w-100"></img>
-                            </div>
-                            <div className="col-4">
-                                <img src="/images/3.png" alt="" className="book-img-item img-fluid w-100"></img>
+                        </div>
+
+                        <div className="col-4 ">
+                            <div className="box-wrap d-flex justify-content-center">
+                                <div class="left-top place">
+                                </div>
+                                <div class="top place">
+                                </div>
+                                <div class="right-top place">
+                                </div>
+                                <div class="left place">
+                                </div>
+                                <div class="right place">
+                                </div>
+                                <div class="left-bottom place">
+                                </div>
+                                <div class="bottom place">
+                                </div>
+                                <div class="right-bottom place">
+                                </div>
+                                <div className="div img-wrap">
+                                    <img src="/images/3.png " alt="" className="book-img-item img-fluid"></img>
+                                </div>
                             </div>
                         </div>
                     </div>

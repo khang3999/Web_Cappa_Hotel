@@ -6,9 +6,9 @@
 .nav-link {
     color: #fff;
     font-size: 1em;
-    font-weight: 500;
+    font-weight: 300;
     font-family: 'Barlow Condensed', serif;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
 }
 /* 
 .main {
@@ -32,4 +32,12 @@
 .nav-item:hover .dropdown-menu{
     display: block;
     transition: ease-out 1s;
+}
+.nav-bar{
+    transition: transform 0.3s ease;
+}
+  
+.navbar.visible {
+    position: fixed;
+    /* transform: translateY(0); */
 }

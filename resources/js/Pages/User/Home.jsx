@@ -1,40 +1,49 @@
-
 import Footer from "@/Components/Commons/Footer";
 import About from "@/Components/HomePage/About";
 import Banner from "@/Components/HomePage/Banner";
 import Blog from "@/Components/HomePage/Blog";
 import Booking from "@/Components/HomePage/Booking";
 import CheckRoom from "@/Components/HomePage/CheckRoom";
+import ExtraService from "@/Components/HomePage/ExtraService";
 import Facilities from "@/Components/HomePage/Facilities";
 import Promotion from "@/Components/HomePage/Promotion";
 import RoomAndSuite from "@/Components/HomePage/RoomAndSuite";
 import Testimonial from "@/Components/HomePage/Testimonial";
 import Utility from "@/Components/HomePage/Utility";
+import { Head } from "@inertiajs/react";
 
-const Home = (props) => {
+const Home = () => {
+    const pageName = "home"
     return (
         <>
-        <Banner></Banner>
+            <Head title="Cappa Luxury Hotel" />
+            <div className="img-base z-n1 fixed-top ">
+                <img src="/images/banner-home-1.jpg" alt="" className="w-100 img-fluid"/>
+            </div>
+            {/* <Banner banners = {banners}></Banner> */}
+            <Banner pageName={pageName}></Banner>
 
-        {/* <About></About>
+            <About></About>
 
-        <RoomAndSuite></RoomAndSuite>
+            <RoomAndSuite></RoomAndSuite>
+            
+            <ExtraService></ExtraService>
 
-        <Promotion></Promotion>
+            <Promotion></Promotion>
 
-        <Facilities></Facilities>
+            <Facilities></Facilities>
 
-        <CheckRoom></CheckRoom>
+            {/* <CheckRoom></CheckRoom> */}
 
-        <Testimonial></Testimonial>
+            <Testimonial></Testimonial>
 
-        <Utility></Utility>
+            <Utility></Utility>
 
-        <Blog></Blog>
+            <Blog></Blog>
 
-        <Booking></Booking>
+            <Booking></Booking>
 
-        <Footer></Footer> */}
+            <Footer></Footer>
         </>
     )
 }

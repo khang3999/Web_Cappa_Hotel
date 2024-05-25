@@ -1,0 +1,54 @@
+/* Hotel blog */
+.hotel-blog{
+    padding: 120px 0 210px 0;
+    background-color: #222222;
+    font-family: 'Barlow', sans-serif;
+
+}
+.tag-desc{
+    z-index: 100;
+    position: absolute;
+    background-color: #fff;
+    width: 80%;
+    padding: 20px;
+    transition: 1s;
+    bottom: -12%;
+}
+.hotel-blog-img:hover .tag-desc{
+    position: absolute;
+    background-color: #fff;
+    width: 80%;
+    padding: 20px;
+    bottom: 5%;
+}
+.hotel-blog-img-desc{
+    transition: 1s;
+}
+.hotel-blog-img:hover .hotel-blog-img-desc{
+    transform: scale(1.1);
+}
+.tag-desc-text{
+    font-size: 24px;
+}
+.tag-desc-title{
+    font-size: 12px;
+}
+
+.tag-date{
+    position: absolute;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    top: 5%;
+    left: 10%;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Barlow', sans-serif;
+    
+}
+.monthnow{
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+.daynow{
+    font-size: 24px;
+}
