@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400&display=swap');
+
+.section-subtitle {
+    font-size: 15px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    color: #666;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 6px;
+    margin-bottom: 5px;
+}
+
+.section-title {
+    font-size: 46px;
+    font-family: 'Gilda Display', serif;
+    font-weight: 400;
+    color: #222;
+    position: relative;
+    margin-bottom: 20px;
+    line-height: 1.25em;
+}
+
+.mt-7 {
+    margin-top: 7rem;
+}
+
+p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.75em;
+}
+
+h6 {
+    font-family: 'Gilda Display', serif;
+    font-size: 24px;
+    color: #222;
+
+}
+
+li {
+    display: flex;
+    position: relative;
+}
+
+.fa-clock {
+    color: #bc9d77;
+}
+
+.section-padding {
+    padding: 120px 0;
+}
+
+.bg-blck {
+    background: #222;
+}
+
+section {
+    display: block;
+}
+
+.section-subtitle span {
+    color: #aa8453;
+}
+
+.section-title span {
+    color: #fff;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #222;
+    border: 1px solid #aa8453;
+}
+
+.menu-info h5 {
+    font-family: 'Gilda Display', serif;
+    font-size: 20px;
+    color: #aa8453;
+    margin-bottom: 10px;
+    text-align: left;
+    border-bottom: 1px dashed #aa8453;
+    line-height: 2em;
+}
+
+.menu-info p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.75em;
+    color: #adadad;
+}
+
+.price {
+    color: #adadad;
+    float: right;
+}
+
+span {
+    display: inline-block;
+}
+
+.bg-fixed {
+    background-attachment: fixed;
+}
+
+.bg-testimonial {
+    background-image: url(../images/slide2.jpg);
+    background-size: contain; /* Add this line */
+    width: 100%;
+    height: auto;
+    inset: 0;    
+    z-index: 1;
+}
+
+.testimonials-box h6{    
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 10px;
+}
+.testimonials-box h4{
+    font-family: 'Gilda Display', serif;   
+    font-size: 32px;
+    font-weight: 400;
+    color: #fff;    
+    line-height: 1.25em;
+    margin: 0 0 20px 0;
+}
+.line{
+    width: 60px;    
+    border: 2px solid #fff;
+    margin-bottom: 20px;    
+}
+.carousel-item p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.75em;
+    color: #adadad;
+}
+.info{
+    position: relative;
+    margin: 30px 0px 15px 0px;
+    
+}
+.author-img{    
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    float: left;
+    overflow: hidden;
+}
+.star-color{
+    color: #e4a852;
+}
+.info .author-name{
+    font-size: 15px;
+    margin-left: 95px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    font-weight: 400;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #fff;
+    line-height: 1em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.info span{
+    font-size: 12px;
+    color: #fff;
+    line-height: 1em;
+    margin-left: 95px;
+    margin-top: 10px;
+}
