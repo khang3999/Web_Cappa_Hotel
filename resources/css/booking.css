@@ -1,0 +1,234 @@
+/* Check now */
+
+.check-now-bot {
+    font-family: 'Gilda Display', serif;
+}
+
+.check-now-top {
+    color: #8e6d45;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 4px;
+}
+
+.checkin,
+.checkout {
+    font-size: 15px;
+    padding: 20px 60px 20px 20px;
+}
+
+.check {
+    padding: 25px 20px 20px 10px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: #aa8453;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.check-booking-form {
+    background-color: #f8f5f0;
+    box-shadow: 5px 5px 5px #333333;
+}
+
+.icon-calendar-link {
+    color: #ab854f;
+    padding: 20px;
+    right: 0;
+    top: 0;
+}
+
+/* Booking */
+.booking {
+    padding: 120px 0 0;
+}
+
+.booking-text {
+    font-size: 24px;
+    font-family: 'Gilda Display', serif;
+    color: #fff;
+}
+
+.booking-call-icon {
+    font-size: 2.5em;
+    color: #fff;
+    padding-left: 0;
+}
+
+.booking-about-call {
+    display: inline-block;
+    font-size: 15px;
+    margin: 0;
+    color: #fff;
+    font-family: 'Barlow Condensed', serif;
+}
+
+.booking-about-callnumber {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.check-icon {
+    color: #fff;
+    margin-right: 5px;
+}
+
+.check-text {
+    font-family: 'Barlow Condensed', serif;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.box-wrap {
+    position: relative;
+    perspective: 400px;
+}
+.img-wrap{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.3s linear;  
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 2;
+    border-radius: 20px;
+
+}
+.img-wrap::after {
+    content: "";
+    inset: 0;
+    left: -2.5%;
+    top: -2.5%;
+    width: 105%;
+    height: 105%;
+    mix-blend-mode: overlay;
+    background: #ffc400;
+    filter: blur(20px);
+    position: absolute;
+    opacity: 0;
+}
+
+.img-wrap:hover::after{
+    opacity:  1;
+}
+
+.book-img-item {
+    width: 180px;
+    height: 90px;
+    border: 1px solid #333333;
+    box-shadow: 5px 5px 10px #333333;
+    border-radius: 20px;
+}
+
+
+
+.place {
+    position: absolute;
+    z-index: 5;
+    width: 180px;
+    height: 90px;
+    /* background-color: red; */
+}
+
+.left-top {
+    clip-path: polygon(0 0, 33% 0, 50% 50%, 0 33%);
+}
+
+.top {
+    clip-path: polygon(33% 0, 66% 0, 50% 50%);
+}
+
+.right-top {
+    clip-path: polygon(66% 0, 100% 0, 100% 33%, 50% 50%);
+}
+
+.left {
+    clip-path: polygon(0 33%, 50% 50%, 0 66%);
+}
+
+.right {
+    clip-path: polygon(100% 33%, 50% 50%, 100% 66%);
+}
+
+.left-bottom {
+    clip-path: polygon(0 66%, 50% 50%, 33% 100%, 0 100%);
+}
+
+.bottom {
+    clip-path: polygon(33% 100%, 50% 50%, 66% 100%);
+}
+
+.right-bottom {
+    clip-path: polygon(100% 66%, 50% 50%, 66% 100%, 100% 100%);
+}
+
+
+/* Hover rotate */
+.left-top:hover~.img-wrap{
+    transform: rotateY(20deg) rotateX(-20deg);
+}
+.left-top:hover~.img-wrap::after{
+    opacity: 1;
+}
+.top:hover~.img-wrap {
+    transform: rotateX(-20deg);
+}
+.top:hover~.img-wrap::after{
+    opacity: 1;
+}
+.right-top:hover~.img-wrap {
+    transform: rotateY(-20deg) rotateX(-20deg);
+}
+.right-top:hover~.img-wrap::after {
+    opacity: 1;
+}
+.left:hover~.img-wrap {
+    transform: rotateY(20deg);
+}
+.left:hover~.img-wrap::after {
+    opacity: 1;
+}
+.right:hover~.img-wrap {
+    transform: rotateY(-20deg);
+}
+.right:hover~.img-wrap::after {
+    opacity: 1;
+}
+
+.left-bottom:hover~.img-wrap {
+    transform: rotateY(20deg) rotateX(20deg);
+}
+.left-bottom:hover~.img-wrap::after {
+    opacity: 1;
+}
+.bottom:hover~.img-wrap {
+    transform: rotateX(20deg);
+}
+.bottom:hover~.img-wrap::after {
+    opacity: 1;
+}
+.right-bottom:hover~.img-wrap {
+    transform: rotateY(-20deg) rotateX(20deg);
+}
+.right-bottom:hover~.img-wrap::after {
+    opacity: 1;
+}
+
+/* .form-booking{
+   padding: 60px 45px;
+   margin-left: 50px;
+} */
+.btn-check-booking {
+    padding: 25px 20px 20px 10px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: #aa8453;
+    font-family: 'Barlow Condensed', sans-serif;
+    border-radius: 8px;
+}
+
+.note-booking {
+    border: 1px solid #e4a853;
+}

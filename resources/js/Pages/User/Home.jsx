@@ -4,13 +4,13 @@ import Banner from "@/Components/HomePage/Banner";
 import Blog from "@/Components/HomePage/Blog";
 import Booking from "@/Components/HomePage/Booking";
 import CheckRoom from "@/Components/HomePage/CheckRoom";
+import ExtraService from "@/Components/HomePage/ExtraService";
 import Facilities from "@/Components/HomePage/Facilities";
 import Promotion from "@/Components/HomePage/Promotion";
 import RoomAndSuite from "@/Components/HomePage/RoomAndSuite";
 import Testimonial from "@/Components/HomePage/Testimonial";
 import Utility from "@/Components/HomePage/Utility";
 import { Head } from "@inertiajs/react";
-import { useEffect } from "react";
 
 const Home = () => {
     const pageName = "home"
@@ -26,12 +26,14 @@ const Home = () => {
             <About></About>
 
             <RoomAndSuite></RoomAndSuite>
+            
+            <ExtraService></ExtraService>
 
             <Promotion></Promotion>
 
             <Facilities></Facilities>
 
-            <CheckRoom></CheckRoom>
+            {/* <CheckRoom></CheckRoom> */}
 
             <Testimonial></Testimonial>
 

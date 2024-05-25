@@ -1,0 +1,99 @@
+/* Rooms & suites */
+.rooms-suites{
+    padding: 120px 0;
+    background-color: #f8f5f0;
+}
+.tag-book{
+    border: 1px solid #fff;
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    font-size: 15px;
+    color: #ffff;
+    letter-spacing: 3px;
+    font-family: 'Barlow Condensed', sans-serif;
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 5px;
+    transform: rotate(-90deg);
+    z-index: 4;
+}
+
+.rooms-suites-info{
+    position: absolute;
+    bottom: -15%;
+    width: 100%;
+    padding: 40px 20px;
+    z-index: 4;
+    transition: 0.5s;
+}
+.rooms-suites-info-large{
+    bottom: -19%;
+}
+.rooms-suites-price{
+    font-size:  15px;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 4px;
+    color: #fff;
+    font-weight: 500;
+    display:block;
+
+}
+.rooms-suites-name{
+    margin: 15px 0px;
+    font-family: 'Gilda Display', serif;
+    font-size:  27px;
+    color: #fff;
+    font-weight: 500;
+    display:block;
+}
+
+.line{
+    margin-bottom: 25px;
+    border-top: 1px solid #adadad;
+    width: 20%;
+    transition: width 1s;
+}
+
+.rooms-suites-icon{
+    font-size: 16px;
+    color:  #fff;
+    padding-left: 10px;
+}
+
+.rooms-suites-detail-text{
+    font-size: 16px;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 4px;
+}
+.rooms-suites-detail:hover .rooms-suites-detail-text{
+    cursor: pointer;
+    color: #e4a853;
+ }
+.rooms-suites-detail:hover .rooms-suites-icon{
+    cursor: pointer;
+    color: #e4a853;
+}
+.overlay{
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.6);
+    inset: 0;
+    z-index: 3;
+    opacity: 0;
+    transition: ease-in 0.5s;
+}
+.rooms-suites-img:hover .img-hover{
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+.rooms-suites-img:hover .overlay{
+    opacity: 0.7;
+}
+.rooms-suites-img:hover .line{
+    width: 100%;
+}
+
+.rooms-suites-img:hover .rooms-suites-info{
+    bottom: 0;
+}
+

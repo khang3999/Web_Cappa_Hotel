@@ -1,4 +1,10 @@
+import { useEffect, useState } from 'react';
+import '../../../css/extraService.css'
 const ExtraService = (props) => {
+    const [extraServices, setExtraServices] = useState([])
+    useEffect(()=>{
+        
+    },[])
     return (
         <div className="extra-services z-2 position-relative">
             <div className="container">
@@ -22,7 +28,6 @@ const ExtraService = (props) => {
                     </div>
                     <div className="col-lg-4 col-md-6 p-2 ">
                         <a href="#">
-
                             <img src="public/images/1.jpg" alt="" className="img-fluid "></img>
                         </a>
                         <div className="services-price">

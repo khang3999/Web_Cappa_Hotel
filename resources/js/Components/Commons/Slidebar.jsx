@@ -23,11 +23,11 @@ const Slidebar = ({pageName}) => {
 
     return (
         <div className="banner position-relative ">
-            <div id="carouselExampleCaptions" className="carousel slide position-relative ">
+            <div id="carouselExampleIndicators" className="carousel slide position-relative" data-bs-ride="carousel">
                 <div className="carousel-indicators z-3 d-none d-lg-block">
                     {banners.map((banner, index) => {
                         return (
-                            <button key={index} type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to={index} className={`dot ${(index == 0) ? 'active' : ''}`}
+                            <button key={index} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={index} className={`dot ${(index == 0) ? 'active' : ''}`}
                                 aria-current="true" aria-label={`Slide ${index + 1}`}></button>
                         )
                     })}
@@ -65,12 +65,12 @@ const Slidebar = ({pageName}) => {
 
 
                 <div className="btn-slide d-none  d-md-block z-3">
-                    <button className="carousel-control-prev mt-auto  " type="button" data-bs-target="#carouselExampleCaptions"
+                    <button className="carousel-control-prev mt-auto  " type="button" data-bs-target="#carouselExampleIndicators"
                         data-bs-slide="prev">
                         <span className="carousel-control-prev-icon " aria-hidden="true"></span>
                         <span className="visually-hidden">Previous</span>
                     </button>
-                    <button className="carousel-control-next mt-auto  " type="button" data-bs-target="#carouselExampleCaptions"
+                    <button className="carousel-control-next mt-auto  " type="button" data-bs-target="#carouselExampleIndicators"
                         data-bs-slide="next">
                         <span className="carousel-control-next-icon" aria-hidden="true"></span>
                         <span className="visually-hidden">Next</span>
