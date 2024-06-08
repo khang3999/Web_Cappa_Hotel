@@ -42,5 +42,10 @@ Route::middleware('auth')->group(function () {
 //declare route for restaurant ui
 Route::get('/restaurant', function () {
     return Inertia::render('User/Restaurant');
-});
+})->name('restaurant');
+//declare route for contact ui
+Route::get('/contact', function () {
+    return Inertia::render('User/Contact');
+})->name('contact');
+
 require __DIR__.'/auth.php';

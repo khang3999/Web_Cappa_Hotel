@@ -92,7 +92,7 @@ const Navbar = () => {
                             </ul>
                         </li>
                         <li className="nav-item ">
-                            <a className="nav-link ms-2 p-2 " aria-current="page" href="#">CONTACT </a>
+                            <a className="nav-link ms-2 p-2 " aria-current="page" href={route('contact')}>CONTACT </a>
                         </li>
                     </ul>
 
