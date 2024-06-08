@@ -3,6 +3,7 @@ import "../../../css/contact.css"
 import { Head } from "@inertiajs/react";
 import Introduction from "@/Components/ContactPage/Introduction";
 import ContactForm from "@/Components/ContactPage/ContactForm";
+import Map from "@/Components/ContactPage/Map";
 const Contact = () => {
     return (
         <>
@@ -13,7 +14,7 @@ const Contact = () => {
             <Banner></Banner>
             <Introduction></Introduction>
             <ContactForm></ContactForm> 
-            
+            <Map></Map>
 
         </>
     )

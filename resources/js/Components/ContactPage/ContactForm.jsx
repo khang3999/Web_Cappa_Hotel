@@ -47,6 +47,20 @@ const ContactForm = () => {
                         </div>
                         <div className="col-md-4">
                             <h3>Get in touch</h3>
+                            <form action="" method="post" className="contact_form">
+                                <div className="row">
+                                    <div className="col-md-6">
+                                        <input type="text" name="name" placeholder="Your Name" required/>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <input type="text" name="name" placeholder="Your email" />
+                                    </div>
+                                    <div className="col-md-12">
+                                        <textarea name="message" id="message" placeholder="Your message"></textarea>
+                                    </div>
+                                </div>
+                                    <button type="submit" className="btn-dark2">Send Message</button>
+                            </form>
                         </div>
                     </div>
                 </div>
