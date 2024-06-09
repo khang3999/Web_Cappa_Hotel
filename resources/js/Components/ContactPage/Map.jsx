@@ -1,6 +1,6 @@
 import "../../../css/contact.css"
 import "../../../css/app.css"
-const Map = () => {
+const Map = (props) => {
     return (<>
         <section className="z-2 position-relative bg-white contact">
             <div className="container">
