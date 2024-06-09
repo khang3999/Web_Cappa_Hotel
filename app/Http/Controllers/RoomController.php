@@ -12,7 +12,8 @@ class RoomController extends Controller
      */
     public function getRoomsByType(String $type)
     {
-        $rooms = Room::where('type',$type)->limit(3)->get();
+        $limit = ($type == "standard" ? 3 : 2);
+        $rooms = Room::where('type',$type)->limit($limit)->get();
         return response()->json($rooms);
     }
     public function index()

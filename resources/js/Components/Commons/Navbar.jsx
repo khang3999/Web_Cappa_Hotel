@@ -39,7 +39,7 @@ const Navbar = () => {
                             </div>
                         </li>
                         <li className="nav-item ">
-                            <a className="nav-link mx-2 p-2" aria-current="page" href="#">ABOUT</a>
+                            <a className="nav-link mx-2 p-2" aria-current="page" href={route('aboutUsUser')}>ABOUT</a>
                         </li>
 
                         <li className="nav-item ">

@@ -18,7 +18,12 @@
     transform: rotate(-90deg);
     z-index: 4;
 }
-
+.btn-bg-img{
+    background: url(/public/images/room-standard-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
 .rooms-suites-info{
     position: absolute;
     bottom: -15%;

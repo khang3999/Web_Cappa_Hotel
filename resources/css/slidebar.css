@@ -61,7 +61,7 @@
     left: auto;
     background-color: #fff;
     width: 0;
-    z-index: -1;
+    z-index: 1;
     transition:ease .25s;
 }
 .btn-mid:hover::before{
@@ -70,6 +70,8 @@
     right: auto;
 }
 .btn-mid-text {
+    position: relative;
+    z-index: 3;
     text-decoration: none;
     color: #fff;
     font-family: 'Barlow Condensed', serif;
