@@ -7,6 +7,7 @@ use App\Http\Controllers\RoomController;
 use App\Http\Controllers\UtilityController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Mail;
 use Inertia\Inertia;
 
 // API
@@ -16,7 +17,7 @@ Route::get('/api/rooms/{type}',[RoomController::class,'getRoomsByType'])->name('
 
 // Tu viet
 // Route::get('/',[HomeController::class, 'index'])->name('indexUser');
-Route::get('/',function () {
+Route::middleware('auth')->get('/',function () {
     return Inertia::render('User/Home');
 })->name('indexUser');
 
@@ -47,5 +48,15 @@ Route::get('/restaurant', function () {
 Route::get('/contact', function () {
     return Inertia::render('User/Contact');
 })->name('contact');
+
+
+Route::get('/test-email', function () {
+    Mail::raw('This is a test email', function ($message) {
+        $message->to('your_email@example.com')
+                ->subject('Test Email');
+    });
+
+    return 'Test email sent';
+});
 
 require __DIR__.'/auth.php';
