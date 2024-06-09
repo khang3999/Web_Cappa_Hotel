@@ -2,7 +2,7 @@ import "../../../css/contact.css"
 import "../../../css/app.css"
 const Map = () => {
     return (<>
-        <section className="z-2 position-relative bg-white contact">
+        <section className="z-2 position-relative bg-white contact section-padding">
             <div className="container">
                 <div className="map_main">
                     <div className="map-responsive">
