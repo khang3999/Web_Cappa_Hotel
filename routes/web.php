@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BannerController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
@@ -20,6 +21,10 @@ Route::get('/',function () {
     return Inertia::render('User/Home');
 })->name('indexUser');
 
+Route::get('/about',function () {
+    return Inertia::render('User/AboutUs');
+})->name('aboutUsUser');
+
 // Route::get('/', function () {
 //     return Inertia::render('Welcome', [
 //         'canLogin' => Route::has('login'),
@@ -29,15 +34,30 @@ Route::get('/',function () {
 //     ]);
 // });
 
+// Route::get('/dashboard', function () {
+//     return Inertia::render('Dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard');
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+})->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+// Login truoc khi vao admin
+// Khi nao xac  thuc thi thêm midleware vào sau prefix()
+Route::prefix('admin')->group(function() {
+    Route::get("/", [AdminController::class, "indexAdmin"])->name('booking.admin');
+    Route::get("/rooms", [AdminController::class, "roomsManagement"])->name('rooms.admin');
+    Route::get("/accounts", [AdminController::class, "accountsManagement"])->name('accounts.admin');
+    Route::get("/statuses", [AdminController::class, "statusesManagement"])->name('statuses.admin');
+    Route::get("/services", [AdminController::class, "servicesManagement"])->name('services.admin');
+});
+
 
 //declare route for restaurant ui
 Route::get('/restaurant', function () {

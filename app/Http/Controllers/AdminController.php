@@ -2,21 +2,43 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Banner;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
-class HomeController extends Controller
+class AdminController extends Controller
 {
 
+    // Go to Admin
+    public function indexAdmin()
+    {
+        return Inertia::render('Admin/BookingManagement');
+    }
+    // Go to room management
+    public function roomsManagement()
+    {
+        return Inertia::render('Admin/RoomManagement');
+    }
     
+    public function accountsManagement()
+    {
+        return Inertia::render('Admin/AccountManagement');
+    }
+    
+    public function statusesManagement()
+    {
+        return Inertia::render('Admin/StatusManagement');
+    }
+    
+    public function servicesManagement()
+    {
+        return Inertia::render('Admin/ServiceManagement');
+    }
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        // $banners = Banner::where('type','home')->get();    
-        // return Inertia::render('User/Home',['banners'=>$banners]);
+        //
     }
 
     /**
