@@ -660,6 +660,24 @@ h6 {
     letter-spacing: 6px;
     margin-bottom: 5px;
 }
+.register-title{
+    font-size: 30px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    color: #ab8a62;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 6px;
+    margin-bottom: 5px;
+}
+.register-text{
+    font-size: 15px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    color: #666;    
+    position: relative;
+    margin-bottom: 5px;
+}
 .text-register{
     font-size: 15px;
     color: #ab8a62;        
