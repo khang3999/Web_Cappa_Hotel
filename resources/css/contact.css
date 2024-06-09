@@ -1,0 +1,109 @@
+.banner-header{
+    height: 60vh;
+}
+.bg-fixed{
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.mt-200 h5{
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 10px;
+}
+.mt-200 h1{
+    font-size: 60px;
+    color: #fff;
+    position: relative;
+}
+.contact h3{
+    font-size: 24px;
+    color: #222;
+}
+p{
+
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.75em;
+    color: #666;
+}
+.reservations .icon{
+    position: relative;
+    top: 5px;
+}
+.reservations .icon span{
+    font-size: 40px;
+    color: #8e6d45;
+}
+.reservations{
+    font-family: 'Barlow', sans-serif;
+    display: flex;
+    align-items: center;
+}
+.reservations .text{
+    margin-left: 20px;
+}
+.reservations .text a{
+    font-size: 27px;
+    color: #8e6d45;
+    letter-spacing: -1px;
+}
+.reservations .text p{
+    margin: 0;
+}
+p{
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.75em;
+    color: #666;
+    margin-bottom: 20px;
+}
+input[type="text"],textarea{
+    max-width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 0;
+    height: auto;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-width: 0 0 1px;
+    border-style: solid;
+    display: block;
+    width: 100%;
+    line-height: 1.5em;
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #666;
+    background-image: none;
+    border-bottom: 1px solid #ececec;
+}
+.btn-dark2{
+    position: relative;
+    line-height: 1.2em;
+    font-weight: 400;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    background: #ab8a62;
+    color: #fff;
+    padding: 13px 22px;
+    margin: 0;
+    position: relative;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+button{
+    text-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    line-height: 1.75em;
+    -webkit-transition: background-color .15s ease-out;
+    transition: background-color .15s ease-out;
+    background: transparent;
+    border: 0px solid transparent;
+}
