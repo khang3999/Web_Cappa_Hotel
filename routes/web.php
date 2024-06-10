@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BannerController;
+use App\Http\Controllers\CommentController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RoomController;
@@ -67,5 +68,6 @@ Route::get('/restaurant', function () {
 Route::get('/contact', function () {
     return Inertia::render('User/Contact');
 })->name('contact');
-
+//Comment
+Route::post('/comments', [CommentController::class,"store"])->name("comment.store");
 require __DIR__.'/auth.php';

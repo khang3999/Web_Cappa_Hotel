@@ -11,14 +11,15 @@ import RoomAndSuite from "@/Components/HomePage/RoomAndSuite";
 import Testimonial from "@/Components/HomePage/Testimonial";
 import Utility from "@/Components/HomePage/Utility";
 import { Head } from "@inertiajs/react";
-
+import "../../home"
 const Home = () => {
+    
     const pageName = "home"
     return (
         <>
             <Head title="Cappa Luxury Hotel" />
             <div className="img-base z-n1 fixed-top ">
-                <img src="/images/banner-home-1.jpg" alt="" className="w-100 img-fluid"/>
+                <img src="/images/banner-home-1.jpg" alt="" className="w-100 img-fluid" />
             </div>
             {/* <Banner banners = {banners}></Banner> */}
             <Banner pageName={pageName}></Banner>
@@ -26,7 +27,7 @@ const Home = () => {
             <About></About>
 
             <RoomAndSuite></RoomAndSuite>
-            
+
             <ExtraService></ExtraService>
 
             <Promotion></Promotion>
