@@ -1,7 +1,7 @@
 import '../../../css/about.css'
 const About = (props) => {
     return (
-        <div className="content-about z-2 position-relative bg-white">
+        <div className="content-about z-2 position-relative">
             <div className="container ">
                 <div className="row ">
                     <div className="col-md-6 ">

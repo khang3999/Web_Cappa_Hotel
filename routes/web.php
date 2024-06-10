@@ -6,26 +6,36 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RoomController;
 use App\Http\Controllers\UtilityController;
+use App\Http\Middleware\CheckUserRole;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Mail;
 use Inertia\Inertia;
 
 // API
-Route::get('/api/banners/{type}',[BannerController::class,'getBannersByType'])->name('api.banners');
-Route::get('/api/utilities/{type}',[UtilityController::class,'getUtilitiesByType'])->name('api.utilities');
-Route::get('/api/rooms/{type}',[RoomController::class,'getRoomsByType'])->name('api.rooms');
+Route::get('/api/banners/{type}', [BannerController::class, 'getBannersByType'])->name('api.banners');
+Route::get('/api/utilities/{type}', [UtilityController::class, 'getUtilitiesByType'])->name('api.utilities');
+Route::get('/api/rooms/{type}', [RoomController::class, 'getRoomsByType'])->name('api.rooms');
 
 // Tu viet
 // Route::get('/',[HomeController::class, 'index'])->name('indexUser');
-Route::get('/',function () {
-    return Inertia::render('User/Home');
-})->middleware(['auth', 'verified'])->name('indexUser');
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::get('/', function () {
+        return Inertia::render('User/Home');
+    })->name('indexUser');
+    Route::get('/about', function () {
+        return Inertia::render('User/AboutUs');
+    })->name('aboutUsUser');
+    //declare route for restaurant ui
+    Route::get('/restaurant', function () {
+        return Inertia::render('User/Restaurant');
+    })->name('restaurant');
+    //declare route for contact ui
+    Route::get('/contact', function () {
+        return Inertia::render('User/Contact');
+    })->name('contact');
+});
 
-
-Route::get('/about',function () {
-    return Inertia::render('User/AboutUs');
-})->name('aboutUsUser');
 
 // Route::get('/', function () {
 //     return Inertia::render('Welcome', [
@@ -39,13 +49,6 @@ Route::get('/about',function () {
 // Route::get('/dashboard', function () {
 //     return Inertia::render('Dashboard');
 // })->middleware(['auth', 'verified'])->name('dashboard');
-<<<<<<< HEAD
-=======
-
-Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->name('dashboard');
->>>>>>> master
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -55,38 +58,28 @@ Route::middleware('auth')->group(function () {
 
 // Login truoc khi vao admin
 // Khi nao xac  thuc thi thêm midleware vào sau prefix()
-Route::prefix('admin')->group(function() {
+Route::prefix('admin')->middleware(['auth','verified',CheckUserRole::class])->group(function () {
     Route::get("/", [AdminController::class, "indexAdmin"])->name('booking.admin');
     Route::get("/accounts", [AdminController::class, "accountsManagement"])->name('accounts.admin');
-   
     Route::get("/statuses", [AdminController::class, "statusesManagement"])->name('statuses.admin');
-    Route::get("/services", [AdminController::class, "servicesManagement"])->name('services.admin');  
-    Route::get("/rooms",[RoomController::class,'index'])->name('admin.rooms.index');
-    Route::get("/rooms/create",function () {
+    Route::get("/services", [AdminController::class, "servicesManagement"])->name('services.admin');
+    Route::get("/rooms", [RoomController::class, 'index'])->name('admin.rooms.index');
+    Route::get("/rooms/create", function () {
         return Inertia::render('Admin/RoomCreate');
     })->name('admin.rooms.create');
-    Route::post("/rooms/store",[RoomController::class,'store'])->name('admin.rooms.store');
-    
+    Route::post("/rooms/store", [RoomController::class, 'store'])->name('admin.rooms.store');
 });
 
 
-//declare route for restaurant ui
-Route::get('/restaurant', function () {
-    return Inertia::render('User/Restaurant');
-})->middleware(['auth', 'verified'])->name('restaurant');
-//declare route for contact ui
-Route::get('/contact', function () {
-    return Inertia::render('User/Contact');
-})->middleware(['auth', 'verified'])->name('contact');
 
 
 Route::get('/test-email', function () {
     Mail::raw('This is a test email', function ($message) {
         $message->to('your_email@example.com')
-                ->subject('Test Email');
+            ->subject('Test Email');
     });
 
     return 'Test email sent';
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

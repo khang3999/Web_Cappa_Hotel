@@ -76,7 +76,11 @@ export default function Register() {
 
     const submit = (e) => {
         e.preventDefault();
-        post(route('register'));
+        post(route('register'),{
+            onSuccess: () => {
+                window.localStorage.setItem('status', 'Account created successfully');
+            },
+        });
     };
 
     return (

@@ -10,7 +10,7 @@ return [
             'port' => env('MAIL_PORT', 587),
             'encryption' => env('MAIL_ENCRYPTION', 'tls'),
             'username' => env('22211tt4701@mail.tdc.edu.vn'),
-            'password' => env('22211tt4701@mail.tdc.edu.vn'),
+            'password' => env('genh dewl hwch rlrs'),
             'timeout' => null,
             'auth_mode' => null,
         ],
