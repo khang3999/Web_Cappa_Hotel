@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Banner;
 use App\Models\Booking;
 use App\Models\Room;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
@@ -67,20 +68,22 @@ class HomeController extends Controller
         }
         if ($isDateInBooking == true) {
             // tra ve lai trang detail voi message date unavaiable
-        }
-        else{
+            return redirect()->route('room.detail', $roomId)->with('message', "Date invalid!");
+        } else {
             $booking = new Booking();
             $cusId = $request->userId;
             $booking->id_customer = $cusId;
             $booking->id_room = $roomId;
             $booking->checkin = $checkin;
             $booking->checkout = $checkout;
+            $checkin = Carbon::parse($booking->checkin); // Chuyển đổi chuỗi checkin thành đối tượng Carbon
+            $checkout = Carbon::parse($booking->checkout);
             $numberOfDays = $checkout->diffInDays($checkin);
+            
             $booking->price = ($request->price) * $numberOfDays;
             $booking->save();
+            return redirect()->route('indexUser');
         }
-       
-       
     }
 
     /**

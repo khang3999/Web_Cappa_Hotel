@@ -23,7 +23,11 @@ const About = (props) => {
                             penatibus et magnis dis parturient monte nascete ridiculus mus nellentesque habitant morbine.
                         </p>
                         <div className="text-call">
+                            <div class="square-loading">
+                                <img src="/images/logo.png" alt="" className='square-loading-img'/>
+                            </div>
                             <i className="fa-solid fa-phone-volume call-icon "></i>
+
                             <h4 className="about-call m-0"> Reservation <br></br> <a href="tel:+8551004444" className="about-callnumber">855 100
                                 4444</a></h4>
 

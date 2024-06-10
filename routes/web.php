@@ -29,6 +29,8 @@ Route::post('/roomsearch',[HomeController::class,'getRoomsBySearch'])->name('roo
 Route::post('/booking',[HomeController::class,'checkRoom'])->name('checkRoomAndSave');
 
 
+Route::get('/detail/{roomId}',[RoomController::class,'show'])->name('room.detail');
+
 // Route::get('/', function () {
 //     return Inertia::render('Welcome', [
 //         'canLogin' => Route::has('login'),
