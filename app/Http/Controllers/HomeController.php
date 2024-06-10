@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Banner;
+use App\Models\Booking;
 use App\Models\Room;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
@@ -10,7 +11,8 @@ use Inertia\Inertia;
 class HomeController extends Controller
 {
 
-    function getRoomsBySearch(Request $request) {
+    function getRoomsBySearch(Request $request)
+    {
         $request->validate([
             'checkin' => 'required',
             'checkout' => 'required'
@@ -18,12 +20,69 @@ class HomeController extends Controller
 
         $checkin = $request->checkin;
         $checkout = $request->checkout;
-        
-        $roomsLarge = Room::where('type','large')->get();
-        $roomsStandard = Room::where('type','standard')->get();
-        return Inertia::render('User/RoomSearch',['roomsLarge'=>$roomsLarge,'roomsStandard'=>$roomsStandard]);
+        $roomsId = Room::pluck('id');
+        // dd($roomsId);
+
+        $roomsIdFree = [];
+
+        $a = 0;
+        for ($i = 0; $i < count($roomsId); $i++) {
+            $bookingByRoomId = Booking::where('id_room', $roomsId[$i])->select('checkin', 'checkout')->get();
+            $isDateInBooking = false;
+            foreach ($bookingByRoomId as $booking) {
+                if (($booking->checkin <= $checkin && $booking->checkout >= $checkin) ||        ($booking->checkin <= $checkout && $booking->checkout >= $checkout)) {
+                    $isDateInBooking = true;
+                    break;
+                }
+            }
+            if ($isDateInBooking == false) {
+                $roomsIdFree[$a++] = $roomsId[$i];
+            }
+        }
+
+        $roomsLarge =  Room::whereIn('id', $roomsIdFree)
+            ->where('type', 'large')
+            ->get();
+        $roomsStandard = Room::whereIn('id', $roomsIdFree)
+            ->where('type', 'standard')
+            ->get();
+        return Inertia::render('User/RoomSearch', ['roomsLarge' => $roomsLarge, 'roomsStandard' => $roomsStandard]);
     }
-    
+    function checkRoom(Request $request)
+    {
+        $request->validate([
+            'checkin' => 'required',
+            'checkout' => 'required'
+        ]);
+        $roomId = $request->roomId;
+        $checkin = $request->checkin;
+        $checkout = $request->checkout;
+        $bookingByRoomId = Booking::where('id_room', $roomId)->select('checkin', 'checkout')->get();
+        $isDateInBooking = false;
+        foreach ($bookingByRoomId as $booking) {
+            if (($booking->checkin <= $checkin && $booking->checkout >= $checkin) ||        ($booking->checkin <= $checkout && $booking->checkout >= $checkout)) {
+                $isDateInBooking = true;
+                break;
+            }
+        }
+        if ($isDateInBooking == true) {
+            // tra ve lai trang detail voi message date unavaiable
+        }
+        else{
+            $booking = new Booking();
+            $cusId = $request->userId;
+            $booking->id_customer = $cusId;
+            $booking->id_room = $roomId;
+            $booking->checkin = $checkin;
+            $booking->checkout = $checkout;
+            $numberOfDays = $checkout->diffInDays($checkin);
+            $booking->price = ($request->price) * $numberOfDays;
+            $booking->save();
+        }
+       
+       
+    }
+
     /**
      * Display a listing of the resource.
      */

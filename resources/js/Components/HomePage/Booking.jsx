@@ -43,18 +43,14 @@ const Booking = (props) => {
                                     <label htmlFor="input-checkin" className="form-label px-1">Check in</label>
                                     <div className="position-relative">
                                         <input id="input-checkin" name='checkin' type="date"   className="checkin bg-white form-control position-relative" placeholder="24-05-2024" />
-                                        <a href="#" className="icon-calendar-link position-absolute">
-                                            <i className="fa-solid fa-calendar-days ms-auto my-auto"></i>
-                                        </a>
+                                       
                                     </div>
                                 </div>
                                 <div className="mt-4 px-0">
                                     <label htmlFor="input-checkout" className="px-1 form-label">Check out</label>
                                     <div className="position-relative">
-                                        <input id="input-checkout" name='checkout'  className="checkout bg-white form-control position-relative" placeholder="24-05-2024" />
-                                        <a href="#" className="icon-calendar-link position-absolute">
-                                            <i className="fa-solid fa-calendar-days ms-auto my-auto"></i>
-                                        </a>
+                                        <input id="input-checkout" name='checkout' type="date"  className="checkout bg-white form-control position-relative" placeholder="24-05-2024" />
+                                     
                                     </div>
                                 </div>
 
@@ -87,7 +83,7 @@ const Booking = (props) => {
                                 </div>
 
                                 <div className="mt-5">
-                                    <button  type='submit' className="btn-check-booking w-100 border-0">CHECK AVAILABILITY</button>
+                                    <button type='submit' className="btn-check-booking w-100 border-0">CHECK AVAILABILITY</button>
                                 </div>
                                 {/* <div className="note-booking mt-4 d-flex">
                                     <p className="px-2">One or more fields have an error. Please check and try again.</p>
