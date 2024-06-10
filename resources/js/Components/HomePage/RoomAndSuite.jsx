@@ -23,6 +23,7 @@ const RoomAndSuite = () => {
     useEffect(() => {
         loadMore();
     }, []);
+    
     useEffect(() => {
         fetch(route('api.rooms', { type: 'large' }))
             .then(response => {
@@ -65,7 +66,7 @@ const RoomAndSuite = () => {
                                             </div>
                                             <div className="ms-auto">
                                                 <div className="rooms-suites-detail ms-auto">
-                                                    <a href="#" className="rooms-suites-detail-text">DETAILS</a>
+                                                    <a href={route('room.detail',roomStandard.id)} className="rooms-suites-detail-text">DETAILS</a>
                                                     <i className="fa-solid fa-arrow-right rooms-suites-icon"></i>
                                                 </div>
                                             </div>
@@ -102,7 +103,7 @@ const RoomAndSuite = () => {
                                             </div>
                                             <div className="ms-auto">
                                                 <div className="rooms-suites-detail ms-auto">
-                                                    <a href="#" className="rooms-suites-detail-text">DETAILS</a>
+                                                    <a href={route('room.detail',roomLarge.id)} className="rooms-suites-detail-text">DETAILS</a>
                                                     <i className="fa-solid fa-arrow-right rooms-suites-icon"></i>
                                                 </div>
                                             </div>
