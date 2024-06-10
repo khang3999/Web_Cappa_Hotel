@@ -19,14 +19,11 @@ const NavbarAdmin = () => {
                                 <a className="nav-link mx-2 p-2 my-auto nav-item-bookings" href={route('booking.admin')} aria-current="page">Bookings</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link mx-2 p-2 my-auto  nav-item-rooms" href={route('rooms.admin')} >Rooms</a>
+                                <a className="nav-link mx-2 p-2 my-auto  nav-item-rooms" href={route('admin.rooms.index')} >Rooms</a>
                             </li>
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <a className="nav-link mx-2 p-2 my-auto" href={route('accounts.admin')}>Accounts</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link mx-2 p-2 my-auto" href={route('services.admin')}>Services</a>
-                            </li>
+                            </li> */}
                         </ul>
                         {/* Login Logout */}
                         <div className="navbar-nav ms-auto mb-2 mb-lg-0">

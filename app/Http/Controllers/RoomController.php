@@ -4,21 +4,27 @@ namespace App\Http\Controllers;
 
 use App\Models\Room;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
+use Intervention\Image;
+use Illuminate\Support\Facades\Storage;
 
 class RoomController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
+
     public function getRoomsByType(String $type)
     {
         $limit = ($type == "standard" ? 3 : 2);
-        $rooms = Room::where('type',$type)->limit($limit)->get();
+        $rooms = Room::where('type', $type)->limit($limit)->get();
         return response()->json($rooms);
     }
     public function index()
     {
         //
+        $rooms = Room::all();
+        return Inertia::render('Admin/RoomManagement', ['rooms' => $rooms]);
     }
 
     /**
@@ -34,7 +40,29 @@ class RoomController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'description' => 'required',
+            'price' => 'required|numeric',
+            'adult' => 'required|numeric',
+            'children' => 'required|numeric',
+            'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048', // Kiểm tra định dạng và kích thước ảnh
+            'type' => 'required',
+        ]);
+
+        // Lưu vào cơ sở dữ liệu
+        $room = new Room();
+        $room->name = $request->name;
+        $room->description = $request->description;
+        $room->price = $request->price;
+        $room->adult = $request->adult;
+        $room->children = $request->children;
+        $room->type = $request->type;
+        // Lưu ảnh vào thư mục và lưu đường dẫn vào cơ sở dữ liệu
+        $imagePath = $request->file('photo')->store('images', 'public');
+        $room->photo = $imagePath;
+        $room->save();
+        return redirect()->route("booking.admin");
     }
 
     /**

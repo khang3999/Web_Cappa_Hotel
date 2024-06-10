@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Room;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
@@ -16,7 +17,8 @@ class AdminController extends Controller
     // Go to room management
     public function roomsManagement()
     {
-        return Inertia::render('Admin/RoomManagement');
+        $rooms = Room::limit(4)->get();
+        return Inertia::render('Admin/RoomManagement',['rooms' => $rooms]);
     }
     
     public function accountsManagement()
