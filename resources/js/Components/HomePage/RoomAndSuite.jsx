@@ -4,22 +4,22 @@ const RoomAndSuite = () => {
     const [roomsStandard, setRoomsStandard] = useState([]);
     const [roomsLarge, setRoomsLarge] = useState([]);
 
-    const loadMore = ()=>{
+    const loadMore = () => {
         fetch(route('api.rooms', { type: 'standard' }))
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Failed to fetch banner data');
-            }
-            return response.json();
-        })
-        .then(data => {
-            setRoomsStandard(data);
-        })
-        .catch(error => {
-            console.error('Error fetching banner data:', error);
-        });
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to fetch banner data');
+                }
+                return response.json();
+            })
+            .then(data => {
+                setRoomsStandard(data);
+            })
+            .catch(error => {
+                console.error('Error fetching banner data:', error);
+            });
     }
-    
+
     useEffect(() => {
         loadMore();
     }, []);
@@ -77,9 +77,8 @@ const RoomAndSuite = () => {
                             </div>
                         )
                     })}
-
-                    <button onClick={loadMore} className="btn btn-primary">click me</button>
                 </div>
+
 
                 <div className="row ">
                     {roomsLarge.map((roomLarge, index) => {
@@ -163,6 +162,15 @@ const RoomAndSuite = () => {
                         <div className="overlay">
                         </div>
                     </div> */}
+                </div>
+
+                <div className="d-flex justify-content-center mt-4">
+                    <div className="btn-wrap btn-bg-img">
+                        <button className="btn-mid my-0">
+                            <span className="btn-mid-text">ROOMS & SUITES</span>
+                        </button>
+                    </div>
+
                 </div>
             </div>
         </div>
