@@ -288,6 +288,8 @@ i{
     font-size: 45px;
     color: #aa8453;
    margin-bottom: 18px;
+   display: inline-block;
+    transition: transform 0.3s ease;
 }
 .hotel-facilities-item-title{
     font-size: 24px;
@@ -516,4 +518,34 @@ h1,h2,h3,h4,h5,h6{
     position: absolute;
     top: 10%;
     left: 30%;
+}
+.box {
+    
+    opacity: 0; /* Ban đầu ẩn đi */
+    transition: opacity 0.5s ease-out; /* Sử dụng transition để tạo hiệu ứng mượt mà */
+}
+
+.animate-on-scroll.show {
+    opacity: 1;
+
+    /* Khi có class 'show', hiển thị phần tử */
+}
+.hotel-facilities-item:hover 
+.hotel-facilities-icon{
+    animation: jumpUpDown 1s alternate infinite;
+}
+@keyframes jumpUpDown {
+    from {
+        transform: translateY(0); /* Bắt đầu từ vị trí ban đầu */
+    }
+    to {
+        transform: translateY(-20px); /* Kết thúc vị trí 20px lên trên */
+    }
+}
+.img-scale{
+    transition: transform 0.3s linear;
+}
+
+.overflow-hidden:hover img {
+    transform: scale(1.2); /* Chỉnh tỷ lệ phóng to theo ý muốn */
 }

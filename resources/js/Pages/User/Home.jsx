@@ -12,8 +12,39 @@ import Testimonial from "@/Components/HomePage/Testimonial";
 import Utility from "@/Components/HomePage/Utility";
 import { Head } from "@inertiajs/react";
 import "../../home"
+import { useEffect } from "react";
 const Home = () => {
-    
+    useEffect(() => {
+        // Lấy danh sách các phần tử bạn muốn thực hiện animation
+        const items = document.querySelectorAll('.animate-on-scroll');
+
+        // Hàm kiểm tra xem phần tử có nằm trong tầm nhìn không
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        // Hàm xử lý sự kiện cuộn trang
+        function handleScroll() {
+            items.forEach(item => {
+                if (isElementInViewport(item)) {
+                    item.classList.add('show');
+                }
+            });
+        }
+
+        // Gắn sự kiện cuộn trang
+        window.addEventListener('scroll', handleScroll);
+
+        // Gọi hàm một lần khi trang được tải lần đầu tiên
+        handleScroll();
+    }, []);
+
     const pageName = "home"
     return (
         <>

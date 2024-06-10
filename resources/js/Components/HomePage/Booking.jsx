@@ -1,8 +1,9 @@
 import '../../../css/booking.css'
 const Booking = (props) => {
+    const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
     return (
-        <div className="booking z-2 bg-md-transparent">
-            <div className="container ">
+        <div className="booking z-2 bg-md-transparent  ">
+            <div className="container box animate-on-scroll">
                 <div className="row bg-transparent ">
                     <div className="col-lg-6">
                         <div className="rating  pb-3">
@@ -30,7 +31,8 @@ const Booking = (props) => {
                     </div>
 
                     <div className="col-lg-6 ">
-                        <form className="check-booking-form z-2 py-5 px-4 ms-5 mb-5">
+                        <form className="check-booking-form z-2 py-5 px-4 ms-5 mb-5" method='post' action={route('roomsearch')}>
+                        <input type="hidden" name="_token" value={csrfToken} />
                             <div className="container">
                                 <div className="check-now-text">
                                     <h6 className="check-now-top">ROOMS & SUITS</h6>
@@ -40,7 +42,7 @@ const Booking = (props) => {
                                 <div className="mt-4 px-0">
                                     <label htmlFor="input-checkin" className="form-label px-1">Check in</label>
                                     <div className="position-relative">
-                                        <input id="input-checkin" readOnly className="checkin bg-white form-control position-relative" placeholder="24-05-2024" />
+                                        <input id="input-checkin" name='checkin' type="date"   className="checkin bg-white form-control position-relative" placeholder="24-05-2024" />
                                         <a href="#" className="icon-calendar-link position-absolute">
                                             <i className="fa-solid fa-calendar-days ms-auto my-auto"></i>
                                         </a>
@@ -49,7 +51,7 @@ const Booking = (props) => {
                                 <div className="mt-4 px-0">
                                     <label htmlFor="input-checkout" className="px-1 form-label">Check out</label>
                                     <div className="position-relative">
-                                        <input id="input-checkout" readOnly className="checkout bg-white form-control position-relative" placeholder="24-05-2024" />
+                                        <input id="input-checkout" name='checkout'  className="checkout bg-white form-control position-relative" placeholder="24-05-2024" />
                                         <a href="#" className="icon-calendar-link position-absolute">
                                             <i className="fa-solid fa-calendar-days ms-auto my-auto"></i>
                                         </a>
@@ -85,7 +87,7 @@ const Booking = (props) => {
                                 </div>
 
                                 <div className="mt-5">
-                                    <button type='submit' className="btn-check-booking w-100 border-0">CHECK AVAILABILITY</button>
+                                    <button  type='submit' className="btn-check-booking w-100 border-0">CHECK AVAILABILITY</button>
                                 </div>
                                 {/* <div className="note-booking mt-4 d-flex">
                                     <p className="px-2">One or more fields have an error. Please check and try again.</p>

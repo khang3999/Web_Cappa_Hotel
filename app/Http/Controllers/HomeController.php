@@ -3,12 +3,26 @@
 namespace App\Http\Controllers;
 
 use App\Models\Banner;
+use App\Models\Room;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
 class HomeController extends Controller
 {
 
+    function getRoomsBySearch(Request $request) {
+        $request->validate([
+            'checkin' => 'required',
+            'checkout' => 'required'
+        ]);
+
+        $checkin = $request->checkin;
+        $checkout = $request->checkout;
+        
+        $roomsLarge = Room::where('type','large')->get();
+        $roomsStandard = Room::where('type','standard')->get();
+        return Inertia::render('User/RoomSearch',['roomsLarge'=>$roomsLarge,'roomsStandard'=>$roomsStandard]);
+    }
     
     /**
      * Display a listing of the resource.

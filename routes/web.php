@@ -25,6 +25,8 @@ Route::get('/',function () {
 Route::get('/about',function () {
     return Inertia::render('User/AboutUs');
 })->name('aboutUsUser');
+Route::post('/roomsearch',[HomeController::class,'getRoomsBySearch'])->name('roomsearch');
+
 
 // Route::get('/', function () {
 //     return Inertia::render('Welcome', [

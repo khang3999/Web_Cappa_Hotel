@@ -1,46 +1,19 @@
-import { useEffect, useState } from "react";
+import Footer from "@/Components/Commons/Footer";
+import Navbar from "@/Components/Commons/Navbar";
+import Banner from "@/Components/HomePage/Banner";
+import RoomAndSuite from "@/Components/HomePage/RoomAndSuite";
+import { Head } from "@inertiajs/react";
 import '../../../css/roomAndSuite.css'
-const RoomAndSuite = () => {
-    const [roomsStandard, setRoomsStandard] = useState([]);
-    const [roomsLarge, setRoomsLarge] = useState([]);
 
-    const loadMore = () => {
-        fetch(route('api.rooms', { type: 'standard' }))
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Failed to fetch banner data');
-                }
-                return response.json();
-            })
-            .then(data => {
-                setRoomsStandard(data);
-            })
-            .catch(error => {
-                console.error('Error fetching banner data:', error);
-            });
-    }
+const RoomSearch = ({roomsStandard, roomsLarge}) => {
 
-    useEffect(() => {
-        loadMore();
-    }, []);
-    useEffect(() => {
-        fetch(route('api.rooms', { type: 'large' }))
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Failed to fetch banner data');
-                }
-                return response.json();
-            })
-            .then(data => {
-                setRoomsLarge(data);
-            })
-            .catch(error => {
-                console.error('Error fetching banner data:', error);
-            });
-    }, []);
+    const pageName = "home";
     return (
-        <div className="rooms-suites z-2 position-relative ">
-            <div className="container box animate-on-scroll">
+        <>
+            <Head title="Cappa Luxury Hotel" />
+            <Banner pageName={pageName}></Banner>
+            <div className="rooms-suites z-2 position-relative ">
+            <div className="container">
                 <h4 className="text-about-top mb-3">THE CAPPA LUXURY HOTEL</h4>
                 <h1 className="text-about-bot mb-3">Rooms & Suites</h1>
                 <div className="row">
@@ -114,54 +87,7 @@ const RoomAndSuite = () => {
                             </div>
                         )
                     })}
-                    {/* <div className="col-md-6 p-2 rooms-suites-img">
-                        <div className="overflow-hidden">
-                            <img src="/images/3-4.jpg" alt="" className="w-100 img-fluid img-hover"></img>
-                        </div>
-                        <div className="tag-book mt-2">BOOK</div>
-                        <a href="" className="rooms-suites-price pb-2">300$ / NIGHT</a>
-                        <a href="" className="rooms-suites-name">Duluxe Room</a>
-                        <div className="rooms-suites-hidden row ">
-                            <div className="rooms-suites-listicon col-6">
-                                <i className="fa-solid fa-earth-asia rooms-suites-icon"></i>
-                                <i className="fa-solid fa-car rooms-suites-icon"></i>
-                                <i className="fa-solid fa-bed rooms-suites-icon"></i>
-                                <i className="fa-solid fa-utensils rooms-suites-icon"></i>
-
-                            </div>
-                            <div className="rooms-suites-detail col-6 ms-auto">
-                                <a href="#" className="rooms-suites-detail-text">DETAILS</a>
-                                <i className="fa-solid fa-arrow-right rooms-suites-icon"></i>
-                            </div>
-                        </div>
-                        <div className="line"></div>
-                        <div className="overlay">
-                        </div>
-                    </div>
-                    <div className="col-md-6 p-2 rooms-suites-img">
-                        <div className="overflow-hidden">
-                            <img src="/images/7-1.jpg" alt="" className="w-100 img-fluid img-hover"></img>
-                        </div>
-                        <div className="tag-book mt-2">BOOK</div>
-                        <a href="" className="rooms-suites-price pb-2">350$ / NIGHT</a>
-                        <a href="" className="rooms-suites-name ">Superior Room</a>
-                        <div className="rooms-suites-hidden row ">
-                            <div className="rooms-suites-listicon col-6">
-                                <i className="fa-solid fa-earth-asia rooms-suites-icon"></i>
-                                <i className="fa-solid fa-car rooms-suites-icon"></i>
-                                <i className="fa-solid fa-bed rooms-suites-icon"></i>
-                                <i className="fa-solid fa-utensils rooms-suites-icon"></i>
-
-                            </div>
-                            <div className="rooms-suites-detail col-6 ms-auto">
-                                <a href="#" className="rooms-suites-detail-text">DETAILS</a>
-                                <i className="fa-solid fa-arrow-right rooms-suites-icon"></i>
-                            </div>
-                        </div>
-                        <div className="line "></div>
-                        <div className="overlay">
-                        </div>
-                    </div> */}
+                    
                 </div>
 
                 <div className="d-flex justify-content-center mt-4">
@@ -174,7 +100,10 @@ const RoomAndSuite = () => {
                 </div>
             </div>
         </div>
+            <Footer></Footer>
+
+
+        </>
     )
 }
-
-export default RoomAndSuite;
+export default RoomSearch;
