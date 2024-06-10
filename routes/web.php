@@ -52,10 +52,16 @@ Route::middleware('auth')->group(function () {
 // Khi nao xac  thuc thi thêm midleware vào sau prefix()
 Route::prefix('admin')->group(function() {
     Route::get("/", [AdminController::class, "indexAdmin"])->name('booking.admin');
-    Route::get("/rooms", [AdminController::class, "roomsManagement"])->name('rooms.admin');
     Route::get("/accounts", [AdminController::class, "accountsManagement"])->name('accounts.admin');
+   
     Route::get("/statuses", [AdminController::class, "statusesManagement"])->name('statuses.admin');
-    Route::get("/services", [AdminController::class, "servicesManagement"])->name('services.admin');
+    Route::get("/services", [AdminController::class, "servicesManagement"])->name('services.admin');  
+    Route::get("/rooms",[RoomController::class,'index'])->name('admin.rooms.index');
+    Route::get("/rooms/create",function () {
+        return Inertia::render('Admin/RoomCreate');
+    })->name('admin.rooms.create');
+    Route::post("/rooms/store",[RoomController::class,'store'])->name('admin.rooms.store');
+    
 });
 
 
