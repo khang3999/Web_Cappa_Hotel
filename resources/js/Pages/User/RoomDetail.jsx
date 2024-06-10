@@ -4,6 +4,7 @@ import '../../../css/roomDetail.css'
 import Footer from "@/Components/Commons/Footer";
 
 const RoomDetail = ({ room, utilities }) => {
+    const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
     return (
         <>
             <Head title="Cappa Luxury Hotel" />
@@ -100,7 +101,9 @@ const RoomDetail = ({ room, utilities }) => {
                 </div>
 
                 <div className="row">
-                    <form className="check-booking-form z-2 py-5 px-4 mb-5" >
+                    <form className="check-booking-form z-2 py-5 px-4 mb-5" method="post" action={route('checkRoomAndSave')}>
+                        <input type="hidden" name="_token" value={csrfToken} />
+
                         <div className="container">
                             <div className="check-now-text">
                                 <h6 className="check-now-top">ROOMS & SUITS</h6>
@@ -108,19 +111,19 @@ const RoomDetail = ({ room, utilities }) => {
                                 <div className="line w-100"></div>
                             </div>
                             {/* Hidden */}
-                            <input hidden name="userId" value="1"/>
-                            <input hidden name="roomId" value={room.id}/>
+                            <input hidden name="userId" value="1" />
+                            <input hidden name="roomId" value={room.id} />
                             <div className="mt-4 px-0">
                                 <label htmlFor="input-checkin" className="form-label px-1">Check in</label>
                                 <div className="position-relative">
-                                    <input id="input-checkin" type="date" className="checkin bg-white form-control position-relative" name="checkin"/>
+                                    <input id="input-checkin" type="date" className="checkin bg-white form-control position-relative" name="checkin" />
                                 </div>
                             </div>
 
                             <div className="mt-4 px-0">
                                 <label htmlFor="input-checkout" className="px-1 form-label">Check out</label>
                                 <div className="position-relative">
-                                    <input id="input-checkout" type="date" className="checkout bg-white form-control position-relative" placeholder="24-05-2024" name="checkout"/>
+                                    <input id="input-checkout" type="date" className="checkout bg-white form-control position-relative" placeholder="24-05-2024" name="checkout" />
                                 </div>
                             </div>
 

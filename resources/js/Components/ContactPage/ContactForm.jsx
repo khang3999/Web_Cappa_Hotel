@@ -47,16 +47,18 @@ const ContactForm = () => {
                         </div>
                         <div className="col-md-4">
                             <h3>Get in touch</h3>
-                            <form action="" method="post" className="contact_form">
+                            <form action={route("comment.store")} method="post" className="contact_form">
                                 <div className="row">
                                     <div className="col-md-6">
                                         <input type="text" name="name" placeholder="Your Name" required/>
+                                        <input type="hidden" name="user_id" placeholder="Your Name" value="1" required/>
+
                                     </div>
                                     <div className="col-md-6">
-                                        <input type="text" name="name" placeholder="Your email" />
+                                        <input type="text" name="email" placeholder="Your email" />
                                     </div>
                                     <div className="col-md-12">
-                                        <textarea name="message" id="message" placeholder="Your message"></textarea>
+                                        <textarea name="comment" id="message" placeholder="Your message"></textarea>
                                     </div>
                                 </div>
                                     <button type="submit" className="btn-dark2">Send Message</button>

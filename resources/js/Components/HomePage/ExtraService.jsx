@@ -6,9 +6,9 @@ const ExtraService = (props) => {
         
     },[])
     return (
-        <div className="extra-services z-2 position-relative">
-            <div className="container">
-                <div className="row">
+        <div className="extra-services z-2 position-relative box animate-on-scroll ">
+            <div className="container ">
+                <div className="row ">
                     <div className="col-lg-4 col-md-6">
                         <div className="services-text">
                             <h5 className="services-text-top mb-3">BEST PRICES</h5>
