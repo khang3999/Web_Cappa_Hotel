@@ -621,7 +621,8 @@ h6 {
     background-size: cover;
     background-position: center;
 }
-.sign-in-icon{
+
+.sign-in-icon {
     background-color: #ab8a62;
     color: #fff;
     padding: 10px 15px;
@@ -630,27 +631,31 @@ h6 {
     border: none;
     border-radius: 100%;
 }
-.login-icon{
+
+.login-icon {
     background-color: #ab8a62;
     color: #fff;
-    padding: 10px 15px;    
+    padding: 10px 15px;
     margin-right: 10px;
     border: none;
     transition: 0.5s ease;
     font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 400;    
+    font-weight: 400;
     font-size: 15px;
-   
+
 }
-.login-icon:hover{
+
+.login-icon:hover {
     background-color: #000;
     transition: step-end;
 }
-.sign-in-icon:hover{
+
+.sign-in-icon:hover {
     background-color: #000;
     transition: step-end;
 }
-.login-text{
+
+.login-text {
     font-size: 15px;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 400;
@@ -660,25 +665,78 @@ h6 {
     letter-spacing: 6px;
     margin-bottom: 5px;
 }
-.register-title{
+
+.register-title {
     font-size: 30px;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 400;
-    color: #ab8a62 ;
+    color: #ab8a62;
     text-transform: uppercase;
     position: relative;
     letter-spacing: 6px;
     margin-bottom: 5px;
 }
-.register-text{
+
+.register-text {
     font-size: 15px;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 400;
-    color: #666;    
+    color: #666;
     position: relative;
     margin-bottom: 5px;
 }
-.text-register{
+
+.text-register {
     font-size: 15px;
-    color: #ab8a62;        
+    color: #ab8a62;
+}
+
+input.error-animation {
+    animation: shake 0.5s;
+}
+.already-registered-link:hover {
+    color: #ab8a62;
+    text-decoration: underline;
+    transition: all .5s ease;
+}
+@keyframes shake {
+    0% {
+        transform: translateX(0px);
+        timing-function: ease-in;
+    }
+
+    37% {
+        transform: translateX(5px);
+        timing-function: ease-out;
+    }
+
+    55% {
+        transform: translateX(-5px);
+        timing-function: ease-in;
+    }
+
+    73% {
+        transform: translateX(4px);
+        timing-function: ease-out;
+    }
+
+    82% {
+        transform: translateX(-4px);
+        timing-function: ease-in;
+    }
+
+    91% {
+        transform: translateX(2px);
+        timing-function: ease-out;
+    }
+
+    96% {
+        transform: translateX(-2px);
+        timing-function: ease-in;
+    }
+
+    100% {
+        transform: translateX(0px);
+        timing-function: ease-in;
+    }
 }

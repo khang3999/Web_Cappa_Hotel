@@ -17,9 +17,9 @@ Route::get('/api/rooms/{type}',[RoomController::class,'getRoomsByType'])->name('
 
 // Tu viet
 // Route::get('/',[HomeController::class, 'index'])->name('indexUser');
-Route::middleware('auth')->get('/',function () {
+Route::get('/',function () {
     return Inertia::render('User/Home');
-})->name('indexUser');
+})->middleware(['auth', 'verified'])->name('indexUser');
 
 // Route::get('/', function () {
 //     return Inertia::render('Welcome', [
@@ -30,9 +30,9 @@ Route::middleware('auth')->get('/',function () {
 //     ]);
 // });
 
-Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return Inertia::render('Dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
