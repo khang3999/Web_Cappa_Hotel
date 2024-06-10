@@ -95,11 +95,11 @@ const Footer = (props) => {
             </div>
 
             <div className="slide-icon d-flex ">
-                <div class="content mx-auto">
-                    <div class="benefits">
-                        <div class="basic-marquee basic-marquee-1">
-                            <a class="social-media-link" href="#">
-                                <button class="button">
+                <div className="content mx-auto">
+                    <div className="benefits">
+                        <div className="basic-marquee basic-marquee-1">
+                            <a className="social-media-link" href="#">
+                                <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         id="Layer_1"
@@ -107,18 +107,18 @@ const Footer = (props) => {
                                         viewBox="0 0 122.88 122.88"
                                     >
                                         <path
-                                            class="cls-1"
+                                            className="cls-1"
                                             d="M25.2,0H97.68a25.27,25.27,0,0,1,25.2,25.2V97.68a25.27,25.27,0,0,1-25.2,25.2H25.2A25.27,25.27,0,0,1,0,97.68V25.2A25.27,25.27,0,0,1,25.2,0Z"
                                         ></path>
                                         <path
-                                            class="cls-2"
+                                            className="cls-2"
                                             d="M98.16,44.33q-.5,10.72-15,29.38-15,19.46-25.36,19.47Q51.4,93.18,47,81.33,44,70.46,41,59.59q-3.29-11.87-7.08-11.85c-.54,0-2.47,1.16-5.76,3.45l-3.46-4.45c3.63-3.1,7.21-6.36,10.69-9.51Q42.67,31,46.3,30.63q8.58-.82,10.56,11.72,2.13,13.55,3,16.84c1.65,7.49,3.45,11.24,5.44,11.24q2.3,0,6.93-7.3t5-11.09c.44-4.19-1.21-6.3-5-6.3A13.55,13.55,0,0,0,66.77,47Q72.19,29.2,87.46,29.71q11.31.3,10.67,14.67h0l0-.05Z"
                                         ></path>
                                     </svg>
                                 </button>
                             </a>
-                            <a class="social-media-link" href="#">
-                                <button class="button">
+                            <a className="social-media-link" href="#">
+                                <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         id="Layer_1"
@@ -126,22 +126,22 @@ const Footer = (props) => {
                                         viewBox="0 0 122.88 122.88"
                                     >
                                         <path
-                                            class="cls-3"
+                                            className="cls-3"
                                             d="M25.2,0H97.68a25.27,25.27,0,0,1,25.2,25.2V97.68a25.27,25.27,0,0,1-25.2,25.2H25.2A25.27,25.27,0,0,1,0,97.68V25.2A25.27,25.27,0,0,1,25.2,0Z"
                                         ></path>
                                         <path
-                                            class="cls-4"
+                                            className="cls-4"
                                             d="M69.22,79.38A34.34,34.34,0,0,0,83,73.45a5.73,5.73,0,0,0-7.17-8.94A24.84,24.84,0,0,1,61.5,68.69a25.46,25.46,0,0,1-14.43-4.18,5.73,5.73,0,0,0-7.17,8.94,34.93,34.93,0,0,0,14.21,6L42,92.07a5.73,5.73,0,1,0,8.25,8l11.23-12,12.36,12A5.73,5.73,0,1,0,82,92L69.22,79.38Z"
                                         ></path>
                                         <path
-                                            class="cls-4"
+                                            className="cls-4"
                                             d="M61.78,20.48A21.07,21.07,0,1,0,82.85,41.54,21.06,21.06,0,0,0,61.78,20.48Zm0,29.77a8.71,8.71,0,1,1,8.71-8.71,8.71,8.71,0,0,1-8.71,8.71Z"
                                         ></path>
                                     </svg>
                                 </button>
                             </a>
-                            <a class="social-media-link" href="#">
-                                <button class="button">
+                            <a className="social-media-link" href="#">
+                                <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -199,8 +199,8 @@ const Footer = (props) => {
                                     </svg>
                                 </button>
                             </a>
-                            <a class="social-media-link" href="#">
-                                <button class="button">
+                            <a className="social-media-link" href="#">
+                                <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -223,20 +223,20 @@ const Footer = (props) => {
                                             </linearGradient>
                                         </defs>
                                         <path
-                                            class="cls-5"
+                                            className="cls-5"
                                             d="M512,382.07c0,2.8-.09,8.88-.26,13.58-.41,11.49-1.32,26.32-2.7,33.07a109.76,109.76,0,0,1-9.27,27.71,98.45,98.45,0,0,1-43.43,43.39,110.21,110.21,0,0,1-27.87,9.28c-6.69,1.35-21.41,2.24-32.82,2.65-4.71.17-10.79.25-13.58.25l-252.1,0c-2.8,0-8.88-.09-13.58-.26-11.49-.41-26.32-1.32-33.07-2.69a110.37,110.37,0,0,1-27.72-9.28A98.5,98.5,0,0,1,12.18,456.3,110.21,110.21,0,0,1,2.9,428.43C1.55,421.74.66,407,.25,395.61.08,390.91,0,384.82,0,382l0-252.1c0-2.8.09-8.88.25-13.58C.71,104.86,1.62,90,3,83.28a110.37,110.37,0,0,1,9.27-27.72A98.59,98.59,0,0,1,55.7,12.18,110.21,110.21,0,0,1,83.57,2.9C90.26,1.55,105,.66,116.39.25,121.09.08,127.18,0,130,0l252.1,0c2.8,0,8.88.09,13.58.25C407.14.71,422,1.62,428.72,3a110.37,110.37,0,0,1,27.72,9.27A98.59,98.59,0,0,1,499.82,55.7a110.21,110.21,0,0,1,9.28,27.87c1.35,6.69,2.24,21.41,2.65,32.82.17,4.7.25,10.79.25,13.58Z"
                                             transform="translate(0 0)"
                                         ></path>
                                         <path
-                                            class="cls-6"
+                                            className="cls-6"
                                             d="M379.56,131.67A172.4,172.4,0,0,0,256.67,80.73C161,80.73,83.05,158.64,83.05,254.42a173.47,173.47,0,0,0,23.2,86.82l-24.65,90,92.08-24.17a173.55,173.55,0,0,0,83,21.17h.07c95.73,0,173.69-77.91,173.69-173.69A172.73,172.73,0,0,0,379.53,131.7l0,0ZM256.72,399a144.17,144.17,0,0,1-73.52-20.14l-5.29-3.15L123.27,390l14.59-53.27-3.42-5.47a143.29,143.29,0,0,1-22.11-76.81C112.33,174.81,177.1,110,256.8,110A144.34,144.34,0,0,1,401.12,254.48c-.07,79.67-64.83,144.46-144.41,144.46v0ZM335.87,290.8c-4.32-2.2-25.68-12.67-29.65-14.12s-6.85-2.19-9.8,2.2-11.22,14.11-13.76,17-5.06,3.29-9.37,1.09-18.35-6.77-34.92-21.56c-12.88-11.5-21.61-25.74-24.15-30s-.29-6.71,1.92-8.83c2-1.93,4.32-5.06,6.51-7.6s2.88-4.32,4.32-7.26.74-5.42-.35-7.6-9.8-23.55-13.34-32.25c-3.49-8.51-7.12-7.32-9.79-7.47s-5.42-.13-8.29-.13a16,16,0,0,0-11.57,5.41c-4,4.32-15.2,14.86-15.2,36.22s15.54,42,17.72,44.91,30.61,46.76,74.14,65.54c10.34,4.44,18.42,7.11,24.72,9.18a60,60,0,0,0,27.32,1.71c8.35-1.23,25.68-10.49,29.31-20.62s3.63-18.83,2.55-20.62-3.91-3-8.29-5.22l0,0Z"
                                             transform="translate(0 0)"
                                         ></path>
                                     </svg>
                                 </button>
                             </a>
-                            <a class="social-media-link" href="#">
-                                <button class="button">
+                            <a className="social-media-link" href="#">
+                                <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         id="Layer_1"
@@ -244,18 +244,18 @@ const Footer = (props) => {
                                         viewBox="0 0 122.88 122.31"
                                     >
                                         <path
-                                            class="cls-7"
+                                            className="cls-7"
                                             d="M27.75,0H95.13a27.83,27.83,0,0,1,27.75,27.75V94.57a27.83,27.83,0,0,1-27.75,27.74H27.75A27.83,27.83,0,0,1,0,94.57V27.75A27.83,27.83,0,0,1,27.75,0Z"
                                         ></path>
                                         <path
-                                            class="cls-8"
+                                            className="cls-8"
                                             d="M49.19,47.41H64.72v8h.22c2.17-3.88,7.45-8,15.34-8,16.39,0,19.42,10.2,19.42,23.47V98.94H83.51V74c0-5.71-.12-13.06-8.42-13.06s-9.72,6.21-9.72,12.65v25.4H49.19V47.41ZM40,31.79a8.42,8.42,0,1,1-8.42-8.42A8.43,8.43,0,0,1,40,31.79ZM23.18,47.41H40V98.94H23.18V47.41Z"
                                         ></path>
                                     </svg>
                                 </button>
                             </a>
-                            <a class="social-media-link" href="#">
-                                <button class="button">
+                            <a className="social-media-link" href="#">
+                                <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         id="Layer_1"
@@ -263,22 +263,22 @@ const Footer = (props) => {
                                         viewBox="0 0 122.88 122.39"
                                     >
                                         <path
-                                            class="cls-1"
+                                            className="cls-1"
                                             d="M27.4,0H95.48a27.48,27.48,0,0,1,27.4,27.4V95a27.48,27.48,0,0,1-27.4,27.41H27.4A27.48,27.48,0,0,1,0,95V27.4A27.48,27.48,0,0,1,27.4,0Z"
                                         ></path>
                                         <path
-                                            class="cls-10"
+                                            className="cls-10"
                                             d="M37.07,32.34A14.41,14.41,0,1,1,22.66,46.75,14.41,14.41,0,0,1,37.07,32.34Z"
                                         ></path>
                                         <path
-                                            class="cls-10"
+                                            className="cls-10"
                                             d="M85.74,32.34A14.41,14.41,0,1,1,71.33,46.75,14.41,14.41,0,0,1,85.74,32.34Z"
                                         ></path>
                                     </svg>
                                 </button>
                             </a>
-                            <a class="social-media-link" href="#">
-                                <button class="button">
+                            <a className="social-media-link" href="#">
+                                <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         shape-rendering="geometricPrecision"
@@ -313,8 +313,8 @@ const Footer = (props) => {
                                     </svg>
                                 </button>
                             </a>
-                            <a class="social-media-link" href="#">
-                                <button class="button">
+                            <a className="social-media-link" href="#">
+                                <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         shape-rendering="geometricPrecision"
@@ -341,8 +341,8 @@ const Footer = (props) => {
                                     </svg>
                                 </button>
                             </a>
-                            <a class="social-media-link" href="#">
-                                <button class="button">
+                            <a className="social-media-link" href="#">
+                                <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         id="Layer_1"
@@ -350,18 +350,18 @@ const Footer = (props) => {
                                         viewBox="0 0 122.88 122.88"
                                     >
                                         <path
-                                            class="cls-1"
+                                            className="cls-1"
                                             d="M25.2,0H97.68a25.27,25.27,0,0,1,25.2,25.2V97.68a25.27,25.27,0,0,1-25.2,25.2H25.2A25.27,25.27,0,0,1,0,97.68V25.2A25.27,25.27,0,0,1,25.2,0Z"
                                         ></path>
                                         <path
-                                            class="cls-2"
+                                            className="cls-2"
                                             d="M98.16,44.33q-.5,10.72-15,29.38-15,19.46-25.36,19.47Q51.4,93.18,47,81.33,44,70.46,41,59.59q-3.29-11.87-7.08-11.85c-.54,0-2.47,1.16-5.76,3.45l-3.46-4.45c3.63-3.1,7.21-6.36,10.69-9.51Q42.67,31,46.3,30.63q8.58-.82,10.56,11.72,2.13,13.55,3,16.84c1.65,7.49,3.45,11.24,5.44,11.24q2.3,0,6.93-7.3t5-11.09c.44-4.19-1.21-6.3-5-6.3A13.55,13.55,0,0,0,66.77,47Q72.19,29.2,87.46,29.71q11.31.3,10.67,14.67h0l0-.05Z"
                                         ></path>
                                     </svg>
                                 </button>
                             </a>
-                            <a class="social-media-link" href="#">
-                                <button class="button">
+                            <a className="social-media-link" href="#">
+                                <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         id="Layer_1"
@@ -369,22 +369,22 @@ const Footer = (props) => {
                                         viewBox="0 0 122.88 122.88"
                                     >
                                         <path
-                                            class="cls-3"
+                                            className="cls-3"
                                             d="M25.2,0H97.68a25.27,25.27,0,0,1,25.2,25.2V97.68a25.27,25.27,0,0,1-25.2,25.2H25.2A25.27,25.27,0,0,1,0,97.68V25.2A25.27,25.27,0,0,1,25.2,0Z"
                                         ></path>
                                         <path
-                                            class="cls-4"
+                                            className="cls-4"
                                             d="M69.22,79.38A34.34,34.34,0,0,0,83,73.45a5.73,5.73,0,0,0-7.17-8.94A24.84,24.84,0,0,1,61.5,68.69a25.46,25.46,0,0,1-14.43-4.18,5.73,5.73,0,0,0-7.17,8.94,34.93,34.93,0,0,0,14.21,6L42,92.07a5.73,5.73,0,1,0,8.25,8l11.23-12,12.36,12A5.73,5.73,0,1,0,82,92L69.22,79.38Z"
                                         ></path>
                                         <path
-                                            class="cls-4"
+                                            className="cls-4"
                                             d="M61.78,20.48A21.07,21.07,0,1,0,82.85,41.54,21.06,21.06,0,0,0,61.78,20.48Zm0,29.77a8.71,8.71,0,1,1,8.71-8.71,8.71,8.71,0,0,1-8.71,8.71Z"
                                         ></path>
                                     </svg>
                                 </button>
                             </a>
-                            <a class="social-media-link" href="#">
-                                <button class="button">
+                            <a className="social-media-link" href="#">
+                                <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -442,8 +442,8 @@ const Footer = (props) => {
                                     </svg>
                                 </button>
                             </a>
-                            <a class="social-media-link" href="#">
-                                <button class="button">
+                            <a className="social-media-link" href="#">
+                                <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -466,20 +466,20 @@ const Footer = (props) => {
                                             </linearGradient>
                                         </defs>
                                         <path
-                                            class="cls-5"
+                                            className="cls-5"
                                             d="M512,382.07c0,2.8-.09,8.88-.26,13.58-.41,11.49-1.32,26.32-2.7,33.07a109.76,109.76,0,0,1-9.27,27.71,98.45,98.45,0,0,1-43.43,43.39,110.21,110.21,0,0,1-27.87,9.28c-6.69,1.35-21.41,2.24-32.82,2.65-4.71.17-10.79.25-13.58.25l-252.1,0c-2.8,0-8.88-.09-13.58-.26-11.49-.41-26.32-1.32-33.07-2.69a110.37,110.37,0,0,1-27.72-9.28A98.5,98.5,0,0,1,12.18,456.3,110.21,110.21,0,0,1,2.9,428.43C1.55,421.74.66,407,.25,395.61.08,390.91,0,384.82,0,382l0-252.1c0-2.8.09-8.88.25-13.58C.71,104.86,1.62,90,3,83.28a110.37,110.37,0,0,1,9.27-27.72A98.59,98.59,0,0,1,55.7,12.18,110.21,110.21,0,0,1,83.57,2.9C90.26,1.55,105,.66,116.39.25,121.09.08,127.18,0,130,0l252.1,0c2.8,0,8.88.09,13.58.25C407.14.71,422,1.62,428.72,3a110.37,110.37,0,0,1,27.72,9.27A98.59,98.59,0,0,1,499.82,55.7a110.21,110.21,0,0,1,9.28,27.87c1.35,6.69,2.24,21.41,2.65,32.82.17,4.7.25,10.79.25,13.58Z"
                                             transform="translate(0 0)"
                                         ></path>
                                         <path
-                                            class="cls-6"
+                                            className="cls-6"
                                             d="M379.56,131.67A172.4,172.4,0,0,0,256.67,80.73C161,80.73,83.05,158.64,83.05,254.42a173.47,173.47,0,0,0,23.2,86.82l-24.65,90,92.08-24.17a173.55,173.55,0,0,0,83,21.17h.07c95.73,0,173.69-77.91,173.69-173.69A172.73,172.73,0,0,0,379.53,131.7l0,0ZM256.72,399a144.17,144.17,0,0,1-73.52-20.14l-5.29-3.15L123.27,390l14.59-53.27-3.42-5.47a143.29,143.29,0,0,1-22.11-76.81C112.33,174.81,177.1,110,256.8,110A144.34,144.34,0,0,1,401.12,254.48c-.07,79.67-64.83,144.46-144.41,144.46v0ZM335.87,290.8c-4.32-2.2-25.68-12.67-29.65-14.12s-6.85-2.19-9.8,2.2-11.22,14.11-13.76,17-5.06,3.29-9.37,1.09-18.35-6.77-34.92-21.56c-12.88-11.5-21.61-25.74-24.15-30s-.29-6.71,1.92-8.83c2-1.93,4.32-5.06,6.51-7.6s2.88-4.32,4.32-7.26.74-5.42-.35-7.6-9.8-23.55-13.34-32.25c-3.49-8.51-7.12-7.32-9.79-7.47s-5.42-.13-8.29-.13a16,16,0,0,0-11.57,5.41c-4,4.32-15.2,14.86-15.2,36.22s15.54,42,17.72,44.91,30.61,46.76,74.14,65.54c10.34,4.44,18.42,7.11,24.72,9.18a60,60,0,0,0,27.32,1.71c8.35-1.23,25.68-10.49,29.31-20.62s3.63-18.83,2.55-20.62-3.91-3-8.29-5.22l0,0Z"
                                             transform="translate(0 0)"
                                         ></path>
                                     </svg>
                                 </button>
                             </a>
-                            <a class="social-media-link" href="#">
-                                <button class="button">
+                            <a className="social-media-link" href="#">
+                                <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         id="Layer_1"
@@ -487,18 +487,18 @@ const Footer = (props) => {
                                         viewBox="0 0 122.88 122.31"
                                     >
                                         <path
-                                            class="cls-7"
+                                            className="cls-7"
                                             d="M27.75,0H95.13a27.83,27.83,0,0,1,27.75,27.75V94.57a27.83,27.83,0,0,1-27.75,27.74H27.75A27.83,27.83,0,0,1,0,94.57V27.75A27.83,27.83,0,0,1,27.75,0Z"
                                         ></path>
                                         <path
-                                            class="cls-8"
+                                            className="cls-8"
                                             d="M49.19,47.41H64.72v8h.22c2.17-3.88,7.45-8,15.34-8,16.39,0,19.42,10.2,19.42,23.47V98.94H83.51V74c0-5.71-.12-13.06-8.42-13.06s-9.72,6.21-9.72,12.65v25.4H49.19V47.41ZM40,31.79a8.42,8.42,0,1,1-8.42-8.42A8.43,8.43,0,0,1,40,31.79ZM23.18,47.41H40V98.94H23.18V47.41Z"
                                         ></path>
                                     </svg>
                                 </button>
                             </a>
-                            <a class="social-media-link" href="#">
-                                <button class="button">
+                            <a className="social-media-link" href="#">
+                                <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         id="Layer_1"
@@ -506,22 +506,22 @@ const Footer = (props) => {
                                         viewBox="0 0 122.88 122.39"
                                     >
                                         <path
-                                            class="cls-1"
+                                            className="cls-1"
                                             d="M27.4,0H95.48a27.48,27.48,0,0,1,27.4,27.4V95a27.48,27.48,0,0,1-27.4,27.41H27.4A27.48,27.48,0,0,1,0,95V27.4A27.48,27.48,0,0,1,27.4,0Z"
                                         ></path>
                                         <path
-                                            class="cls-10"
+                                            className="cls-10"
                                             d="M37.07,32.34A14.41,14.41,0,1,1,22.66,46.75,14.41,14.41,0,0,1,37.07,32.34Z"
                                         ></path>
                                         <path
-                                            class="cls-10"
+                                            className="cls-10"
                                             d="M85.74,32.34A14.41,14.41,0,1,1,71.33,46.75,14.41,14.41,0,0,1,85.74,32.34Z"
                                         ></path>
                                     </svg>
                                 </button>
                             </a>
-                            <a class="social-media-link" href="#">
-                                <button class="button">
+                            <a className="social-media-link" href="#">
+                                <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         shape-rendering="geometricPrecision"
@@ -556,8 +556,8 @@ const Footer = (props) => {
                                     </svg>
                                 </button>
                             </a>
-                            <a class="social-media-link" href="#">
-                                <button class="button">
+                            <a className="social-media-link" href="#">
+                                <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         shape-rendering="geometricPrecision"
@@ -585,9 +585,9 @@ const Footer = (props) => {
                                 </button>
                             </a>
                         </div>
-                        <div class="basic-marquee basic-marquee-2">
-                            <a class="social-media-link" href="#">
-                                <button class="button">
+                        <div className="basic-marquee basic-marquee-2">
+                            <a className="social-media-link" href="#">
+                                <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         shape-rendering="geometricPrecision"
@@ -610,8 +610,8 @@ const Footer = (props) => {
                                     </svg>
                                 </button>
                             </a>
-                            <a class="social-media-link" href="#">
-                                <button class="button">
+                            <a className="social-media-link" href="#">
+                                <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         id="Layer_1"
@@ -619,18 +619,18 @@ const Footer = (props) => {
                                         viewBox="0 0 122.88 122.88"
                                     >
                                         <path
-                                            class="cls-11"
+                                            className="cls-11"
                                             d="M25.2,0H97.68a25.27,25.27,0,0,1,25.2,25.2V97.68a25.27,25.27,0,0,1-25.2,25.2H25.2A25.27,25.27,0,0,1,0,97.68V25.2A25.27,25.27,0,0,1,25.2,0Z"
                                         ></path>
                                         <path
-                                            class="cls-12"
+                                            className="cls-12"
                                             d="M97.52,39.06A29.27,29.27,0,0,1,89,41.39a15,15,0,0,0,6.51-8.19,29.71,29.71,0,0,1-9.4,3.59,14.81,14.81,0,0,0-25.6,10.13,14.45,14.45,0,0,0,.38,3.37A42,42,0,0,1,30.41,34.82a14.86,14.86,0,0,0-2,7.44h0A14.76,14.76,0,0,0,35,54.57a14.85,14.85,0,0,1-6.71-1.84v.19A14.8,14.8,0,0,0,40.15,67.43a14.74,14.74,0,0,1-3.9.52,16.2,16.2,0,0,1-2.8-.26A14.85,14.85,0,0,0,47.28,78,29.86,29.86,0,0,1,25.35,84.1a41.92,41.92,0,0,0,22.7,6.65c27.23,0,42.13-22.56,42.13-42.12,0-.65,0-1.28,0-1.91a29.83,29.83,0,0,0,7.38-7.65h0Z"
                                         ></path>
                                     </svg>
                                 </button>
                             </a>
-                            <a class="social-media-link" href="#">
-                                <button class="button">
+                            <a className="social-media-link" href="#">
+                                <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         shape-rendering="geometricPrecision"
@@ -659,8 +659,8 @@ const Footer = (props) => {
                                     </svg>
                                 </button>
                             </a>
-                            <a class="social-media-link" href="#">
-                                <button class="button">
+                            <a className="social-media-link" href="#">
+                                <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         id="Layer_1"
@@ -668,18 +668,18 @@ const Footer = (props) => {
                                         viewBox="0 0 122.88 122.88"
                                     >
                                         <path
-                                            class="cls-13"
+                                            className="cls-13"
                                             d="M25.2,0H97.68a25.27,25.27,0,0,1,25.2,25.2V97.68a25.27,25.27,0,0,1-25.2,25.2H25.2A25.27,25.27,0,0,1,0,97.68V25.2A25.27,25.27,0,0,1,25.2,0Z"
                                         ></path>
                                         <path
-                                            class="cls-14"
+                                            className="cls-14"
                                             d="M61.44,97.79A36.35,36.35,0,1,1,97.79,61.44,36.38,36.38,0,0,1,61.44,97.79Zm24-55.93c-.66.88-5.87,7.56-17.34,12.24.72,1.48,1.42,3,2.06,4.51.23.54.45,1.06.67,1.6a73.28,73.28,0,0,1,21.62,1,30.92,30.92,0,0,0-7-19.33Zm6.61,24.55a45.46,45.46,0,0,0-19.33-1.32,135.32,135.32,0,0,1,6,22.13,31,31,0,0,0,13.3-20.81ZM73.57,90.06A129.72,129.72,0,0,0,67,66.52l-.2.08C49.23,72.7,42.94,84.84,42.39,86a31,31,0,0,0,31.18,4.09Zm-35.2-7.82C39.08,81,47.6,66.93,63.6,61.75c.4-.12.81-.25,1.22-.36-.78-1.77-1.63-3.54-2.51-5.27a115.42,115.42,0,0,1-31.9,4.43c0,.32,0,.63,0,1a30.92,30.92,0,0,0,8,20.74ZM31.06,55.12a116.9,116.9,0,0,0,28.71-3.77,192.76,192.76,0,0,0-11.52-18A31.14,31.14,0,0,0,31.06,55.12ZM54.17,31.3A166.07,166.07,0,0,1,65.76,49.47C76.8,45.34,81.47,39.05,82,38.26a30.91,30.91,0,0,0-20.59-7.83,32.8,32.8,0,0,0-7.27.87Z"
                                         ></path>
                                     </svg>
                                 </button>
                             </a>
-                            <a class="social-media-link" href="#">
-                                <button class="button">
+                            <a className="social-media-link" href="#">
+                                <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         id="Layer_1"
@@ -687,18 +687,18 @@ const Footer = (props) => {
                                         viewBox="0 0 122.88 122.88"
                                     >
                                         <path
-                                            class="cls-15"
+                                            className="cls-15"
                                             d="M25.2,0H97.68a25.27,25.27,0,0,1,25.2,25.2V97.68a25.27,25.27,0,0,1-25.2,25.2H25.2A25.27,25.27,0,0,1,0,97.68V25.2A25.27,25.27,0,0,1,25.2,0Z"
                                         ></path>
                                         <path
-                                            class="cls-16"
+                                            className="cls-16"
                                             d="M75.25,74.38a8.23,8.23,0,0,0,9.49.54,5.26,5.26,0,0,0,2.17-2.62h7.15c-1.15,3.56-2.89,6.09-5.27,7.62a15.42,15.42,0,0,1-8.56,2.31,17.09,17.09,0,0,1-6.31-1.12,13.36,13.36,0,0,1-4.77-3.18,14.64,14.64,0,0,1-3-4.92,18.24,18.24,0,0,1-1.06-6.31,17.34,17.34,0,0,1,1.09-6.18,14.43,14.43,0,0,1,3.1-5,14.76,14.76,0,0,1,4.8-3.29,15.37,15.37,0,0,1,6.17-1.21,13.9,13.9,0,0,1,6.57,1.47,13.3,13.3,0,0,1,4.62,3.91A15.9,15.9,0,0,1,94,62.07a21.12,21.12,0,0,1,.57,6.59H73.24a8.22,8.22,0,0,0,2,5.71ZM47.49,40.64a25,25,0,0,1,5.33.52,11.45,11.45,0,0,1,4.12,1.69A8,8,0,0,1,59.62,46a11,11,0,0,1,.93,4.79,9,9,0,0,1-1.4,5.15A10.29,10.29,0,0,1,55,59.28a9.78,9.78,0,0,1,5.62,3.8A12.62,12.62,0,0,1,61.25,75,10.43,10.43,0,0,1,58,78.69a14.27,14.27,0,0,1-4.64,2.11,21.08,21.08,0,0,1-5.34.69H28.24V40.65H47.49Zm-.67,33.88a11.3,11.3,0,0,0,2.51-.26,5.8,5.8,0,0,0,2.11-.87,4.3,4.3,0,0,0,1.47-1.63,5.69,5.69,0,0,0,.53-2.64c0-2.1-.6-3.61-1.78-4.52A7.52,7.52,0,0,0,47,63.27H37.22V74.51h9.6v0Zm-.5-17.39a6.47,6.47,0,0,0,4-1.14,4.28,4.28,0,0,0,1.53-3.71,4.87,4.87,0,0,0-.51-2.35,3.72,3.72,0,0,0-1.39-1.42,5.42,5.42,0,0,0-2-.72,12.49,12.49,0,0,0-2.31-.2h-8.4v9.54h9.1ZM71.57,43.94H88.13v4H71.57v-4Zm13,14.91A6.11,6.11,0,0,0,80,57.2a7,7,0,0,0-3.23.66,6.39,6.39,0,0,0-2.06,1.64,5.68,5.68,0,0,0-1.08,2.08,9.26,9.26,0,0,0-.38,2H86.46a7.91,7.91,0,0,0-1.88-4.68Z"
                                         ></path>
                                     </svg>
                                 </button>
                             </a>
-                            <a class="social-media-link" href="#">
-                                <button class="button">
+                            <a className="social-media-link" href="#">
+                                <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         shape-rendering="geometricPrecision"
@@ -723,8 +723,8 @@ const Footer = (props) => {
                                     </svg>
                                 </button>
                             </a>
-                            <a class="social-media-link" href="#">
-                                <button class="button">
+                            <a className="social-media-link" href="#">
+                                <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         id="Layer_1"
@@ -732,26 +732,26 @@ const Footer = (props) => {
                                         viewBox="0 0 122.88 122.88"
                                     >
                                         <path
-                                            class="cls-17"
+                                            className="cls-17"
                                             d="M25.2,0H97.68a25.27,25.27,0,0,1,25.2,25.2V97.68a25.27,25.27,0,0,1-25.2,25.2H25.2A25.27,25.27,0,0,1,0,97.68V25.2A25.27,25.27,0,0,1,25.2,0Z"
                                         ></path>
                                         <path
-                                            class="cls-18"
+                                            className="cls-18"
                                             d="M30.38,30.35V42.27A50.29,50.29,0,0,1,80.57,92.52h12A62.23,62.23,0,0,0,30.38,30.36Z"
                                         ></path>
                                         <path
-                                            class="cls-18"
+                                            className="cls-18"
                                             d="M30.36,51.48V63.39A29.12,29.12,0,0,1,59.43,92.53h12a41.09,41.09,0,0,0-41-41.05Z"
                                         ></path>
                                         <path
-                                            class="cls-18"
+                                            className="cls-18"
                                             d="M38.63,75.94a8.26,8.26,0,1,0,8.29,8.26,8.29,8.29,0,0,0-8.29-8.26Z"
                                         ></path>
                                     </svg>
                                 </button>
                             </a>
-                            <a class="social-media-link" href="#">
-                                <button class="button">
+                            <a className="social-media-link" href="#">
+                                <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         shape-rendering="geometricPrecision"
@@ -774,8 +774,8 @@ const Footer = (props) => {
                                     </svg>
                                 </button>
                             </a>
-                            <a class="social-media-link" href="#">
-                                <button class="button">
+                            <a className="social-media-link" href="#">
+                                <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         id="Layer_1"
@@ -783,18 +783,18 @@ const Footer = (props) => {
                                         viewBox="0 0 122.88 122.88"
                                     >
                                         <path
-                                            class="cls-11"
+                                            className="cls-11"
                                             d="M25.2,0H97.68a25.27,25.27,0,0,1,25.2,25.2V97.68a25.27,25.27,0,0,1-25.2,25.2H25.2A25.27,25.27,0,0,1,0,97.68V25.2A25.27,25.27,0,0,1,25.2,0Z"
                                         ></path>
                                         <path
-                                            class="cls-12"
+                                            className="cls-12"
                                             d="M97.52,39.06A29.27,29.27,0,0,1,89,41.39a15,15,0,0,0,6.51-8.19,29.71,29.71,0,0,1-9.4,3.59,14.81,14.81,0,0,0-25.6,10.13,14.45,14.45,0,0,0,.38,3.37A42,42,0,0,1,30.41,34.82a14.86,14.86,0,0,0-2,7.44h0A14.76,14.76,0,0,0,35,54.57a14.85,14.85,0,0,1-6.71-1.84v.19A14.8,14.8,0,0,0,40.15,67.43a14.74,14.74,0,0,1-3.9.52,16.2,16.2,0,0,1-2.8-.26A14.85,14.85,0,0,0,47.28,78,29.86,29.86,0,0,1,25.35,84.1a41.92,41.92,0,0,0,22.7,6.65c27.23,0,42.13-22.56,42.13-42.12,0-.65,0-1.28,0-1.91a29.83,29.83,0,0,0,7.38-7.65h0Z"
                                         ></path>
                                     </svg>
                                 </button>
                             </a>
-                            <a class="social-media-link" href="#">
-                                <button class="button">
+                            <a className="social-media-link" href="#">
+                                <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         shape-rendering="geometricPrecision"
@@ -823,8 +823,8 @@ const Footer = (props) => {
                                     </svg>
                                 </button>
                             </a>
-                            <a class="social-media-link" href="#">
-                                <button class="button">
+                            <a className="social-media-link" href="#">
+                                <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         id="Layer_1"
@@ -832,18 +832,18 @@ const Footer = (props) => {
                                         viewBox="0 0 122.88 122.88"
                                     >
                                         <path
-                                            class="cls-13"
+                                            className="cls-13"
                                             d="M25.2,0H97.68a25.27,25.27,0,0,1,25.2,25.2V97.68a25.27,25.27,0,0,1-25.2,25.2H25.2A25.27,25.27,0,0,1,0,97.68V25.2A25.27,25.27,0,0,1,25.2,0Z"
                                         ></path>
                                         <path
-                                            class="cls-14"
+                                            className="cls-14"
                                             d="M61.44,97.79A36.35,36.35,0,1,1,97.79,61.44,36.38,36.38,0,0,1,61.44,97.79Zm24-55.93c-.66.88-5.87,7.56-17.34,12.24.72,1.48,1.42,3,2.06,4.51.23.54.45,1.06.67,1.6a73.28,73.28,0,0,1,21.62,1,30.92,30.92,0,0,0-7-19.33Zm6.61,24.55a45.46,45.46,0,0,0-19.33-1.32,135.32,135.32,0,0,1,6,22.13,31,31,0,0,0,13.3-20.81ZM73.57,90.06A129.72,129.72,0,0,0,67,66.52l-.2.08C49.23,72.7,42.94,84.84,42.39,86a31,31,0,0,0,31.18,4.09Zm-35.2-7.82C39.08,81,47.6,66.93,63.6,61.75c.4-.12.81-.25,1.22-.36-.78-1.77-1.63-3.54-2.51-5.27a115.42,115.42,0,0,1-31.9,4.43c0,.32,0,.63,0,1a30.92,30.92,0,0,0,8,20.74ZM31.06,55.12a116.9,116.9,0,0,0,28.71-3.77,192.76,192.76,0,0,0-11.52-18A31.14,31.14,0,0,0,31.06,55.12ZM54.17,31.3A166.07,166.07,0,0,1,65.76,49.47C76.8,45.34,81.47,39.05,82,38.26a30.91,30.91,0,0,0-20.59-7.83,32.8,32.8,0,0,0-7.27.87Z"
                                         ></path>
                                     </svg>
                                 </button>
                             </a>
-                            <a class="social-media-link" href="#">
-                                <button class="button">
+                            <a className="social-media-link" href="#">
+                                <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         id="Layer_1"
@@ -851,18 +851,18 @@ const Footer = (props) => {
                                         viewBox="0 0 122.88 122.88"
                                     >
                                         <path
-                                            class="cls-15"
+                                            className="cls-15"
                                             d="M25.2,0H97.68a25.27,25.27,0,0,1,25.2,25.2V97.68a25.27,25.27,0,0,1-25.2,25.2H25.2A25.27,25.27,0,0,1,0,97.68V25.2A25.27,25.27,0,0,1,25.2,0Z"
                                         ></path>
                                         <path
-                                            class="cls-16"
+                                            className="cls-16"
                                             d="M75.25,74.38a8.23,8.23,0,0,0,9.49.54,5.26,5.26,0,0,0,2.17-2.62h7.15c-1.15,3.56-2.89,6.09-5.27,7.62a15.42,15.42,0,0,1-8.56,2.31,17.09,17.09,0,0,1-6.31-1.12,13.36,13.36,0,0,1-4.77-3.18,14.64,14.64,0,0,1-3-4.92,18.24,18.24,0,0,1-1.06-6.31,17.34,17.34,0,0,1,1.09-6.18,14.43,14.43,0,0,1,3.1-5,14.76,14.76,0,0,1,4.8-3.29,15.37,15.37,0,0,1,6.17-1.21,13.9,13.9,0,0,1,6.57,1.47,13.3,13.3,0,0,1,4.62,3.91A15.9,15.9,0,0,1,94,62.07a21.12,21.12,0,0,1,.57,6.59H73.24a8.22,8.22,0,0,0,2,5.71ZM47.49,40.64a25,25,0,0,1,5.33.52,11.45,11.45,0,0,1,4.12,1.69A8,8,0,0,1,59.62,46a11,11,0,0,1,.93,4.79,9,9,0,0,1-1.4,5.15A10.29,10.29,0,0,1,55,59.28a9.78,9.78,0,0,1,5.62,3.8A12.62,12.62,0,0,1,61.25,75,10.43,10.43,0,0,1,58,78.69a14.27,14.27,0,0,1-4.64,2.11,21.08,21.08,0,0,1-5.34.69H28.24V40.65H47.49Zm-.67,33.88a11.3,11.3,0,0,0,2.51-.26,5.8,5.8,0,0,0,2.11-.87,4.3,4.3,0,0,0,1.47-1.63,5.69,5.69,0,0,0,.53-2.64c0-2.1-.6-3.61-1.78-4.52A7.52,7.52,0,0,0,47,63.27H37.22V74.51h9.6v0Zm-.5-17.39a6.47,6.47,0,0,0,4-1.14,4.28,4.28,0,0,0,1.53-3.71,4.87,4.87,0,0,0-.51-2.35,3.72,3.72,0,0,0-1.39-1.42,5.42,5.42,0,0,0-2-.72,12.49,12.49,0,0,0-2.31-.2h-8.4v9.54h9.1ZM71.57,43.94H88.13v4H71.57v-4Zm13,14.91A6.11,6.11,0,0,0,80,57.2a7,7,0,0,0-3.23.66,6.39,6.39,0,0,0-2.06,1.64,5.68,5.68,0,0,0-1.08,2.08,9.26,9.26,0,0,0-.38,2H86.46a7.91,7.91,0,0,0-1.88-4.68Z"
                                         ></path>
                                     </svg>
                                 </button>
                             </a>
-                            <a class="social-media-link" href="#">
-                                <button class="button">
+                            <a className="social-media-link" href="#">
+                                <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         shape-rendering="geometricPrecision"
@@ -887,8 +887,8 @@ const Footer = (props) => {
                                     </svg>
                                 </button>
                             </a>
-                            <a class="social-media-link" href="#">
-                                <button class="button">
+                            <a className="social-media-link" href="#">
+                                <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         id="Layer_1"
@@ -896,19 +896,19 @@ const Footer = (props) => {
                                         viewBox="0 0 122.88 122.88"
                                     >
                                         <path
-                                            class="cls-17"
+                                            className="cls-17"
                                             d="M25.2,0H97.68a25.27,25.27,0,0,1,25.2,25.2V97.68a25.27,25.27,0,0,1-25.2,25.2H25.2A25.27,25.27,0,0,1,0,97.68V25.2A25.27,25.27,0,0,1,25.2,0Z"
                                         ></path>
                                         <path
-                                            class="cls-18"
+                                            className="cls-18"
                                             d="M30.38,30.35V42.27A50.29,50.29,0,0,1,80.57,92.52h12A62.23,62.23,0,0,0,30.38,30.36Z"
                                         ></path>
                                         <path
-                                            class="cls-18"
+                                            className="cls-18"
                                             d="M30.36,51.48V63.39A29.12,29.12,0,0,1,59.43,92.53h12a41.09,41.09,0,0,0-41-41.05Z"
                                         ></path>
                                         <path
-                                            class="cls-18"
+                                            className="cls-18"
                                             d="M38.63,75.94a8.26,8.26,0,1,0,8.29,8.26,8.29,8.29,0,0,0-8.29-8.26Z"
                                         ></path>
                                     </svg>
