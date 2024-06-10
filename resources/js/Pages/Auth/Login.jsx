@@ -61,7 +61,7 @@ export default function Login({ status, canResetPassword }) {
                                 {/* Email input */}
                                 <div data-mdb-input-init className="form-outline mb-4">
                                     <InputLabel htmlFor="email" value="Email" />
-                                    <TextInput type="email" id="email" value={data.email} className="form-control form-control-lg" placeholder="Enter a valid email address" autoComplete="username"
+                                    <TextInput type="email" id="email" value={data.email} className="form-control form-control-lg" placeholder="Enter an email address" autoComplete="username"
                                         isFocused={true}
                                         onChange={(e) => setData('email', e.target.value)} />
 

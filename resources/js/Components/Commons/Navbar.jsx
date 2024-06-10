@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "../../../css/navbar.css"
+import ResponsiveNavLink from '@/Components/ResponsiveNavLink';
 const Navbar = () => {
     // const [isVisible, setIsVisible] = useState(false);
 
@@ -97,7 +98,9 @@ const Navbar = () => {
                         <li className="nav-item">
                             <a className="nav-link ms-2 p-2 " aria-current="page" href="#">ACCOUNT</a>
                               <ul className="dropdown-menu ">
-                                <li><a className="dropdown-item " href="#">News 1</a></li>
+                                <li><ResponsiveNavLink method="post" href={route('logout')} as="button">
+                                Log Out
+                            </ResponsiveNavLink></li>
                                 <li><hr className="dropdown-divider" /></li>
                                 <li><a className="dropdown-item" href="#">News 2</a></li>
                                 <li><hr className="dropdown-divider" /></li>
