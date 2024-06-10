@@ -47,9 +47,9 @@ const Navbar = () => {
                                 className="fa-solid fa-angle-down icon-down"></i></a>
                             <ul className="dropdown-menu ">
                                 <li><a className="dropdown-item" href="#">Rooms & suites 1</a></li>
-                                <li><hr className="dropdown-divider"/></li>
+                                <li><hr className="dropdown-divider" /></li>
                                 <li><a className="dropdown-item" href="#">Rooms & suites 2</a></li>
-                                <li><hr className="dropdown-divider"/></li>
+                                <li><hr className="dropdown-divider" /></li>
                                 <li><a className="dropdown-item" href="#">Rooms & suites 3</a></li>
 
                             </ul>
@@ -60,9 +60,9 @@ const Navbar = () => {
                                 className="fa-solid fa-angle-down icon-down"></i></a>
                             <ul className="dropdown-menu ">
                                 <li><a className="dropdown-item" href="#">Pages 1</a></li>
-                                <li><hr className="dropdown-divider"/></li>
+                                <li><hr className="dropdown-divider" /></li>
                                 <li><a className="dropdown-item" href="#">Pages 2</a></li>
-                                <li><hr className="dropdown-divider"/></li>
+                                <li><hr className="dropdown-divider" /></li>
                                 <li><a className="dropdown-item" href="#">Pages 3</a></li>
 
                             </ul>
@@ -73,9 +73,9 @@ const Navbar = () => {
                                 className="fa-solid fa-angle-down icon-down"></i></a>
                             <ul className="dropdown-menu ">
                                 <li><a className="dropdown-item" href="#">Shop 1</a></li>
-                                <li><hr className="dropdown-divider"/></li>
+                                <li><hr className="dropdown-divider" /></li>
                                 <li><a className="dropdown-item" href="#">Shop 2</a></li>
-                                <li><hr className="dropdown-divider"/></li>
+                                <li><hr className="dropdown-divider" /></li>
                                 <li><a className="dropdown-item" href="#">Shop 3</a></li>
                             </ul>
                         </li>
@@ -84,15 +84,26 @@ const Navbar = () => {
                                 className="fa-solid fa-angle-down icon-down"></i></a>
                             <ul className="dropdown-menu ">
                                 <li><a className="dropdown-item" href="#">News 1</a></li>
-                                <li><hr className="dropdown-divider"/></li>
+                                <li><hr className="dropdown-divider" /></li>
                                 <li><a className="dropdown-item" href="#">News 2</a></li>
-                                <li><hr className="dropdown-divider"/></li>
+                                <li><hr className="dropdown-divider" /></li>
                                 <li><a className="dropdown-item" href="#">News 3</a></li>
 
                             </ul>
                         </li>
                         <li className="nav-item ">
                             <a className="nav-link ms-2 p-2 " aria-current="page" href={route('contact')}>CONTACT </a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link ms-2 p-2 " aria-current="page" href="#">ACCOUNT</a>
+                              <ul className="dropdown-menu ">
+                                <li><a className="dropdown-item " href="#">News 1</a></li>
+                                <li><hr className="dropdown-divider" /></li>
+                                <li><a className="dropdown-item" href="#">News 2</a></li>
+                                <li><hr className="dropdown-divider" /></li>
+                                <li><a className="dropdown-item" href="#">News 3</a></li>
+
+                            </ul>
                         </li>
                     </ul>
 
