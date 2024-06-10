@@ -25,6 +25,8 @@ Route::get('/about',function () {
     return Inertia::render('User/AboutUs');
 })->name('aboutUsUser');
 
+Route::get('/detail/{roomId}',[RoomController::class,'show'])->name('room.detail');
+
 // Route::get('/', function () {
 //     return Inertia::render('Welcome', [
 //         'canLogin' => Route::has('login'),

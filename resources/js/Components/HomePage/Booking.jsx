@@ -40,19 +40,15 @@ const Booking = (props) => {
                                 <div className="mt-4 px-0">
                                     <label htmlFor="input-checkin" className="form-label px-1">Check in</label>
                                     <div className="position-relative">
-                                        <input id="input-checkin" readOnly className="checkin bg-white form-control position-relative" placeholder="24-05-2024" />
-                                        <a href="#" className="icon-calendar-link position-absolute">
-                                            <i className="fa-solid fa-calendar-days ms-auto my-auto"></i>
-                                        </a>
+                                        <input id="input-checkin" type='date' className="checkin bg-white form-control position-relative" placeholder="24-05-2024" />
+                    
                                     </div>
                                 </div>
                                 <div className="mt-4 px-0">
                                     <label htmlFor="input-checkout" className="px-1 form-label">Check out</label>
                                     <div className="position-relative">
-                                        <input id="input-checkout" readOnly className="checkout bg-white form-control position-relative" placeholder="24-05-2024" />
-                                        <a href="#" className="icon-calendar-link position-absolute">
-                                            <i className="fa-solid fa-calendar-days ms-auto my-auto"></i>
-                                        </a>
+                                        <input id="input-checkout" type='date' className="checkout bg-white form-control position-relative" placeholder="24-05-2024" />
+    
                                     </div>
                                 </div>
 

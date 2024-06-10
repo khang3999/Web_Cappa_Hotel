@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Room;
+use App\Models\Utility;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 use Intervention\Image;
@@ -71,6 +72,8 @@ class RoomController extends Controller
     public function show(string $id)
     {
         //
+        $room = Room::find($id);
+        return Inertia::render('User/RoomDetail', ['room' => $room]);   
     }
 
     /**
