@@ -41,7 +41,7 @@ const RoomAndSuite = () => {
     }, []);
     return (
         <div className="rooms-suites z-2 position-relative ">
-            <div className="container ">
+            <div className="container">
                 <h4 className="text-about-top mb-3">THE CAPPA LUXURY HOTEL</h4>
                 <h1 className="text-about-bot mb-3">Rooms & Suites</h1>
                 <div className="row">

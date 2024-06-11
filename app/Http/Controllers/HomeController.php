@@ -7,7 +7,10 @@ use App\Models\Booking;
 use App\Models\Room;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Inertia\Inertia;
+
+use function Termwind\render;
 
 class HomeController extends Controller
 {
@@ -71,18 +74,18 @@ class HomeController extends Controller
             return redirect()->route('room.detail', $roomId)->with('message', "Date invalid!");
         } else {
             $booking = new Booking();
-            $cusId = $request->userId;
+            $cusId = Auth::id();
             $booking->id_customer = $cusId;
             $booking->id_room = $roomId;
             $booking->checkin = $checkin;
             $booking->checkout = $checkout;
-            $checkin = Carbon::parse($booking->checkin); // Chuyển đổi chuỗi checkin thành đối tượng Carbon
-            $checkout = Carbon::parse($booking->checkout);
-            $numberOfDays = $checkout->diffInDays($checkin);
-            
-            $booking->price = ($request->price) * $numberOfDays;
+            $checkinC = Carbon::parse($booking->checkin); // Chuyển đổi chuỗi checkin thành đối tượng Carbon
+            $checkoutC = Carbon::parse($booking->checkout);
+            $numberOfDays = $checkoutC->diffInDays($checkinC);
+            $price = ($request->price)*-1 * $numberOfDays;
+            $booking->price = $price;
             $booking->save();
-            return redirect()->route('indexUser');
+            return Inertia::render('User/Payment',['roomId'=>$roomId, 'checkin'=>$checkin, 'checkout'=>$checkout,'price'=>$price]);
         }
     }
 

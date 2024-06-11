@@ -1,6 +1,9 @@
-import { useEffect, useState } from "react";
+import React, { useState, useEffect } from 'react';
 import "../../../css/navbar.css"
+import Loader from "@/Components/Loader";
+import ResponsiveNavLink from '@/Components/ResponsiveNavLink';
 const Navbar = () => {
+
     // const [isVisible, setIsVisible] = useState(false);
 
     // const handleScroll = () => {
@@ -19,6 +22,7 @@ const Navbar = () => {
     //   window.removeEventListener('scroll', handleScroll);
     // };
     // },[])
+    
 
     return (
         <nav className="navbar navbar-expand-xl z-3 position-absolute w-100 mt-3">
@@ -43,16 +47,9 @@ const Navbar = () => {
                         </li>
 
                         <li className="nav-item ">
-                            <a className="nav-link  mx-2 p-2 " aria-current="page" href="#">ROOMS & SUITES <i
+                            <a className="nav-link  mx-2 p-2 " aria-current="page" href={route('restaurant')}>RESTAURANT<i
                                 className="fa-solid fa-angle-down icon-down"></i></a>
-                            <ul className="dropdown-menu ">
-                                <li><a className="dropdown-item" href="#">Rooms & suites 1</a></li>
-                                <li><hr className="dropdown-divider"/></li>
-                                <li><a className="dropdown-item" href="#">Rooms & suites 2</a></li>
-                                <li><hr className="dropdown-divider"/></li>
-                                <li><a className="dropdown-item" href="#">Rooms & suites 3</a></li>
-
-                            </ul>
+                            
                         </li>
 
                         <li className="nav-item ">
@@ -60,9 +57,9 @@ const Navbar = () => {
                                 className="fa-solid fa-angle-down icon-down"></i></a>
                             <ul className="dropdown-menu ">
                                 <li><a className="dropdown-item" href="#">Pages 1</a></li>
-                                <li><hr className="dropdown-divider"/></li>
+                                <li><hr className="dropdown-divider" /></li>
                                 <li><a className="dropdown-item" href="#">Pages 2</a></li>
-                                <li><hr className="dropdown-divider"/></li>
+                                <li><hr className="dropdown-divider" /></li>
                                 <li><a className="dropdown-item" href="#">Pages 3</a></li>
 
                             </ul>
@@ -73,9 +70,9 @@ const Navbar = () => {
                                 className="fa-solid fa-angle-down icon-down"></i></a>
                             <ul className="dropdown-menu ">
                                 <li><a className="dropdown-item" href="#">Shop 1</a></li>
-                                <li><hr className="dropdown-divider"/></li>
+                                <li><hr className="dropdown-divider" /></li>
                                 <li><a className="dropdown-item" href="#">Shop 2</a></li>
-                                <li><hr className="dropdown-divider"/></li>
+                                <li><hr className="dropdown-divider" /></li>
                                 <li><a className="dropdown-item" href="#">Shop 3</a></li>
                             </ul>
                         </li>
@@ -84,15 +81,23 @@ const Navbar = () => {
                                 className="fa-solid fa-angle-down icon-down"></i></a>
                             <ul className="dropdown-menu ">
                                 <li><a className="dropdown-item" href="#">News 1</a></li>
-                                <li><hr className="dropdown-divider"/></li>
+                                <li><hr className="dropdown-divider" /></li>
                                 <li><a className="dropdown-item" href="#">News 2</a></li>
-                                <li><hr className="dropdown-divider"/></li>
+                                <li><hr className="dropdown-divider" /></li>
                                 <li><a className="dropdown-item" href="#">News 3</a></li>
 
                             </ul>
                         </li>
                         <li className="nav-item ">
                             <a className="nav-link ms-2 p-2 " aria-current="page" href={route('contact')}>CONTACT </a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link ms-2 p-2 " aria-current="page" href="#">ACCOUNT</a>
+                            <ul className="dropdown-menu ">                              
+                                <li><ResponsiveNavLink method="post" href={route('logout')} onClick={() => alert('Are you sure you want to logout?')}>                                    
+                                    <span className="text-dark drop-item">Log Out</span>                                    
+                                </ResponsiveNavLink></li>
+                            </ul>
                         </li>
                     </ul>
 

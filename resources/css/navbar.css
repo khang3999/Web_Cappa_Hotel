@@ -10,6 +10,15 @@
     font-family: 'Barlow Condensed', serif;
     letter-spacing: 4px;
 }
+.drop-item{
+    color: #fff;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Barlow Condensed', serif;
+}
+.drop-item:hover{
+    color: #ab854f;
+}
 /* 
 .main {
     color: #ab854f;

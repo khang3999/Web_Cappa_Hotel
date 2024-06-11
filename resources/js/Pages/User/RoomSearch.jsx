@@ -22,7 +22,7 @@ const RoomSearch = ({roomsStandard, roomsLarge}) => {
                             <div key={index} className="col-md-4 my-4">
                                 <div className="position-relative rooms-suites-img overflow-hidden">
                                     <div className="overflow-hidden">
-                                        <img src={`/images/${roomStandard.photo}`} alt="" className="w-100 img-fluid img-hover"></img>
+                                        <img src={`/${roomStandard.photo}`} alt="" className="w-100 img-fluid img-hover"></img>
                                     </div>
                                     <div className="tag-book text-center">BOOK</div>
                                     <div className="rooms-suites-info">
@@ -38,7 +38,7 @@ const RoomSearch = ({roomsStandard, roomsLarge}) => {
                                             </div>
                                             <div className="ms-auto">
                                                 <div className="rooms-suites-detail ms-auto">
-                                                    <a href="#" className="rooms-suites-detail-text">DETAILS</a>
+                                                    <a href={route('room.detail',roomStandard.id)} className="rooms-suites-detail-text">DETAILS</a>
                                                     <i className="fa-solid fa-arrow-right rooms-suites-icon"></i>
                                                 </div>
                                             </div>
@@ -59,7 +59,7 @@ const RoomSearch = ({roomsStandard, roomsLarge}) => {
                             <div key={index} className="col-md-6 my-4">
                                 <div className="position-relative rooms-suites-img overflow-hidden">
                                     <div className="overflow-hidden">
-                                        <img src={`/images/${roomLarge.photo}`} alt="" className="w-100 img-fluid img-hover"></img>
+                                        <img src={`/${roomLarge.photo}`} alt="" className="w-100 img-fluid img-hover"></img>
                                     </div>
                                     <div className="tag-book text-center">BOOK</div>
                                     <div className="rooms-suites-info rooms-suites-info-large">
@@ -75,7 +75,7 @@ const RoomSearch = ({roomsStandard, roomsLarge}) => {
                                             </div>
                                             <div className="ms-auto">
                                                 <div className="rooms-suites-detail ms-auto">
-                                                    <a href="#" className="rooms-suites-detail-text">DETAILS</a>
+                                                    <a href={route('room.detail',roomLarge.id)} className="rooms-suites-detail-text">DETAILS</a>
                                                     <i className="fa-solid fa-arrow-right rooms-suites-icon"></i>
                                                 </div>
                                             </div>
@@ -90,14 +90,13 @@ const RoomSearch = ({roomsStandard, roomsLarge}) => {
                     
                 </div>
 
-                <div className="d-flex justify-content-center mt-4">
+                {/* <div className="d-flex justify-content-center mt-4">
                     <div className="btn-wrap btn-bg-img">
                         <button className="btn-mid my-0">
                             <span className="btn-mid-text">ROOMS & SUITES</span>
                         </button>
                     </div>
-
-                </div>
+                </div> */}
             </div>
         </div>
             <Footer></Footer>

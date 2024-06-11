@@ -37,9 +37,13 @@ class CommentController extends Controller
         ]);
         //C2:
         $comment = new Comment($validated);
-        $comment->user_id = Auth::id();
-        $user = User::find($request->input('user_id'));
-        $user->comments()->save($comment);
+        $comment->user_id = 1;
+        $comment->name = $request->name;
+        $comment->email = $request->email;
+        $comment->comment = $request->comment;
+        // $comment->user_id = Auth::id();
+        // $user = User::find($request->input('user_id'));
+        $comment->save();
         return redirect()->route('contact')
             ->with('success','Binh luan thanh cong!');
         

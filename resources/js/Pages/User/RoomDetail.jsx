@@ -17,7 +17,7 @@ const RoomDetail = ({ room, utilities }) => {
             <div className="container mt-5">
                 <div className="row">
                     <div className="col-12 justify-content-center d-flex">
-                        <img className="img-fluid" src={`/images/${room.photo}`}></img>
+                        <img className="img-fluid" src={`/${room.photo}`}></img>
                     </div>
                 </div>
                 <div className="row mt-5">
@@ -112,6 +112,7 @@ const RoomDetail = ({ room, utilities }) => {
                             </div>
                             {/* Hidden */}
                             <input hidden name="userId" value="1" />
+                            <input hidden name="price" value={room.price} />
                             <input hidden name="roomId" value={room.id} />
                             <div className="mt-4 px-0">
                                 <label htmlFor="input-checkin" className="form-label px-1">Check in</label>

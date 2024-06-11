@@ -6,7 +6,7 @@ const ExtraService = (props) => {
         
     },[])
     return (
-        <div className="extra-services z-2 position-relative">
+        <div className="extra-services z-2 position-relative  ">
             <div className="container ">
                 <div className="row ">
                     <div className="col-lg-4 col-md-6">
