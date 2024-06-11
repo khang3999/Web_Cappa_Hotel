@@ -56,15 +56,15 @@ export default function Login({ status, canResetPassword }) {
                                         <div className="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
                                             <p className="lead fw-normal mb-0 me-3 login-text">Sign in with</p>
                                             <button type="button" data-mdb-button-init data-mdb-ripple-init className="btn btn-primary sign-in-icon btn-floating mx-1">
-                                                <i className="fab fa-facebook-f"></i>
+                                                <i class="bi bi-facebook"></i>
                                             </button>
 
                                             <button type="button" data-mdb-button-init data-mdb-ripple-init className="btn btn-primary sign-in-icon btn-floating mx-1">
-                                                <i className="fab fa-twitter"></i>
+                                                <i class="bi bi-twitter-x"></i>
                                             </button>
 
                                             <button type="button" data-mdb-button-init data-mdb-ripple-init className="btn btn-primary sign-in-icon btn-floating mx-1">
-                                                <i className="fab fa-linkedin-in"></i>
+                                                <i class="bi bi-linkedin"></i>
                                             </button>
                                         </div>
 
