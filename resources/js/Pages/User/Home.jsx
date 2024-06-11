@@ -11,7 +11,7 @@ import RoomAndSuite from "@/Components/HomePage/RoomAndSuite";
 import Testimonial from "@/Components/HomePage/Testimonial";
 import Utility from "@/Components/HomePage/Utility";
 import { Head } from "@inertiajs/react";
-import "../../home"
+import "../../home.js"
 import { useEffect } from "react";
 const Home = () => {
     useEffect(() => {
@@ -76,6 +76,10 @@ const Home = () => {
             <Booking></Booking>
 
             <Footer></Footer>
+            {/* <!-- Start of LiveChat (www.livechat.com) code --> */}
+            <noscript><a href="https://www.livechat.com/chat-with/18109608/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+            {/* <!-- End of LiveChat code --> */}
+
         </>
     )
 }

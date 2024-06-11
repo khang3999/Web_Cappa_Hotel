@@ -30,6 +30,7 @@ Route::post('/booking',[HomeController::class,'checkRoom'])->name('checkRoomAndS
 
 
 Route::get('/detail/{roomId}',[RoomController::class,'show'])->name('room.detail');
+Route::get('/payment',[RoomController::class,'payment'])->name('room.payment');
 
 // Route::get('/', function () {
 //     return Inertia::render('Welcome', [
