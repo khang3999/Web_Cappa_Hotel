@@ -66,3 +66,32 @@
     transform: scale(1);
     transition: 0.5s;
 }
+.square-loading-img{
+    width: 100%;
+    position: relative;
+    top: 40%;
+    justify-content: center;
+    align-items: center;
+}
+.square-loading {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid #aa8453;
+    animation: flip 1.2s ease-in-out infinite;
+  }
+  
+  @keyframes flip {
+    0% {
+      transform: perspective(200px) rotateX(0) rotateY(0);
+    }
+  
+    50% {
+      transform: perspective(200px) rotateX(180deg) rotateY(0);
+    }
+  
+    100% {
+      transform: perspective(200px) rotateX(180deg) rotateY(180deg);
+    }
+  }

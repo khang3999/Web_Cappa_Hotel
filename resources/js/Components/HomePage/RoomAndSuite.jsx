@@ -23,6 +23,7 @@ const RoomAndSuite = () => {
     useEffect(() => {
         loadMore();
     }, []);
+    
     useEffect(() => {
         fetch(route('api.rooms', { type: 'large' }))
             .then(response => {
@@ -39,8 +40,8 @@ const RoomAndSuite = () => {
             });
     }, []);
     return (
-        <div className="rooms-suites z-2 position-relative">
-            <div className="container">
+        <div className="rooms-suites z-2 position-relative ">
+            <div className="container ">
                 <h4 className="text-about-top mb-3">THE CAPPA LUXURY HOTEL</h4>
                 <h1 className="text-about-bot mb-3">Rooms & Suites</h1>
                 <div className="row">
@@ -65,7 +66,7 @@ const RoomAndSuite = () => {
                                             </div>
                                             <div className="ms-auto">
                                                 <div className="rooms-suites-detail ms-auto">
-                                                    <a href="#" className="rooms-suites-detail-text">DETAILS</a>
+                                                    <a href={route('room.detail',roomStandard.id)} className="rooms-suites-detail-text">DETAILS</a>
                                                     <i className="fa-solid fa-arrow-right rooms-suites-icon"></i>
                                                 </div>
                                             </div>
@@ -102,7 +103,7 @@ const RoomAndSuite = () => {
                                             </div>
                                             <div className="ms-auto">
                                                 <div className="rooms-suites-detail ms-auto">
-                                                    <a href="#" className="rooms-suites-detail-text">DETAILS</a>
+                                                    <a href={route('room.detail',roomLarge.id)} className="rooms-suites-detail-text">DETAILS</a>
                                                     <i className="fa-solid fa-arrow-right rooms-suites-icon"></i>
                                                 </div>
                                             </div>

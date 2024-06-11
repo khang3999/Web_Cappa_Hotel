@@ -2,7 +2,7 @@ import "../../../css/contact.css"
 import "../../../css/app.css"
 const myMap = (props) => {
     return (<>
-        <section className="z-2 position-relative bg-white contact section-padding">
+        <section className="z-2 position-relative bg-white contact">
             <div className="container">
                 <div className="map_main">
                     <div className="map-responsive">

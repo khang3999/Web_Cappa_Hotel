@@ -1,11 +1,11 @@
 const Utility = (props) => {
     return (
-        <div className="utility bg-white z-2">
-            <div className="container">
-                <div className="row">
+        <div className="utility bg-white z-2  ">
+            <div className="container ">
+                <div className="row ">
                     <div className="col-lg-6 px-0 ">
                         <div className="overflow-hidden">
-                            <img src="/images/u-1.jpg" alt="" className="w-100"></img>
+                            <img src="/images/u-1.jpg" alt="" className="w-100 img-scale"></img>
                         </div>
                     </div>
                     <div className="col-lg-6 px-0 d-flex utility-col">
@@ -32,12 +32,12 @@ const Utility = (props) => {
                     </div>
                     <div className="col-lg-6 px-0">
                         <div className="overflow-hidden">
-                            <img src="/images/u-2.jpg" alt="" className="w-100"></img>
+                            <img src="/images/u-2.jpg" alt="" className="w-100 img-scale"></img>
                         </div>
                     </div>
                     <div className="col-lg-6 px-0">
                         <div className="overflow-hidden">
-                            <img src="/images/u-3.jpg" alt="" className="w-100"></img>
+                            <img src="/images/u-3.jpg" alt="" className="w-100 img-scale"></img>
                         </div>
                     </div>
                     <div className="col-lg-6 px-0 d-flex utility-col">
@@ -68,7 +68,7 @@ const Utility = (props) => {
                     </div>
                     <div className="col-lg-6 px-0">
                         <div className="overflow-hidden">
-                            <img src="/images/u-4.jpg" alt="" className="w-100"></img>
+                            <img src="/images/u-4.jpg" alt="" className="w-100 img-scale"></img>
                         </div>
                     </div>
                 </div>

@@ -60,7 +60,8 @@ export default function RoomCreateContent() {
                             </div>
                         </div>
                         <span>Send</span>
-                    </button></div>
+                    </button>
+                </div>
             </form>
         </>
     );

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BannerController;
+use App\Http\Controllers\CommentController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RoomController;
@@ -36,6 +37,15 @@ Route::middleware(['auth', 'verified'])->group(function () {
     })->name('contact');
 });
 
+Route::get('/about',function () {
+    return Inertia::render('User/AboutUs');
+})->name('aboutUsUser');
+Route::post('/roomsearch',[HomeController::class,'getRoomsBySearch'])->name('roomsearch');
+Route::post('/booking',[HomeController::class,'checkRoom'])->name('checkRoomAndSave');
+
+
+Route::get('/detail/{roomId}',[RoomController::class,'show'])->name('room.detail');
+Route::get('/payment',[RoomController::class,'payment'])->name('room.payment');
 
 // Route::get('/', function () {
 //     return Inertia::render('Welcome', [
@@ -62,24 +72,24 @@ Route::prefix('admin')->middleware(['auth','verified',CheckUserRole::class])->gr
     Route::get("/", [AdminController::class, "indexAdmin"])->name('booking.admin');
     Route::get("/accounts", [AdminController::class, "accountsManagement"])->name('accounts.admin');
     Route::get("/statuses", [AdminController::class, "statusesManagement"])->name('statuses.admin');
-    Route::get("/services", [AdminController::class, "servicesManagement"])->name('services.admin');
-    Route::get("/rooms", [RoomController::class, 'index'])->name('admin.rooms.index');
-    Route::get("/rooms/create", function () {
+    Route::get("/services", [AdminController::class, "servicesManagement"])->name('services.admin');  
+    Route::get("/rooms",[RoomController::class,'index'])->name('admin.rooms.index');
+    Route::get("/rooms/create",function () {
         return Inertia::render('Admin/RoomCreate');
     })->name('admin.rooms.create');
-    Route::post("/rooms/store", [RoomController::class, 'store'])->name('admin.rooms.store');
+    Route::post("/rooms/store",[RoomController::class,'store'])->name('admin.rooms.store');
+    
 });
 
 
-
-
-Route::get('/test-email', function () {
-    Mail::raw('This is a test email', function ($message) {
-        $message->to('your_email@example.com')
-            ->subject('Test Email');
-    });
-
-    return 'Test email sent';
-});
-
-require __DIR__ . '/auth.php';
+//declare route for restaurant ui
+Route::get('/restaurant', function () {
+    return Inertia::render('User/Restaurant');
+})->name('restaurant');
+//declare route for contact ui
+Route::get('/contact', function () {
+    return Inertia::render('User/Contact');
+})->name('contact');
+//Comment
+Route::post('/comments', [CommentController::class,"store"])->name("comment.store");
+require __DIR__.'/auth.php';
