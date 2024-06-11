@@ -6,7 +6,7 @@ const ExtraService = (props) => {
         
     },[])
     return (
-        <div className="extra-services z-2 position-relative box animate-on-scroll ">
+        <div className="extra-services z-2 position-relative">
             <div className="container ">
                 <div className="row ">
                     <div className="col-lg-4 col-md-6">
@@ -28,7 +28,7 @@ const ExtraService = (props) => {
                     </div>
                     <div className="col-lg-4 col-md-6 p-2 ">
                         <a href="#">
-                            <img src="public/images/1.jpg" alt="" className="img-fluid "></img>
+                            <img src="images/1.jpg" alt="" className="img-fluid "></img>
                         </a>
                         <div className="services-price">
 
@@ -47,7 +47,7 @@ const ExtraService = (props) => {
                         <a href="#">
 
 
-                            <img src="public/images/2-2.jpg" alt="" className="img-fluid"></img>
+                            <img src="images/2-2.jpg" alt="" className="img-fluid"></img>
                         </a>
                         <div className="services-price">
 
