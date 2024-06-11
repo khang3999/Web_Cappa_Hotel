@@ -144,27 +144,27 @@ const Footer = (props) => {
                                 <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        xmlnsXlink="http://www.w3.org/1999/xlink"
                                         viewBox="0 0 132.004 132"
                                     >
                                         <defs>
                                             <linearGradient id="b">
-                                                <stop offset="0" stop-color="#3771c8"></stop>
-                                                <stop stop-color="#3771c8" offset=".128"></stop>
-                                                <stop offset="1" stop-color="#60f" stop-opacity="0"></stop>
+                                                <stop offset="0" stopColor="#3771c8"></stop>
+                                                <stop stopColor="#3771c8" offset=".128"></stop>
+                                                <stop offset="1" stopColor="#60f" stopOpacity="0"></stop>
                                             </linearGradient>
                                             <linearGradient id="a">
-                                                <stop offset="0" stop-color="#fd5"></stop>
-                                                <stop offset=".1" stop-color="#fd5"></stop>
-                                                <stop offset=".5" stop-color="#ff543e"></stop>
-                                                <stop offset="1" stop-color="#c837ab"></stop>
+                                                <stop offset="0" stopColor="#fd5"></stop>
+                                                <stop offset=".1" stopColor="#fd5"></stop>
+                                                <stop offset=".5" stopColor="#ff543e"></stop>
+                                                <stop offset="1" stopColor="#c837ab"></stop>
                                             </linearGradient>
                                             <radialGradient
                                                 id="c"
                                                 cx="158.429"
                                                 cy="578.088"
                                                 r="65"
-                                                xlink:href="#a"
+                                                xlinkHref="#a"
                                                 gradientUnits="userSpaceOnUse"
                                                 gradientTransform="matrix(0 -1.98198 1.8439 0 -1031.402 454.004)"
                                                 fx="158.429"
@@ -175,7 +175,7 @@ const Footer = (props) => {
                                                 cx="147.694"
                                                 cy="473.455"
                                                 r="65"
-                                                xlink:href="#b"
+                                                xlinkHref="#b"
                                                 gradientUnits="userSpaceOnUse"
                                                 gradientTransform="matrix(.17394 .86872 -3.5818 .71718 1648.348 -458.493)"
                                                 fx="147.694"
@@ -203,7 +203,7 @@ const Footer = (props) => {
                                 <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        xmlnsXlink="http://www.w3.org/1999/xlink"
                                         id="Layer_1"
                                         data-name="Layer 1"
                                         viewBox="0 0 512 512"
@@ -218,8 +218,8 @@ const Footer = (props) => {
                                                 gradientTransform="matrix(0.19, 0, 0, -0.19, 0.81, 98.89)"
                                                 gradientUnits="userSpaceOnUse"
                                             >
-                                                <stop offset="0" stop-color="#61fd7d"></stop>
-                                                <stop offset="1" stop-color="#2bb826"></stop>
+                                                <stop offset="0" stopColor="#61fd7d"></stop>
+                                                <stop offset="1" stopColor="#2bb826"></stop>
                                             </linearGradient>
                                         </defs>
                                         <path
@@ -281,11 +281,11 @@ const Footer = (props) => {
                                 <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        shape-rendering="geometricPrecision"
-                                        text-rendering="geometricPrecision"
-                                        image-rendering="optimizeQuality"
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
+                                        shapeRendering="geometricPrecision"
+                                        textRendering="geometricPrecision"
+                                        imageRendering="optimizeQuality"
+                                        fillRule="evenodd"
+                                        clipRule="evenodd"
                                         viewBox="0 0 512 512"
                                     >
                                         <defs>
@@ -297,8 +297,8 @@ const Footer = (props) => {
                                                 x2="251.069"
                                                 y2="507.468"
                                             >
-                                                <stop offset="0" stop-color="#6364FF"></stop>
-                                                <stop offset="1" stop-color="#563ACC"></stop>
+                                                <stop offset="0" stopColor="#6364FF"></stop>
+                                                <stop offset="1" stopColor="#563ACC"></stop>
                                             </linearGradient>
                                         </defs>
                                         <path
@@ -307,7 +307,7 @@ const Footer = (props) => {
                                         ></path>
                                         <path
                                             fill="#fff"
-                                            fill-rule="nonzero"
+                                            fillRule="nonzero"
                                             d="M399.681 169.996c-4.462-33.167-33.37-59.307-67.639-64.37-5.782-.857-27.685-3.972-78.429-3.972h-.378c-50.757 0-61.645 3.115-67.427 3.972-33.314 4.922-63.738 28.409-71.119 61.97-3.55 16.527-3.929 34.852-3.269 51.659.94 24.105 1.122 48.166 3.312 72.172a339.605 339.605 0 007.9 47.34c7.016 28.76 35.419 52.695 63.246 62.461a169.628 169.628 0 0092.531 4.883 135.476 135.476 0 0010.005-2.735c7.465-2.372 16.208-5.024 22.637-9.683a.705.705 0 00.209-.245.695.695 0 00.084-.315V369.87a.673.673 0 00-.263-.53.687.687 0 00-.578-.13 256.39 256.39 0 01-60.046 7.017c-34.802 0-44.162-16.513-46.84-23.387a72.424 72.424 0 01-4.071-18.437.67.67 0 01.248-.559.672.672 0 01.593-.129 251.583 251.583 0 0059.064 7.016c4.785 0 9.557 0 14.341-.129 20.01-.559 41.104-1.584 60.789-5.429.493-.097.984-.182 1.404-.307 31.055-5.965 60.609-24.68 63.611-72.075.111-1.866.393-19.543.393-21.478.014-6.581 2.118-46.68-.308-71.317zm-49.97 37.265v82.399h-32.654v-79.972c0-16.837-7.017-25.424-21.288-25.424-15.691 0-23.549 10.159-23.549 30.22v43.777h-32.455v-43.777c0-20.061-7.874-30.22-23.562-30.22-14.188 0-21.274 8.587-21.274 25.424v79.972H162.29v-82.399c0-16.837 4.298-30.213 12.895-40.128 8.868-9.891 20.502-14.971 34.941-14.971 16.713 0 29.342 6.426 37.762 19.264l8.126 13.638 8.139-13.638c8.419-12.838 21.049-19.264 37.733-19.264 14.426 0 26.058 5.08 34.956 14.971 8.589 9.906 12.877 23.282 12.869 40.128z"
                                         ></path>
                                     </svg>
@@ -317,11 +317,11 @@ const Footer = (props) => {
                                 <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        shape-rendering="geometricPrecision"
-                                        text-rendering="geometricPrecision"
-                                        image-rendering="optimizeQuality"
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
+                                        shapeRendering="geometricPrecision"
+                                        textRendering="geometricPrecision"
+                                        imageRendering="optimizeQuality"
+                                        fillRule="evenodd"
+                                        clipRule="evenodd"
                                         viewBox="0 0 512 512"
                                     >
                                         <path
@@ -332,7 +332,7 @@ const Footer = (props) => {
                                             <g data-name="Discord Logos">
                                                 <path
                                                     fill="#fff"
-                                                    fill-rule="nonzero"
+                                                    fillRule="nonzero"
                                                     d="M368.896 153.381a269.506 269.506 0 00-67.118-20.637 186.88 186.88 0 00-8.57 17.475 250.337 250.337 0 00-37.247-2.8c-12.447 0-24.955.946-37.25 2.776-2.511-5.927-5.427-11.804-8.592-17.454a271.73 271.73 0 00-67.133 20.681c-42.479 62.841-53.991 124.112-48.235 184.513a270.622 270.622 0 0082.308 41.312c6.637-8.959 12.582-18.497 17.63-28.423a173.808 173.808 0 01-27.772-13.253c2.328-1.688 4.605-3.427 6.805-5.117 25.726 12.083 53.836 18.385 82.277 18.385 28.442 0 56.551-6.302 82.279-18.387 2.226 1.817 4.503 3.557 6.805 5.117a175.002 175.002 0 01-27.823 13.289 197.847 197.847 0 0017.631 28.4 269.513 269.513 0 0082.363-41.305l-.007.007c6.754-70.045-11.538-130.753-48.351-184.579zM201.968 300.789c-16.04 0-29.292-14.557-29.292-32.465s12.791-32.592 29.241-32.592 29.599 14.684 29.318 32.592c-.282 17.908-12.919 32.465-29.267 32.465zm108.062 0c-16.066 0-29.267-14.557-29.267-32.465s12.791-32.592 29.267-32.592c16.475 0 29.522 14.684 29.241 32.592-.281 17.908-12.894 32.465-29.241 32.465z"
                                                     data-name="Discord Logo - Large - White"
                                                 ></path>
@@ -387,27 +387,27 @@ const Footer = (props) => {
                                 <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        xmlnsXlink="http://www.w3.org/1999/xlink"
                                         viewBox="0 0 132.004 132"
                                     >
                                         <defs>
                                             <linearGradient id="b">
-                                                <stop offset="0" stop-color="#3771c8"></stop>
-                                                <stop stop-color="#3771c8" offset=".128"></stop>
-                                                <stop offset="1" stop-color="#60f" stop-opacity="0"></stop>
+                                                <stop offset="0" stopColor="#3771c8"></stop>
+                                                <stop stopColor="#3771c8" offset=".128"></stop>
+                                                <stop offset="1" stopColor="#60f" stopOpacity="0"></stop>
                                             </linearGradient>
                                             <linearGradient id="a">
-                                                <stop offset="0" stop-color="#fd5"></stop>
-                                                <stop offset=".1" stop-color="#fd5"></stop>
-                                                <stop offset=".5" stop-color="#ff543e"></stop>
-                                                <stop offset="1" stop-color="#c837ab"></stop>
+                                                <stop offset="0" stopColor="#fd5"></stop>
+                                                <stop offset=".1" stopColor="#fd5"></stop>
+                                                <stop offset=".5" stopColor="#ff543e"></stop>
+                                                <stop offset="1" stopColor="#c837ab"></stop>
                                             </linearGradient>
                                             <radialGradient
                                                 id="c"
                                                 cx="158.429"
                                                 cy="578.088"
                                                 r="65"
-                                                xlink:href="#a"
+                                                xlinkHref="#a"
                                                 gradientUnits="userSpaceOnUse"
                                                 gradientTransform="matrix(0 -1.98198 1.8439 0 -1031.402 454.004)"
                                                 fx="158.429"
@@ -418,7 +418,7 @@ const Footer = (props) => {
                                                 cx="147.694"
                                                 cy="473.455"
                                                 r="65"
-                                                xlink:href="#b"
+                                                xlinkHref="#b"
                                                 gradientUnits="userSpaceOnUse"
                                                 gradientTransform="matrix(.17394 .86872 -3.5818 .71718 1648.348 -458.493)"
                                                 fx="147.694"
@@ -446,7 +446,7 @@ const Footer = (props) => {
                                 <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        xmlnsXlink="http://www.w3.org/1999/xlink"
                                         id="Layer_1"
                                         data-name="Layer 1"
                                         viewBox="0 0 512 512"
@@ -461,8 +461,8 @@ const Footer = (props) => {
                                                 gradientTransform="matrix(0.19, 0, 0, -0.19, 0.81, 98.89)"
                                                 gradientUnits="userSpaceOnUse"
                                             >
-                                                <stop offset="0" stop-color="#61fd7d"></stop>
-                                                <stop offset="1" stop-color="#2bb826"></stop>
+                                                <stop offset="0" stopColor="#61fd7d"></stop>
+                                                <stop offset="1" stopColor="#2bb826"></stop>
                                             </linearGradient>
                                         </defs>
                                         <path
@@ -524,11 +524,11 @@ const Footer = (props) => {
                                 <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        shape-rendering="geometricPrecision"
-                                        text-rendering="geometricPrecision"
-                                        image-rendering="optimizeQuality"
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
+                                        shapeRendering="geometricPrecision"
+                                        textRendering="geometricPrecision"
+                                        imageRendering="optimizeQuality"
+                                        fillRule="evenodd"
+                                        clipRule="evenodd"
                                         viewBox="0 0 512 512"
                                     >
                                         <defs>
@@ -540,8 +540,8 @@ const Footer = (props) => {
                                                 x2="251.069"
                                                 y2="507.468"
                                             >
-                                                <stop offset="0" stop-color="#6364FF"></stop>
-                                                <stop offset="1" stop-color="#563ACC"></stop>
+                                                <stop offset="0" stopColor="#6364FF"></stop>
+                                                <stop offset="1" stopColor="#563ACC"></stop>
                                             </linearGradient>
                                         </defs>
                                         <path
@@ -550,7 +550,7 @@ const Footer = (props) => {
                                         ></path>
                                         <path
                                             fill="#fff"
-                                            fill-rule="nonzero"
+                                            fillRule="nonzero"
                                             d="M399.681 169.996c-4.462-33.167-33.37-59.307-67.639-64.37-5.782-.857-27.685-3.972-78.429-3.972h-.378c-50.757 0-61.645 3.115-67.427 3.972-33.314 4.922-63.738 28.409-71.119 61.97-3.55 16.527-3.929 34.852-3.269 51.659.94 24.105 1.122 48.166 3.312 72.172a339.605 339.605 0 007.9 47.34c7.016 28.76 35.419 52.695 63.246 62.461a169.628 169.628 0 0092.531 4.883 135.476 135.476 0 0010.005-2.735c7.465-2.372 16.208-5.024 22.637-9.683a.705.705 0 00.209-.245.695.695 0 00.084-.315V369.87a.673.673 0 00-.263-.53.687.687 0 00-.578-.13 256.39 256.39 0 01-60.046 7.017c-34.802 0-44.162-16.513-46.84-23.387a72.424 72.424 0 01-4.071-18.437.67.67 0 01.248-.559.672.672 0 01.593-.129 251.583 251.583 0 0059.064 7.016c4.785 0 9.557 0 14.341-.129 20.01-.559 41.104-1.584 60.789-5.429.493-.097.984-.182 1.404-.307 31.055-5.965 60.609-24.68 63.611-72.075.111-1.866.393-19.543.393-21.478.014-6.581 2.118-46.68-.308-71.317zm-49.97 37.265v82.399h-32.654v-79.972c0-16.837-7.017-25.424-21.288-25.424-15.691 0-23.549 10.159-23.549 30.22v43.777h-32.455v-43.777c0-20.061-7.874-30.22-23.562-30.22-14.188 0-21.274 8.587-21.274 25.424v79.972H162.29v-82.399c0-16.837 4.298-30.213 12.895-40.128 8.868-9.891 20.502-14.971 34.941-14.971 16.713 0 29.342 6.426 37.762 19.264l8.126 13.638 8.139-13.638c8.419-12.838 21.049-19.264 37.733-19.264 14.426 0 26.058 5.08 34.956 14.971 8.589 9.906 12.877 23.282 12.869 40.128z"
                                         ></path>
                                     </svg>
@@ -560,11 +560,11 @@ const Footer = (props) => {
                                 <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        shape-rendering="geometricPrecision"
-                                        text-rendering="geometricPrecision"
-                                        image-rendering="optimizeQuality"
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
+                                        shapeRendering="geometricPrecision"
+                                        textRendering="geometricPrecision"
+                                        imageRendering="optimizeQuality"
+                                        fillRule="evenodd"
+                                        clipRule="evenodd"
                                         viewBox="0 0 512 512"
                                     >
                                         <path
@@ -575,7 +575,7 @@ const Footer = (props) => {
                                             <g data-name="Discord Logos">
                                                 <path
                                                     fill="#fff"
-                                                    fill-rule="nonzero"
+                                                    fillRule="nonzero"
                                                     d="M368.896 153.381a269.506 269.506 0 00-67.118-20.637 186.88 186.88 0 00-8.57 17.475 250.337 250.337 0 00-37.247-2.8c-12.447 0-24.955.946-37.25 2.776-2.511-5.927-5.427-11.804-8.592-17.454a271.73 271.73 0 00-67.133 20.681c-42.479 62.841-53.991 124.112-48.235 184.513a270.622 270.622 0 0082.308 41.312c6.637-8.959 12.582-18.497 17.63-28.423a173.808 173.808 0 01-27.772-13.253c2.328-1.688 4.605-3.427 6.805-5.117 25.726 12.083 53.836 18.385 82.277 18.385 28.442 0 56.551-6.302 82.279-18.387 2.226 1.817 4.503 3.557 6.805 5.117a175.002 175.002 0 01-27.823 13.289 197.847 197.847 0 0017.631 28.4 269.513 269.513 0 0082.363-41.305l-.007.007c6.754-70.045-11.538-130.753-48.351-184.579zM201.968 300.789c-16.04 0-29.292-14.557-29.292-32.465s12.791-32.592 29.241-32.592 29.599 14.684 29.318 32.592c-.282 17.908-12.919 32.465-29.267 32.465zm108.062 0c-16.066 0-29.267-14.557-29.267-32.465s12.791-32.592 29.267-32.592c16.475 0 29.522 14.684 29.241 32.592-.281 17.908-12.894 32.465-29.241 32.465z"
                                                     data-name="Discord Logo - Large - White"
                                                 ></path>
@@ -590,14 +590,14 @@ const Footer = (props) => {
                                 <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        shape-rendering="geometricPrecision"
-                                        text-rendering="geometricPrecision"
-                                        image-rendering="optimizeQuality"
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
+                                        shapeRendering="geometricPrecision"
+                                        textRendering="geometricPrecision"
+                                        imageRendering="optimizeQuality"
+                                        fillRule="evenodd"
+                                        clipRule="evenodd"
                                         viewBox="0 0 512 512"
                                     >
-                                        <g fill-rule="nonzero">
+                                        <g fillRule="nonzero">
                                             <path
                                                 fill="#07F"
                                                 d="M245.49 512h21.32c115.73 0 173.61 0 209.56-35.94 35.94-35.95 35.63-93.8 35.63-209.25v-21.62c0-115.43 0-173.3-35.63-209.25C440.73 0 382.54 0 266.81 0h-21.32C129.74 0 71.89 0 35.94 35.94 0 71.89 0 129.72 0 245.19v21.62c0 115.45 0 173.3 35.94 209.25C71.89 512 129.74 512 245.49 512z"
@@ -633,11 +633,11 @@ const Footer = (props) => {
                                 <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        shape-rendering="geometricPrecision"
-                                        text-rendering="geometricPrecision"
-                                        image-rendering="optimizeQuality"
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
+                                        shapeRendering="geometricPrecision"
+                                        textRendering="geometricPrecision"
+                                        imageRendering="optimizeQuality"
+                                        fillRule="evenodd"
+                                        clipRule="evenodd"
                                         viewBox="0 0 512 512"
                                     >
                                         <rect
@@ -647,7 +647,7 @@ const Footer = (props) => {
                                             rx="105"
                                             ry="105"
                                         ></rect>
-                                        <g fill-rule="nonzero">
+                                        <g fillRule="nonzero">
                                             <path
                                                 fill="#fff"
                                                 d="M424.16 341.5c-1.47-4.87-8.51-8.3-8.51-8.3v.01c-.65-.37-1.25-.67-1.76-.92-11.72-5.67-22.1-12.47-30.86-20.22-7.03-6.22-13.05-13.07-17.89-20.37-5.9-8.89-8.67-16.32-9.87-20.34-.66-2.62-.55-3.66 0-5.03.47-1.14 1.81-2.25 2.47-2.75 3.96-2.8 10.33-6.93 14.24-9.46 3.39-2.19 6.31-4.09 8.01-5.27 5.51-3.85 9.27-7.77 11.49-11.99 2.88-5.47 3.22-11.48.98-17.41-3.02-7.98-10.47-12.75-19.94-12.75-2.11 0-4.27.24-6.42.71-5.42 1.17-10.57 3.1-14.88 4.78a.472.472 0 01-.64-.46c.46-10.67.97-25-.21-38.64-1.07-12.33-3.6-22.72-7.75-31.77-4.17-9.09-9.58-15.82-13.82-20.67-4.05-4.64-11.13-11.45-21.83-17.57-15.07-8.62-32.22-12.99-50.97-12.99-18.71 0-35.84 4.37-50.92 12.98-11.33 6.47-18.57 13.79-21.88 17.58-4.24 4.85-9.64 11.58-13.81 20.67-4.15 9.05-6.69 19.44-7.75 31.77-1.19 13.66-.71 26.87-.22 38.63.02.35-.33.59-.65.47-4.3-1.68-9.46-3.61-14.87-4.78-2.15-.47-4.31-.71-6.42-.71-9.47 0-16.92 4.77-19.94 12.75-2.24 5.93-1.9 11.94.98 17.41 2.23 4.22 5.99 8.14 11.49 11.99 1.7 1.18 4.62 3.08 8.01 5.27 3.83 2.48 10.02 6.49 14 9.28.49.36 2.17 1.62 2.7 2.93.57 1.4.67 2.46-.05 5.24-1.24 4.06-4.01 11.39-9.8 20.13-4.85 7.3-10.87 14.15-17.9 20.37-8.76 7.75-19.14 14.55-30.86 20.22-.55.27-1.21.61-1.93 1.02v-.01s-7 3.58-8.32 8.2c-1.95 6.83 3.24 13.22 8.56 16.65 8.68 5.59 19.25 8.6 25.38 10.24 1.7.45 3.25.87 4.66 1.31.88.29 3.09 1.12 4.03 2.33 1.19 1.53 1.33 3.43 1.76 5.56.68 3.59 2.17 8.06 6.62 11.12 4.88 3.38 11.09 3.62 18.95 3.92 8.22.32 18.46.71 30.16 4.57 5.43 1.8 10.35 4.82 16.04 8.31 11.89 7.31 26.69 16.4 51.98 16.4 25.3 0 40.2-9.14 52.17-16.49 5.66-3.47 10.55-6.47 15.85-8.22 11.71-3.87 21.94-4.26 30.16-4.57 7.86-.3 14.07-.54 18.96-3.92 4.75-3.28 6.13-8.17 6.75-11.87.33-1.83.56-3.46 1.61-4.81.89-1.15 2.93-1.95 3.89-2.29 1.45-.45 3.05-.88 4.82-1.35 6.13-1.64 13.81-3.58 23.16-8.86 11.19-6.32 11.95-14.17 10.79-18.03z"
@@ -701,11 +701,11 @@ const Footer = (props) => {
                                 <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        shape-rendering="geometricPrecision"
-                                        text-rendering="geometricPrecision"
-                                        image-rendering="optimizeQuality"
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
+                                        shapeRendering="geometricPrecision"
+                                        textRendering="geometricPrecision"
+                                        imageRendering="optimizeQuality"
+                                        fillRule="evenodd"
+                                        clipRule="evenodd"
                                         viewBox="0 0 512 512"
                                     >
                                         <rect
@@ -717,7 +717,7 @@ const Footer = (props) => {
                                         ></rect>
                                         <path
                                             fill="#fff"
-                                            fill-rule="nonzero"
+                                            fillRule="nonzero"
                                             d="M307.75 303.16c-12.98 0-23.54-10.55-23.54-23.54 0-12.98 10.56-23.53 23.54-23.53 12.97 0 23.53 10.55 23.53 23.53 0 12.99-10.56 23.54-23.53 23.54zm4.14 38.66c-16.06 16.04-46.85 17.29-55.9 17.29-9.06 0-39.84-1.25-55.89-17.3a6.096 6.096 0 010-8.62c2.38-2.39 6.25-2.39 8.64 0 10.12 10.13 31.78 13.71 47.25 13.71 15.47 0 37.13-3.58 47.28-13.71a6.09 6.09 0 018.63.01c2.38 2.38 2.37 6.24-.01 8.62zm-131.25-62.2c0-12.98 10.56-23.53 23.55-23.53 12.97 0 23.53 10.55 23.53 23.53s-10.56 23.53-23.53 23.53c-12.99 0-23.55-10.55-23.55-23.53zm225.93-23.53c0-18.2-14.76-32.96-32.95-32.96-8.88 0-16.93 3.53-22.86 9.25-22.53-16.26-53.56-26.76-88.12-27.97l15.01-70.62 49.04 10.42c.59 12.48 10.81 22.43 23.42 22.43 13.01 0 23.54-10.54 23.54-23.54s-10.53-23.54-23.54-23.54c-9.24 0-17.16 5.38-21.01 13.14l-54.77-11.64a5.758 5.758 0 00-4.42.82 5.876 5.876 0 00-2.55 3.71L250.6 204.4c-35.09.97-66.62 11.48-89.43 27.91-5.92-5.68-13.93-9.18-22.79-9.18-18.19 0-32.95 14.76-32.95 32.96 0 13.38 8 24.88 19.47 30.04-.51 3.28-.79 6.6-.79 9.97 0 50.69 59.02 91.8 131.81 91.8 72.8 0 131.82-41.11 131.82-91.8 0-3.35-.28-6.66-.77-9.91 11.54-5.13 19.6-16.67 19.6-30.1z"
                                         ></path>
                                     </svg>
@@ -754,14 +754,14 @@ const Footer = (props) => {
                                 <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        shape-rendering="geometricPrecision"
-                                        text-rendering="geometricPrecision"
-                                        image-rendering="optimizeQuality"
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
+                                        shapeRendering="geometricPrecision"
+                                        textRendering="geometricPrecision"
+                                        imageRendering="optimizeQuality"
+                                        fillRule="evenodd"
+                                        clipRule="evenodd"
                                         viewBox="0 0 512 512"
                                     >
-                                        <g fill-rule="nonzero">
+                                        <g fillRule="nonzero">
                                             <path
                                                 fill="#07F"
                                                 d="M245.49 512h21.32c115.73 0 173.61 0 209.56-35.94 35.94-35.95 35.63-93.8 35.63-209.25v-21.62c0-115.43 0-173.3-35.63-209.25C440.73 0 382.54 0 266.81 0h-21.32C129.74 0 71.89 0 35.94 35.94 0 71.89 0 129.72 0 245.19v21.62c0 115.45 0 173.3 35.94 209.25C71.89 512 129.74 512 245.49 512z"
@@ -797,11 +797,11 @@ const Footer = (props) => {
                                 <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        shape-rendering="geometricPrecision"
-                                        text-rendering="geometricPrecision"
-                                        image-rendering="optimizeQuality"
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
+                                        shapeRendering="geometricPrecision"
+                                        textRendering="geometricPrecision"
+                                        imageRendering="optimizeQuality"
+                                        fillRule="evenodd"
+                                        clipRule="evenodd"
                                         viewBox="0 0 512 512"
                                     >
                                         <rect
@@ -811,7 +811,7 @@ const Footer = (props) => {
                                             rx="105"
                                             ry="105"
                                         ></rect>
-                                        <g fill-rule="nonzero">
+                                        <g fillRule="nonzero">
                                             <path
                                                 fill="#fff"
                                                 d="M424.16 341.5c-1.47-4.87-8.51-8.3-8.51-8.3v.01c-.65-.37-1.25-.67-1.76-.92-11.72-5.67-22.1-12.47-30.86-20.22-7.03-6.22-13.05-13.07-17.89-20.37-5.9-8.89-8.67-16.32-9.87-20.34-.66-2.62-.55-3.66 0-5.03.47-1.14 1.81-2.25 2.47-2.75 3.96-2.8 10.33-6.93 14.24-9.46 3.39-2.19 6.31-4.09 8.01-5.27 5.51-3.85 9.27-7.77 11.49-11.99 2.88-5.47 3.22-11.48.98-17.41-3.02-7.98-10.47-12.75-19.94-12.75-2.11 0-4.27.24-6.42.71-5.42 1.17-10.57 3.1-14.88 4.78a.472.472 0 01-.64-.46c.46-10.67.97-25-.21-38.64-1.07-12.33-3.6-22.72-7.75-31.77-4.17-9.09-9.58-15.82-13.82-20.67-4.05-4.64-11.13-11.45-21.83-17.57-15.07-8.62-32.22-12.99-50.97-12.99-18.71 0-35.84 4.37-50.92 12.98-11.33 6.47-18.57 13.79-21.88 17.58-4.24 4.85-9.64 11.58-13.81 20.67-4.15 9.05-6.69 19.44-7.75 31.77-1.19 13.66-.71 26.87-.22 38.63.02.35-.33.59-.65.47-4.3-1.68-9.46-3.61-14.87-4.78-2.15-.47-4.31-.71-6.42-.71-9.47 0-16.92 4.77-19.94 12.75-2.24 5.93-1.9 11.94.98 17.41 2.23 4.22 5.99 8.14 11.49 11.99 1.7 1.18 4.62 3.08 8.01 5.27 3.83 2.48 10.02 6.49 14 9.28.49.36 2.17 1.62 2.7 2.93.57 1.4.67 2.46-.05 5.24-1.24 4.06-4.01 11.39-9.8 20.13-4.85 7.3-10.87 14.15-17.9 20.37-8.76 7.75-19.14 14.55-30.86 20.22-.55.27-1.21.61-1.93 1.02v-.01s-7 3.58-8.32 8.2c-1.95 6.83 3.24 13.22 8.56 16.65 8.68 5.59 19.25 8.6 25.38 10.24 1.7.45 3.25.87 4.66 1.31.88.29 3.09 1.12 4.03 2.33 1.19 1.53 1.33 3.43 1.76 5.56.68 3.59 2.17 8.06 6.62 11.12 4.88 3.38 11.09 3.62 18.95 3.92 8.22.32 18.46.71 30.16 4.57 5.43 1.8 10.35 4.82 16.04 8.31 11.89 7.31 26.69 16.4 51.98 16.4 25.3 0 40.2-9.14 52.17-16.49 5.66-3.47 10.55-6.47 15.85-8.22 11.71-3.87 21.94-4.26 30.16-4.57 7.86-.3 14.07-.54 18.96-3.92 4.75-3.28 6.13-8.17 6.75-11.87.33-1.83.56-3.46 1.61-4.81.89-1.15 2.93-1.95 3.89-2.29 1.45-.45 3.05-.88 4.82-1.35 6.13-1.64 13.81-3.58 23.16-8.86 11.19-6.32 11.95-14.17 10.79-18.03z"
@@ -865,11 +865,11 @@ const Footer = (props) => {
                                 <button className="button">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        shape-rendering="geometricPrecision"
-                                        text-rendering="geometricPrecision"
-                                        image-rendering="optimizeQuality"
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
+                                        shapeRendering="geometricPrecision"
+                                        textRendering="geometricPrecision"
+                                        imageRendering="optimizeQuality"
+                                        fillRule="evenodd"
+                                        clipRule="evenodd"
                                         viewBox="0 0 512 512"
                                     >
                                         <rect
@@ -881,7 +881,7 @@ const Footer = (props) => {
                                         ></rect>
                                         <path
                                             fill="#fff"
-                                            fill-rule="nonzero"
+                                            fillRule="nonzero"
                                             d="M307.75 303.16c-12.98 0-23.54-10.55-23.54-23.54 0-12.98 10.56-23.53 23.54-23.53 12.97 0 23.53 10.55 23.53 23.53 0 12.99-10.56 23.54-23.53 23.54zm4.14 38.66c-16.06 16.04-46.85 17.29-55.9 17.29-9.06 0-39.84-1.25-55.89-17.3a6.096 6.096 0 010-8.62c2.38-2.39 6.25-2.39 8.64 0 10.12 10.13 31.78 13.71 47.25 13.71 15.47 0 37.13-3.58 47.28-13.71a6.09 6.09 0 018.63.01c2.38 2.38 2.37 6.24-.01 8.62zm-131.25-62.2c0-12.98 10.56-23.53 23.55-23.53 12.97 0 23.53 10.55 23.53 23.53s-10.56 23.53-23.53 23.53c-12.99 0-23.55-10.55-23.55-23.53zm225.93-23.53c0-18.2-14.76-32.96-32.95-32.96-8.88 0-16.93 3.53-22.86 9.25-22.53-16.26-53.56-26.76-88.12-27.97l15.01-70.62 49.04 10.42c.59 12.48 10.81 22.43 23.42 22.43 13.01 0 23.54-10.54 23.54-23.54s-10.53-23.54-23.54-23.54c-9.24 0-17.16 5.38-21.01 13.14l-54.77-11.64a5.758 5.758 0 00-4.42.82 5.876 5.876 0 00-2.55 3.71L250.6 204.4c-35.09.97-66.62 11.48-89.43 27.91-5.92-5.68-13.93-9.18-22.79-9.18-18.19 0-32.95 14.76-32.95 32.96 0 13.38 8 24.88 19.47 30.04-.51 3.28-.79 6.6-.79 9.97 0 50.69 59.02 91.8 131.81 91.8 72.8 0 131.82-41.11 131.82-91.8 0-3.35-.28-6.66-.77-9.91 11.54-5.13 19.6-16.67 19.6-30.1z"
                                         ></path>
                                     </svg>

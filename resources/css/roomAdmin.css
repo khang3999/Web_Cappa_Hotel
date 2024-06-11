@@ -52,7 +52,7 @@
   
   .form__label {
     position: absolute;
-    top: 0;
+    top: -5px;
     display: block;
     transition: 0.2s;
     font-size: 17px;
@@ -70,7 +70,8 @@
   
   .form__field:focus ~ .form__label {
     position: absolute;
-    top: 0;
+    top: -5px;
+    margin-bottom: 10px;
     display: block;
     transition: 0.2s;
     font-size: 17px;

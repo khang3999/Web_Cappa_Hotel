@@ -9,7 +9,7 @@ const Promotion = (props) => {
     }, []);
     return (
         <div className="promotion-video container-fluid d-flex bg-md-transparent  z-2 position-relative">
-            <div className="promotion-video-info mx-auto text-center box animate-on-scroll">
+            <div className="promotion-video-info mx-auto text-center ">
                 <div className="rating  pb-3 ">
                     <i className="fa-solid fa-star"></i>
                     <i className="fa-solid fa-star"></i>

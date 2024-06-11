@@ -2,24 +2,24 @@ import { useEffect, useState } from "react";
 
 const Facilities = () => {
     const [facilities, setFacilities] = useState([])
-    useEffect(() => {
-        fetch(route('api.utilities', { type: 'common' }))
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Failed to fetch banner data');
-                }
-                return response.json();
-            })
-            .then(data => {
-                setFacilities(data);
-            })
-            .catch(error => {
-                console.error('Error fetching banner data:', error);
-            });
-    }, []);
+    // useEffect(() => {
+    //     fetch(route('api.utilities', { type: 'common' }))
+    //         .then(response => {
+    //             if (!response.ok) {
+    //                 throw new Error('Failed to fetch banner data');
+    //             }
+    //             return response.json();
+    //         })
+    //         .then(data => {
+    //             setFacilities(data);
+    //         })
+    //         .catch(error => {
+    //             console.error('Error fetching banner data:', error);
+    //         });
+    // }, []);
     return (
         <div className="hotel-facilities z-2 position-relative bg-white ">
-            <div className="container box animate-on-scroll">
+            <div className="container">
                 <div className="hotel-facilities-text">
                     <h4 className="hotel-facilities-top text-secondary mb-3">OUR SERVICES</h4>
                     <h1 className="hotel-facilities-bot text-dark mt-2 mb-3">Hotel Facilities</h1>
