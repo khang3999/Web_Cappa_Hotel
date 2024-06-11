@@ -33,7 +33,7 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
         $role = $request->user()->role;
-        var_dump($role);
+        
         
         // Redirect based on the role
         if ($role !== 'admin') {

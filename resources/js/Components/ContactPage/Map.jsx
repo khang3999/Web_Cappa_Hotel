@@ -1,6 +1,6 @@
 import "../../../css/contact.css"
 import "../../../css/app.css"
-const Map = () => {
+const myMap = (props) => {
     return (<>
         <section className="z-2 position-relative bg-white contact section-padding">
             <div className="container">
@@ -13,4 +13,4 @@ const Map = () => {
         </section>
     </>)
 };
-export default Map;
+export default myMap;

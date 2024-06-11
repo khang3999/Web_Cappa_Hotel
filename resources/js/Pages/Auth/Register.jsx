@@ -91,12 +91,12 @@ export default function Register() {
                     <div className="container h-100">
                         <div className="row d-flex justify-content-center align-items-center h-100">
                             <div className="col-12 col-md-9 col-lg-7 col-xl-6">
-                                <div className="card bg-dark opacity-75" style={{ borderRadius: '15px' }}>
+                                <div className="card bg-light opacity-75" style={{ borderRadius: '15px' }}>
                                     <div className="card-body p-5">
                                         <h2 className="text-uppercase text-center mb-5 register-title">Create an account</h2>
                                         <form onSubmit={submit}>
                                             <div data-mdb-input-init className="form-outline mb-4">
-                                                <InputLabel className="form-label " htmlFor="name" value="Name">Your Name</InputLabel>
+                                                <InputLabel className="form-label text-dark" htmlFor="name" value="Name">Your Name</InputLabel>
                                                 <TextInput
                                                     id="name"
                                                     name="name"
@@ -113,7 +113,7 @@ export default function Register() {
                                             </div>
 
                                             <div data-mdb-input-init className="form-outline mb-4">
-                                                <InputLabel className="form-label" htmlFor="email">Your Email</InputLabel>
+                                                <InputLabel className="form-label text-dark" htmlFor="email">Your Email</InputLabel>
                                                 <TextInput
                                                     id="email"
                                                     name="email"
@@ -129,7 +129,7 @@ export default function Register() {
                                             </div>
 
                                             <div data-mdb-input-init className="form-outline mb-4">
-                                                <InputLabel className="form-label" htmlFor="password" value="Password" />
+                                                <InputLabel className="form-label text-dark text-dark" htmlFor="password" value="Password" />
 
                                                 <TextInput
                                                     id="password"
@@ -147,7 +147,7 @@ export default function Register() {
                                             </div>
 
                                             <div data-mdb-input-init className="form-outline mb-4">
-                                                <InputLabel className="form-label" htmlFor="password_confirmation" value="Confirm Password" />
+                                                <InputLabel className="form-label text-dark" htmlFor="password_confirmation" value="Confirm Password" />
 
                                                 <TextInput
                                                     id="password_confirmation"
@@ -167,7 +167,7 @@ export default function Register() {
                                             <div className="flex items-center justify-end mt-4">
                                                 <Link
                                                     href={route('login')}
-                                                    className="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800 already-registered-link"
+                                                    className="underline text-sm text-dark dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800 already-registered-link"
                                                 >
                                                     Already registered?
                                                 </Link>
