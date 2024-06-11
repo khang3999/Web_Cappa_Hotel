@@ -3,7 +3,7 @@ import Navbar from "../Commons/Navbar";
 import Slidebar from "../Commons/Slidebar";
 const Banner = ({pageName}) => {
     return (
-        <div className="header z-2 position-relative">
+        <div className="header z-4 position-relative">
             <Navbar ></Navbar>
             <Slidebar pageName = {pageName}></Slidebar>
         </div>
