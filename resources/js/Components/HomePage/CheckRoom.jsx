@@ -1,7 +1,7 @@
 const CheckRoom = (props) => {
     return (
         <div className="check-now z-2 position-relative  ">
-            <div className="container box animate-on-scroll">
+            <div className="container ">
                 <div className="check-now-text">
                     <h4 className="check-now-top text-secondary ">CHECK NOW</h4>
                     <h1 className="check-now-bot mb-3 text-dark mt-2 mb-3">Search Rooms</h1>

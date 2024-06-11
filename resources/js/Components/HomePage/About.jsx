@@ -2,7 +2,7 @@ import '../../../css/about.css'
 const About = (props) => {
     return (
         <div className="content-about z-2 position-relative bg-white  ">
-            <div className="container animate-on-scroll box">
+            <div className="container ">
                 <div className="row ">
                     <div className="col-md-6 ">
                         <div className="rating  pb-3">

@@ -1,6 +1,6 @@
 const Utility = (props) => {
     return (
-        <div className="utility bg-white z-2  ">
+        <div className="utility bg-white z-2 ">
             <div className="container ">
                 <div className="row ">
                     <div className="col-lg-6 px-0 ">

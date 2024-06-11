@@ -2,7 +2,7 @@ import '../../../css/app.css'
 const Testimonial = (props) => {
     return (
         <div className="testimonials container-fluid d-flex bg-md-transparent  z-2 position-relative ">
-            <div className="container ">
+            <div className="container">
                 <div className="testimonials-title text-white ">
                     <h5 className="testimonials-top  ">TESTIMONIALS</h5>
                     <h4 className="testimonials-bot mt-2 ">What's Client Say?</h4>
