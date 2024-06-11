@@ -15,6 +15,7 @@ use Inertia\Inertia;
 Route::get('/api/banners/{type}',[BannerController::class,'getBannersByType'])->name('api.banners');
 Route::get('/api/utilities/{type}',[UtilityController::class,'getUtilitiesByType'])->name('api.utilities');
 Route::get('/api/rooms/{type}',[RoomController::class,'getRoomsByType'])->name('api.rooms');
+Route::post('/api/bookings/all',[AdminController::class,'getAllBooking'])->name('api.booking.all');
 
 // Tu viet
 // Route::get('/',[HomeController::class, 'index'])->name('indexUser');

@@ -11,6 +11,15 @@ use Inertia\Inertia;
 class AdminController extends Controller
 {
 
+    public function getAllBooking(Request $request)
+    {
+        $id = $request->id;
+        $booking = Booking::find($id);
+        $booking->status = 1;
+        $booking->save();
+        $bookings = Booking::all();
+        return response()->json(['bookings'=>$bookings,'status'=>'true']);
+    }
     // Go to Admin
     public function indexAdmin()
     {
@@ -97,4 +106,5 @@ class AdminController extends Controller
     {
         //
     }
+
 }
