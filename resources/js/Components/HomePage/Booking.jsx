@@ -3,7 +3,7 @@ const Booking = (props) => {
     const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
     return (
         <div className="booking z-2 bg-md-transparent  ">
-            <div className="container box animate-on-scroll">
+            <div className="container ">
                 <div className="row bg-transparent ">
                     <div className="col-lg-6">
                         <div className="rating  pb-3">

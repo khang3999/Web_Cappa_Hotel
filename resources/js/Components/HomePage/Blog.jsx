@@ -2,7 +2,7 @@ import "../../../css/blog.css"
 const Blog = (props) => {
     return (
         <div className="hotel-blog z-2 ">
-            <div className="container box animate-on-scroll">
+            <div className="container ">
                 <h5 className="services-text-top mb-2">HOTEL BLOG</h5>
                 <h1 className="services-text-bot mb-3">Our News</h1>
                 <div className="row">
