@@ -23,7 +23,7 @@ const About = (props) => {
                             penatibus et magnis dis parturient monte nascete ridiculus mus nellentesque habitant morbine.
                         </p>
                         <div className="text-call">
-                            <div class="square-loading">
+                            <div className="square-loading">
                                 <img src="/images/logo.png" alt="" className='square-loading-img'/>
                             </div>
                             <i className="fa-solid fa-phone-volume call-icon "></i>

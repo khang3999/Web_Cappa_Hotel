@@ -68,10 +68,22 @@ Route::prefix('admin')->group(function() {
         return Inertia::render('Admin/RoomCreate');
     })->name('admin.rooms.create');
     Route::post("/rooms/store",[RoomController::class,'store'])->name('admin.rooms.store');
-    
+    Route::get("/rooms/edit/{roomId}",[AdminController::class,'edit'])->name('admin.rooms.edit');
+    Route::post("/rooms/update",[RoomController::class,'update'])->name('admin.rooms.update');
+    Route::get("/rooms/edit/{roomId}",[AdminController::class,'edit'])->name('admin.rooms.edit');
+    Route::get("/rooms/delete/{roomid}",[RoomController::class,'destroy'])->name('admin.rooms.destroy');
 });
 
+// Image
+Route::get('/images/{filename}', function ($filename) {
+    $path = storage_path('app/public/images/' . $filename);
+    if (!file_exists($path)) {
+        abort(404);
+    }
+    return response()->file($path);
+})->name('image');
 
+//  <img src={`/images/${imageUrl}`} alt="Room Image" /> Hiển thị
 //declare route for restaurant ui
 Route::get('/restaurant', function () {
     return Inertia::render('User/Restaurant');

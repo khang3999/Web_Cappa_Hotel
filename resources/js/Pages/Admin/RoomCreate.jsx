@@ -5,7 +5,7 @@ import RoomCreateContent from './RoomCreateContent.jsx';
 export default function RoomCreate({ auth, laravelVersion, phpVersion }) {
     return (
         <>
-            <Head title="" />
+            <Head title="Create form" />
             <NavbarAdmin></NavbarAdmin>
             <RoomCreateContent></RoomCreateContent>        
         </>

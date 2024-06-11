@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Booking;
 use App\Models\Room;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Inertia\Inertia;
 
 class AdminController extends Controller
@@ -12,7 +14,10 @@ class AdminController extends Controller
     // Go to Admin
     public function indexAdmin()
     {
-        return Inertia::render('Admin/BookingManagement');
+        // $bookings = Booking::orderBy('status', 'asc')->get();
+        $bookings = DB::table('bookings')->join('rooms', 'bookings.id_room','=','rooms.id')->select('bookings.*', 'rooms.name')->get();
+        // dd($bookings);
+        return Inertia::render('Admin/BookingManagement',['bookings'=>$bookings]);
     }
     // Go to room management
     public function roomsManagement()
@@ -73,6 +78,8 @@ class AdminController extends Controller
     public function edit(string $id)
     {
         //
+        $room = Room::find($id);
+        return Inertia::render('Admin/RoomEdit',['room'=>$room]);
     }
 
     /**

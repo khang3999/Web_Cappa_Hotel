@@ -3,7 +3,7 @@ const Booking = (props) => {
     const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
     return (
         <div className="booking z-2 bg-md-transparent  ">
-            <div className="container box animate-on-scroll">
+            <div className="container">
                 <div className="row bg-transparent ">
                     <div className="col-lg-6">
                         <div className="rating  pb-3">
@@ -98,21 +98,21 @@ const Booking = (props) => {
                     <div className="row parent">
                         <div className="col-4 ">
                             <div className="box-wrap d-flex justify-content-center">
-                                <div class="left-top place">
+                                <div className="left-top place">
                                 </div>
-                                <div class="top place">
+                                <div className="top place">
                                 </div>
-                                <div class="right-top place">
+                                <div className="right-top place">
                                 </div>
-                                <div class="left place">
+                                <div className="left place">
                                 </div>
-                                <div class="right place">
+                                <div className="right place">
                                 </div>
-                                <div class="left-bottom place">
+                                <div className="left-bottom place">
                                 </div>
-                                <div class="bottom place">
+                                <div className="bottom place">
                                 </div>
-                                <div class="right-bottom place">
+                                <div className="right-bottom place">
                                 </div>
                                 <div className="div img-wrap">
                                     <img src="/images/1.png " alt="" className="book-img-item img-fluid"></img>
@@ -122,21 +122,21 @@ const Booking = (props) => {
 
                         <div className="col-4 ">
                             <div className="box-wrap d-flex justify-content-center">
-                                <div class="left-top place">
+                                <div className="left-top place">
                                 </div>
-                                <div class="top place">
+                                <div className="top place">
                                 </div>
-                                <div class="right-top place">
+                                <div className="right-top place">
                                 </div>
-                                <div class="left place">
+                                <div className="left place">
                                 </div>
-                                <div class="right place">
+                                <div className="right place">
                                 </div>
-                                <div class="left-bottom place">
+                                <div className="left-bottom place">
                                 </div>
-                                <div class="bottom place">
+                                <div className="bottom place">
                                 </div>
-                                <div class="right-bottom place">
+                                <div className="right-bottom place">
                                 </div>
                                 <div className="div img-wrap">
                                     <img src="/images/2.png " alt="" className="book-img-item img-fluid"></img>
@@ -146,21 +146,21 @@ const Booking = (props) => {
 
                         <div className="col-4 ">
                             <div className="box-wrap d-flex justify-content-center">
-                                <div class="left-top place">
+                                <div className="left-top place">
                                 </div>
-                                <div class="top place">
+                                <div className="top place">
                                 </div>
-                                <div class="right-top place">
+                                <div className="right-top place">
                                 </div>
-                                <div class="left place">
+                                <div className="left place">
                                 </div>
-                                <div class="right place">
+                                <div className="right place">
                                 </div>
-                                <div class="left-bottom place">
+                                <div className="left-bottom place">
                                 </div>
-                                <div class="bottom place">
+                                <div className="bottom place">
                                 </div>
-                                <div class="right-bottom place">
+                                <div className="right-bottom place">
                                 </div>
                                 <div className="div img-wrap">
                                     <img src="/images/3.png " alt="" className="book-img-item img-fluid"></img>

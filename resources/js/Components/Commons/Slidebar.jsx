@@ -37,7 +37,7 @@ const Slidebar = ({pageName}) => {
                         return (
                             <div key={index} className={`carousel-item ${(index == 0) ? 'active' : ''}`} data-bs-interval="10000">
                                 <div className="img-slideshow ">
-                                    <img src={`./images/banner-home-${index + 1}.jpg`} className="d-block w-100 img-slide img-fluid" alt="..."></img>
+                                    <img src={`/images/banner-home-${index + 1}.jpg`} className="d-block w-100 img-slide img-fluid" alt="..."></img>
                                 </div>
                                 <div className="carousel-caption d-none d-sm-block m-auto z-2">
                                     <i className="fa-solid fa-star"></i>
@@ -45,8 +45,8 @@ const Slidebar = ({pageName}) => {
                                     <i className="fa-solid fa-star"></i>
                                     <i className="fa-solid fa-star"></i>
                                     <i className="fa-solid fa-star"></i>
-                                    <h4 className="m-4 text-top ">{banner.title}</h4>
-                                    <h1 className="text-bot">{banner.description.toUpperCase()}</h1>
+                                    <h4 className="m-4 text-top text-light">{banner.title}</h4>
+                                    <h1 className="text-bot text-light">{banner.description.toUpperCase()}</h1>
                                     <button className="btn-mid">
                                         <span className="btn-mid-text">ROOMS & SUITES</span>
                                     </button>
