@@ -296,6 +296,12 @@ i {
     position: relative;
 }
 
+
+
+
+
+
+
 .img-base::before {
     position: absolute;
     content: "";
@@ -633,17 +639,7 @@ h6 {
     top: 10%;
     left: 30%;
 }
-.box {
-    
-    opacity: 0; /* Ban đầu ẩn đi */
-    transition: opacity 0.5s ease-out; /* Sử dụng transition để tạo hiệu ứng mượt mà */
-}
 
-.animate-on-scroll.show {
-    opacity: 1;
-
-    /* Khi có class 'show', hiển thị phần tử */
-}
 .hotel-facilities-item:hover 
 .hotel-facilities-icon{
     animation: jumpUpDown 1s alternate infinite;
