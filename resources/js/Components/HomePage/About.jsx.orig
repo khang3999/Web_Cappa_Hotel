@@ -1,8 +1,13 @@
 import '../../../css/about.css'
 const About = (props) => {
     return (
-        <div className="content-about z-2 position-relative bg-white  ">
+<<<<<<< HEAD
+        <div className="content-about z-2 position-relative">
             <div className="container ">
+=======
+        <div className="content-about z-2 position-relative bg-white  ">
+            <div className="container animate-on-scroll box">
+>>>>>>> master
                 <div className="row ">
                     <div className="col-md-6 ">
                         <div className="rating  pb-3">
@@ -23,7 +28,7 @@ const About = (props) => {
                             penatibus et magnis dis parturient monte nascete ridiculus mus nellentesque habitant morbine.
                         </p>
                         <div className="text-call">
-                            <div className="square-loading">
+                            <div class="square-loading">
                                 <img src="/images/logo.png" alt="" className='square-loading-img'/>
                             </div>
                             <i className="fa-solid fa-phone-volume call-icon "></i>

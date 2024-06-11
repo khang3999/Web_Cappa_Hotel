@@ -1,3 +1,4 @@
+import '../../../css/app.css'
 const Testimonial = (props) => {
     return (
         <div className="testimonials container-fluid d-flex bg-md-transparent  z-2 position-relative ">

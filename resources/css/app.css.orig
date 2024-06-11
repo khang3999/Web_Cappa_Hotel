@@ -274,7 +274,7 @@ a {
     line-height: 100%;
 }
 
-
+p,
 h1,
 h2,
 h3,
@@ -295,12 +295,6 @@ i {
 .header {
     position: relative;
 }
-
-
-
-
-
-
 
 .img-base::before {
     position: absolute;
@@ -340,8 +334,14 @@ i {
     left: 10%;
     background-color: #fff;
 }
+<<<<<<< HEAD
+
+.fa-play {
+    font-size: 25px;
+=======
 .fa-play{
     font-size: 60px;
+>>>>>>> master
     color: #e4a853;
     top: -5%;
     left: 18%;
@@ -372,9 +372,13 @@ i {
 .hotel-facilities-icon {
     font-size: 45px;
     color: #aa8453;
+<<<<<<< HEAD
+    margin-bottom: 18px;
+=======
    margin-bottom: 18px;
    display: inline-block;
     transition: transform 0.3s ease;
+>>>>>>> master
 }
 
 .hotel-facilities-item-title {
@@ -610,55 +614,7 @@ h6 {
     overflow: hidden;
 }
 
-.hero-section video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-}
-.modal-content{
-    width: 600px;
-    height: 450px;
-}
-.modal-header{
-    background-color: transparent;
-}
-.modal-dialog{
-    position: absolute;
-    top: 10%;
-    left: 30%;
-}
-
-.hotel-facilities-item:hover 
-.hotel-facilities-icon{
-    animation: jumpUpDown 1s alternate infinite;
-}
-@keyframes jumpUpDown {
-    from {
-        transform: translateY(0); /* Bắt đầu từ vị trí ban đầu */
-    }
-    to {
-        transform: translateY(-20px); /* Kết thúc vị trí 20px lên trên */
-    }
-}
-.img-scale{
-    transition: transform 0.3s linear;
-}
-
-.overflow-hidden:hover img {
-    transform: scale(1.2); /* Chỉnh tỷ lệ phóng to theo ý muốn */
-}
+<<<<<<< HEAD
 .divider:after,
 .divider:before {
     content: "";
@@ -801,4 +757,64 @@ input.error-animation {
         transform: translateX(0px);
         timing-function: ease-in;
     }
+=======
+.hero-section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+.modal-content{
+    width: 600px;
+    height: 450px;
+}
+.modal-header{
+    background-color: transparent;
+}
+.modal-dialog{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
+.box {
+    
+    opacity: 0; /* Ban đầu ẩn đi */
+    transition: opacity 0.5s ease-out; /* Sử dụng transition để tạo hiệu ứng mượt mà */
+}
+
+.animate-on-scroll.show {
+    opacity: 1;
+
+    /* Khi có class 'show', hiển thị phần tử */
+}
+.hotel-facilities-item:hover 
+.hotel-facilities-icon{
+    animation: jumpUpDown 1s alternate infinite;
+}
+@keyframes jumpUpDown {
+    from {
+        transform: translateY(0); /* Bắt đầu từ vị trí ban đầu */
+    }
+    to {
+        transform: translateY(-20px); /* Kết thúc vị trí 20px lên trên */
+    }
+}
+.img-scale{
+    transition: transform 0.3s linear;
+}
+
+.overflow-hidden:hover img {
+    transform: scale(1.2); /* Chỉnh tỷ lệ phóng to theo ý muốn */
+>>>>>>> master
 }

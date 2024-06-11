@@ -37,6 +37,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
     })->name('contact');
 });
 
+<<<<<<< HEAD
+=======
 Route::get('/about',function () {
     return Inertia::render('User/AboutUs');
 })->name('aboutUsUser');
@@ -46,6 +48,7 @@ Route::post('/booking',[HomeController::class,'checkRoom'])->name('checkRoomAndS
 
 Route::get('/detail/{roomId}',[RoomController::class,'show'])->name('room.detail');
 Route::get('/payment',[RoomController::class,'payment'])->name('room.payment');
+>>>>>>> master
 
 // Route::get('/', function () {
 //     return Inertia::render('Welcome', [
@@ -72,28 +75,29 @@ Route::prefix('admin')->middleware(['auth','verified',CheckUserRole::class])->gr
     Route::get("/", [AdminController::class, "indexAdmin"])->name('booking.admin');
     Route::get("/accounts", [AdminController::class, "accountsManagement"])->name('accounts.admin');
     Route::get("/statuses", [AdminController::class, "statusesManagement"])->name('statuses.admin');
-    Route::get("/services", [AdminController::class, "servicesManagement"])->name('services.admin');  
-    Route::get("/rooms",[RoomController::class,'index'])->name('admin.rooms.index');
-    Route::get("/rooms/create",function () {
+    Route::get("/services", [AdminController::class, "servicesManagement"])->name('services.admin');
+    Route::get("/rooms", [RoomController::class, 'index'])->name('admin.rooms.index');
+    Route::get("/rooms/create", function () {
         return Inertia::render('Admin/RoomCreate');
     })->name('admin.rooms.create');
-    Route::post("/rooms/store",[RoomController::class,'store'])->name('admin.rooms.store');
-    Route::get("/rooms/edit/{roomId}",[AdminController::class,'edit'])->name('admin.rooms.edit');
-    Route::post("/rooms/update",[RoomController::class,'update'])->name('admin.rooms.update');
-    Route::get("/rooms/edit/{roomId}",[AdminController::class,'edit'])->name('admin.rooms.edit');
-    Route::get("/rooms/delete/{roomid}",[RoomController::class,'destroy'])->name('admin.rooms.destroy');
+    Route::post("/rooms/store", [RoomController::class, 'store'])->name('admin.rooms.store');
 });
 
-// Image
-Route::get('/images/{filename}', function ($filename) {
-    $path = storage_path('app/public/images/' . $filename);
-    if (!file_exists($path)) {
-        abort(404);
-    }
-    return response()->file($path);
-})->name('image');
 
-//  <img src={`/images/${imageUrl}`} alt="Room Image" /> Hiển thị
+<<<<<<< HEAD
+
+
+Route::get('/test-email', function () {
+    Mail::raw('This is a test email', function ($message) {
+        $message->to('your_email@example.com')
+            ->subject('Test Email');
+    });
+
+    return 'Test email sent';
+});
+
+require __DIR__ . '/auth.php';
+=======
 //declare route for restaurant ui
 Route::get('/restaurant', function () {
     return Inertia::render('User/Restaurant');
@@ -105,3 +109,4 @@ Route::get('/contact', function () {
 //Comment
 Route::post('/comments', [CommentController::class,"store"])->name("comment.store");
 require __DIR__.'/auth.php';
+>>>>>>> master

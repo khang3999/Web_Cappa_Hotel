@@ -50,7 +50,7 @@ const RoomAndSuite = () => {
                             <div key={index} className="col-md-4 my-4">
                                 <div className="position-relative rooms-suites-img overflow-hidden">
                                     <div className="overflow-hidden">
-                                        <img src={`/images/${roomStandard.photo}`} alt="" className="w-100 img-fluid img-hover"></img>
+                                        <img src={`${roomStandard.photo}`} alt="" className="w-100 img-fluid img-hover"></img>
                                     </div>
                                     <div className="tag-book text-center">BOOK</div>
                                     <div className="rooms-suites-info">
@@ -87,7 +87,7 @@ const RoomAndSuite = () => {
                             <div key={index} className="col-md-6 my-4">
                                 <div className="position-relative rooms-suites-img overflow-hidden">
                                     <div className="overflow-hidden">
-                                        <img src={`/images/${roomLarge.photo}`} alt="" className="w-100 img-fluid img-hover"></img>
+                                        <img src={`/${roomLarge.photo}`} alt="" className="w-100 img-fluid img-hover"></img>
                                     </div>
                                     <div className="tag-book text-center">BOOK</div>
                                     <div className="rooms-suites-info rooms-suites-info-large">

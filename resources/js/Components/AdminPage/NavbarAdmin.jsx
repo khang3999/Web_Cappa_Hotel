@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "../../../css/navbar.css"
+import ResponsiveNavLink from '@/Components/ResponsiveNavLink';
 const NavbarAdmin = () => {
     return (
         <>
@@ -31,7 +32,9 @@ const NavbarAdmin = () => {
                                 <a className="nav-link" aria-current="page" href="#">Username</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" aria-current="page" href="#"><i className="bi bi-box-arrow-right"></i></a>
+                                <ResponsiveNavLink className="nav-link" method="post" href={route('logout')} onClick={() => alert('Are you sure you want to logout?')}>
+                                    <i className="bi bi-box-arrow-right"></i>
+                                </ResponsiveNavLink>
                             </li>
                         </div>
                     </div>
